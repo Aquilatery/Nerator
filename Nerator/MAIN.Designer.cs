@@ -33,6 +33,8 @@
             this.Expand = new ReaLTaiizor.ForeverToggle();
             this.Copy_B = new ReaLTaiizor.ForeverButton();
             this.Settings = new ReaLTaiizor.ThunderGroupBox();
+            this.labelEdit2 = new ReaLTaiizor.LabelEdit();
+            this.TopMost_T = new ReaLTaiizor.ForeverToggle();
             this.Special_GB = new System.Windows.Forms.GroupBox();
             this.Just_Number = new ReaLTaiizor.ForeverRadioButton();
             this.Just_Symbol = new ReaLTaiizor.ForeverRadioButton();
@@ -48,8 +50,6 @@
             this.Password = new ReaLTaiizor.TextEdit();
             this.Description = new ReaLTaiizor.LabelEdit();
             this.controlBox1 = new ReaLTaiizor.ControlBox();
-            this.TopMost_T = new ReaLTaiizor.ForeverToggle();
-            this.labelEdit2 = new ReaLTaiizor.LabelEdit();
             this.themeForm1.SuspendLayout();
             this.Settings.SuspendLayout();
             this.Special_GB.SuspendLayout();
@@ -126,6 +126,34 @@
             this.Settings.Size = new System.Drawing.Size(296, 374);
             this.Settings.TabIndex = 0;
             this.Settings.Text = "Advanced Settings";
+            // 
+            // labelEdit2
+            // 
+            this.labelEdit2.AutoSize = true;
+            this.labelEdit2.BackColor = System.Drawing.Color.Transparent;
+            this.labelEdit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.labelEdit2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.labelEdit2.Location = new System.Drawing.Point(8, 331);
+            this.labelEdit2.Margin = new System.Windows.Forms.Padding(6);
+            this.labelEdit2.Name = "labelEdit2";
+            this.labelEdit2.Size = new System.Drawing.Size(115, 20);
+            this.labelEdit2.TabIndex = 10;
+            this.labelEdit2.Text = "Always on Top:";
+            // 
+            // TopMost_T
+            // 
+            this.TopMost_T.BackColor = System.Drawing.Color.Transparent;
+            this.TopMost_T.Checked = false;
+            this.TopMost_T.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TopMost_T.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TopMost_T.Location = new System.Drawing.Point(208, 325);
+            this.TopMost_T.Margin = new System.Windows.Forms.Padding(6);
+            this.TopMost_T.Name = "TopMost_T";
+            this.TopMost_T.Options = ReaLTaiizor.ForeverToggle._Options.Style3;
+            this.TopMost_T.Size = new System.Drawing.Size(76, 33);
+            this.TopMost_T.TabIndex = 9;
+            this.TopMost_T.Text = "TopMost_T";
+            this.TopMost_T.CheckedChanged += new ReaLTaiizor.ForeverToggle.CheckedChangedEventHandler(this.TopMost_T_CheckedChanged);
             // 
             // Special_GB
             // 
@@ -349,34 +377,6 @@
             this.controlBox1.Size = new System.Drawing.Size(90, 25);
             this.controlBox1.TabIndex = 0;
             this.controlBox1.Text = "controlBox1";
-            // 
-            // TopMost_T
-            // 
-            this.TopMost_T.BackColor = System.Drawing.Color.Transparent;
-            this.TopMost_T.Checked = false;
-            this.TopMost_T.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TopMost_T.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TopMost_T.Location = new System.Drawing.Point(208, 325);
-            this.TopMost_T.Margin = new System.Windows.Forms.Padding(6);
-            this.TopMost_T.Name = "TopMost_T";
-            this.TopMost_T.Options = ReaLTaiizor.ForeverToggle._Options.Style3;
-            this.TopMost_T.Size = new System.Drawing.Size(76, 33);
-            this.TopMost_T.TabIndex = 9;
-            this.TopMost_T.Text = "TopMost_T";
-            this.TopMost_T.CheckedChanged += new ReaLTaiizor.ForeverToggle.CheckedChangedEventHandler(this.TopMost_T_CheckedChanged);
-            // 
-            // labelEdit2
-            // 
-            this.labelEdit2.AutoSize = true;
-            this.labelEdit2.BackColor = System.Drawing.Color.Transparent;
-            this.labelEdit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelEdit2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.labelEdit2.Location = new System.Drawing.Point(8, 331);
-            this.labelEdit2.Margin = new System.Windows.Forms.Padding(6);
-            this.labelEdit2.Name = "labelEdit2";
-            this.labelEdit2.Size = new System.Drawing.Size(115, 20);
-            this.labelEdit2.TabIndex = 10;
-            this.labelEdit2.Text = "Always on Top:";
             // 
             // MAIN
             // 
