@@ -77,7 +77,7 @@ namespace Nerator
 
         private static string Shuffle_Mode_2(string Text)
         {
-            string Output = "";
+            string Result = null;
             int ArraySize = Text.Length;
             int[] RandomArray = new int[ArraySize];
 
@@ -87,9 +87,9 @@ namespace Nerator
             Shuffle_Helper(RandomArray);
 
             for (int C = 0; C < ArraySize; C++)
-                Output += Text[RandomArray[C]];
+                Result += Text[RandomArray[C]];
 
-            return Output;
+            return Result;
         }
 
         private static void Shuffle_Helper(int[] Array)
