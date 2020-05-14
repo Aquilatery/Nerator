@@ -30,7 +30,7 @@ namespace Nerator
             NS, JN, JS
         }
 
-        public static string Create(int Lenght, Alphabetic AC, Special SL)
+        public static string Create(int Length, Alphabetic AC, Special SL)
         {
             string Dictionary = null;
             switch (AC)
@@ -57,7 +57,7 @@ namespace Nerator
                     Dictionary += SL_JS;
                     break;
             }
-            return Shuffle_Mode_1(Dictionary).Substring(0, Lenght);
+            return Shuffle_Mode_1(Dictionary).Substring(0, Length);
         }
 
         private static string Shuffle_Mode_1(string Text)
