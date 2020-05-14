@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAIN));
             this.themeForm1 = new ReaLTaiizor.ThemeForm();
+            this.Expand = new ReaLTaiizor.ForeverToggle();
             this.Copy_B = new ReaLTaiizor.ForeverButton();
             this.Settings = new ReaLTaiizor.ThunderGroupBox();
-            this.Special_G = new System.Windows.Forms.GroupBox();
+            this.Special_GB = new System.Windows.Forms.GroupBox();
             this.Just_Number = new ReaLTaiizor.ForeverRadioButton();
             this.Just_Symbol = new ReaLTaiizor.ForeverRadioButton();
             this.Number_Symbol = new ReaLTaiizor.ForeverRadioButton();
-            this.Alphabetic_G = new System.Windows.Forms.GroupBox();
+            this.Alphabetic_GB = new System.Windows.Forms.GroupBox();
             this.Just_Big = new ReaLTaiizor.ForeverRadioButton();
             this.Just_Small = new ReaLTaiizor.ForeverRadioButton();
             this.Big_Small = new ReaLTaiizor.ForeverRadioButton();
@@ -49,13 +50,14 @@
             this.controlBox1 = new ReaLTaiizor.ControlBox();
             this.themeForm1.SuspendLayout();
             this.Settings.SuspendLayout();
-            this.Special_G.SuspendLayout();
-            this.Alphabetic_G.SuspendLayout();
+            this.Special_GB.SuspendLayout();
+            this.Alphabetic_GB.SuspendLayout();
             this.SuspendLayout();
             // 
             // themeForm1
             // 
             this.themeForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.themeForm1.Controls.Add(this.Expand);
             this.themeForm1.Controls.Add(this.Copy_B);
             this.themeForm1.Controls.Add(this.Settings);
             this.themeForm1.Controls.Add(this.labelEdit1);
@@ -71,11 +73,25 @@
             this.themeForm1.Padding = new System.Windows.Forms.Padding(10, 70, 10, 9);
             this.themeForm1.RoundCorners = true;
             this.themeForm1.Sizable = false;
-            this.themeForm1.Size = new System.Drawing.Size(335, 545);
+            this.themeForm1.Size = new System.Drawing.Size(335, 202);
             this.themeForm1.SmartBounds = true;
             this.themeForm1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.themeForm1.TabIndex = 0;
             this.themeForm1.Text = "Soferity - Nerator";
+            // 
+            // Expand
+            // 
+            this.Expand.BackColor = System.Drawing.Color.Transparent;
+            this.Expand.Checked = false;
+            this.Expand.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Expand.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Expand.Location = new System.Drawing.Point(131, 155);
+            this.Expand.Name = "Expand";
+            this.Expand.Options = ReaLTaiizor.ForeverToggle._Options.Style2;
+            this.Expand.Size = new System.Drawing.Size(76, 33);
+            this.Expand.TabIndex = 5;
+            this.Expand.Text = "foreverToggle1";
+            this.Expand.CheckedChanged += new ReaLTaiizor.ForeverToggle.CheckedChangedEventHandler(this.Expand_CheckedChanged);
             // 
             // Copy_B
             // 
@@ -83,10 +99,10 @@
             this.Copy_B.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Copy_B.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Copy_B.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Copy_B.Location = new System.Drawing.Point(196, 152);
+            this.Copy_B.Location = new System.Drawing.Point(227, 152);
             this.Copy_B.Name = "Copy_B";
             this.Copy_B.Rounded = true;
-            this.Copy_B.Size = new System.Drawing.Size(120, 40);
+            this.Copy_B.Size = new System.Drawing.Size(90, 40);
             this.Copy_B.TabIndex = 4;
             this.Copy_B.Text = "Copy";
             this.Copy_B.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -95,8 +111,8 @@
             // Settings
             // 
             this.Settings.BackColor = System.Drawing.Color.Transparent;
-            this.Settings.Controls.Add(this.Special_G);
-            this.Settings.Controls.Add(this.Alphabetic_G);
+            this.Settings.Controls.Add(this.Special_GB);
+            this.Settings.Controls.Add(this.Alphabetic_GB);
             this.Settings.Controls.Add(this.PLength);
             this.Settings.Controls.Add(this.Length);
             this.Settings.Location = new System.Drawing.Point(20, 202);
@@ -107,20 +123,20 @@
             this.Settings.TabIndex = 0;
             this.Settings.Text = "Advanced Settings";
             // 
-            // Special_G
+            // Special_GB
             // 
-            this.Special_G.Controls.Add(this.Just_Number);
-            this.Special_G.Controls.Add(this.Just_Symbol);
-            this.Special_G.Controls.Add(this.Number_Symbol);
-            this.Special_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Special_G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.Special_G.Location = new System.Drawing.Point(12, 200);
-            this.Special_G.Margin = new System.Windows.Forms.Padding(6);
-            this.Special_G.Name = "Special_G";
-            this.Special_G.Size = new System.Drawing.Size(272, 113);
-            this.Special_G.TabIndex = 8;
-            this.Special_G.TabStop = false;
-            this.Special_G.Text = "Special Characters";
+            this.Special_GB.Controls.Add(this.Just_Number);
+            this.Special_GB.Controls.Add(this.Just_Symbol);
+            this.Special_GB.Controls.Add(this.Number_Symbol);
+            this.Special_GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Special_GB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.Special_GB.Location = new System.Drawing.Point(12, 200);
+            this.Special_GB.Margin = new System.Windows.Forms.Padding(6);
+            this.Special_GB.Name = "Special_GB";
+            this.Special_GB.Size = new System.Drawing.Size(272, 113);
+            this.Special_GB.TabIndex = 8;
+            this.Special_GB.TabStop = false;
+            this.Special_GB.Text = "Special Characters";
             // 
             // Just_Number
             // 
@@ -167,20 +183,20 @@
             this.Number_Symbol.TabIndex = 7;
             this.Number_Symbol.Text = "Number and Special Symbol - 1$2&3£";
             // 
-            // Alphabetic_G
+            // Alphabetic_GB
             // 
-            this.Alphabetic_G.Controls.Add(this.Just_Big);
-            this.Alphabetic_G.Controls.Add(this.Just_Small);
-            this.Alphabetic_G.Controls.Add(this.Big_Small);
-            this.Alphabetic_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Alphabetic_G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.Alphabetic_G.Location = new System.Drawing.Point(12, 75);
-            this.Alphabetic_G.Margin = new System.Windows.Forms.Padding(6);
-            this.Alphabetic_G.Name = "Alphabetic_G";
-            this.Alphabetic_G.Size = new System.Drawing.Size(272, 113);
-            this.Alphabetic_G.TabIndex = 7;
-            this.Alphabetic_G.TabStop = false;
-            this.Alphabetic_G.Text = "Alphabetic Characters";
+            this.Alphabetic_GB.Controls.Add(this.Just_Big);
+            this.Alphabetic_GB.Controls.Add(this.Just_Small);
+            this.Alphabetic_GB.Controls.Add(this.Big_Small);
+            this.Alphabetic_GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Alphabetic_GB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.Alphabetic_GB.Location = new System.Drawing.Point(12, 75);
+            this.Alphabetic_GB.Margin = new System.Windows.Forms.Padding(6);
+            this.Alphabetic_GB.Name = "Alphabetic_GB";
+            this.Alphabetic_GB.Size = new System.Drawing.Size(272, 113);
+            this.Alphabetic_GB.TabIndex = 7;
+            this.Alphabetic_GB.TabStop = false;
+            this.Alphabetic_GB.Text = "Alphabetic Characters";
             // 
             // Just_Big
             // 
@@ -278,7 +294,7 @@
             this.Create_B.Location = new System.Drawing.Point(20, 152);
             this.Create_B.Name = "Create_B";
             this.Create_B.Rounded = true;
-            this.Create_B.Size = new System.Drawing.Size(120, 40);
+            this.Create_B.Size = new System.Drawing.Size(90, 40);
             this.Create_B.TabIndex = 1;
             this.Create_B.Text = "Create";
             this.Create_B.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -334,7 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 545);
+            this.ClientSize = new System.Drawing.Size(335, 202);
             this.Controls.Add(this.themeForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -348,8 +364,8 @@
             this.themeForm1.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
-            this.Special_G.ResumeLayout(false);
-            this.Alphabetic_G.ResumeLayout(false);
+            this.Special_GB.ResumeLayout(false);
+            this.Alphabetic_GB.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -365,15 +381,16 @@
         private ReaLTaiizor.ForeverNumeric PLength;
         private ReaLTaiizor.LabelEdit Length;
         private ReaLTaiizor.ForeverRadioButton Big_Small;
-        private System.Windows.Forms.GroupBox Alphabetic_G;
+        private System.Windows.Forms.GroupBox Alphabetic_GB;
         private ReaLTaiizor.ForeverRadioButton Just_Big;
         private ReaLTaiizor.ForeverRadioButton Just_Small;
-        private System.Windows.Forms.GroupBox Special_G;
+        private System.Windows.Forms.GroupBox Special_GB;
         private ReaLTaiizor.ForeverRadioButton Just_Number;
         private ReaLTaiizor.ForeverRadioButton Just_Symbol;
         private ReaLTaiizor.ForeverRadioButton Number_Symbol;
         private ReaLTaiizor.Button Create;
         private ReaLTaiizor.ForeverButton Copy_B;
         private ReaLTaiizor.ForeverButton Create_B;
+        private ReaLTaiizor.ForeverToggle Expand;
     }
 }

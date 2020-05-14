@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using static Nerator.Generator;
 
@@ -14,6 +15,15 @@ namespace Nerator
         private void Create_B_Click(object sender, EventArgs e)
         {
             Password.Text = Create(Convert.ToInt32(PLength.Value), GET_AC(), GET_SL());
+        }
+
+        private void Expand_CheckedChanged(object sender)
+        {
+            if (Expand.Checked)
+                Size = new Size(335, 545);
+            else
+                Size = new Size(335, 202);
+            CenterToScreen();
         }
 
         private void Copy_B_Click(object sender, EventArgs e)
