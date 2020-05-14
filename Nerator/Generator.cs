@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Nerator
 {
-    public static class Generate
+    public static class Generator
     {
         private static Random RNDM = new Random();
 

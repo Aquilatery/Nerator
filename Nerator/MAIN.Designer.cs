@@ -32,11 +32,11 @@
             this.themeForm1 = new ReaLTaiizor.ThemeForm();
             this.Copy_B = new ReaLTaiizor.ForeverButton();
             this.Settings = new ReaLTaiizor.ThunderGroupBox();
-            this.Special = new System.Windows.Forms.GroupBox();
+            this.Special_G = new System.Windows.Forms.GroupBox();
             this.Just_Number = new ReaLTaiizor.ForeverRadioButton();
             this.Just_Symbol = new ReaLTaiizor.ForeverRadioButton();
             this.Number_Symbol = new ReaLTaiizor.ForeverRadioButton();
-            this.Alphabetic = new System.Windows.Forms.GroupBox();
+            this.Alphabetic_G = new System.Windows.Forms.GroupBox();
             this.Just_Big = new ReaLTaiizor.ForeverRadioButton();
             this.Just_Small = new ReaLTaiizor.ForeverRadioButton();
             this.Big_Small = new ReaLTaiizor.ForeverRadioButton();
@@ -49,8 +49,8 @@
             this.controlBox1 = new ReaLTaiizor.ControlBox();
             this.themeForm1.SuspendLayout();
             this.Settings.SuspendLayout();
-            this.Special.SuspendLayout();
-            this.Alphabetic.SuspendLayout();
+            this.Special_G.SuspendLayout();
+            this.Alphabetic_G.SuspendLayout();
             this.SuspendLayout();
             // 
             // themeForm1
@@ -95,8 +95,8 @@
             // Settings
             // 
             this.Settings.BackColor = System.Drawing.Color.Transparent;
-            this.Settings.Controls.Add(this.Special);
-            this.Settings.Controls.Add(this.Alphabetic);
+            this.Settings.Controls.Add(this.Special_G);
+            this.Settings.Controls.Add(this.Alphabetic_G);
             this.Settings.Controls.Add(this.PLength);
             this.Settings.Controls.Add(this.Length);
             this.Settings.Location = new System.Drawing.Point(20, 202);
@@ -107,20 +107,20 @@
             this.Settings.TabIndex = 0;
             this.Settings.Text = "Advanced Settings";
             // 
-            // Special
+            // Special_G
             // 
-            this.Special.Controls.Add(this.Just_Number);
-            this.Special.Controls.Add(this.Just_Symbol);
-            this.Special.Controls.Add(this.Number_Symbol);
-            this.Special.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Special.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.Special.Location = new System.Drawing.Point(12, 200);
-            this.Special.Margin = new System.Windows.Forms.Padding(6);
-            this.Special.Name = "Special";
-            this.Special.Size = new System.Drawing.Size(272, 113);
-            this.Special.TabIndex = 8;
-            this.Special.TabStop = false;
-            this.Special.Text = "Special Characters";
+            this.Special_G.Controls.Add(this.Just_Number);
+            this.Special_G.Controls.Add(this.Just_Symbol);
+            this.Special_G.Controls.Add(this.Number_Symbol);
+            this.Special_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Special_G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.Special_G.Location = new System.Drawing.Point(12, 200);
+            this.Special_G.Margin = new System.Windows.Forms.Padding(6);
+            this.Special_G.Name = "Special_G";
+            this.Special_G.Size = new System.Drawing.Size(272, 113);
+            this.Special_G.TabIndex = 8;
+            this.Special_G.TabStop = false;
+            this.Special_G.Text = "Special Characters";
             // 
             // Just_Number
             // 
@@ -167,20 +167,20 @@
             this.Number_Symbol.TabIndex = 7;
             this.Number_Symbol.Text = "Number and Special Symbol - 1$2&3£";
             // 
-            // Alphabetic
+            // Alphabetic_G
             // 
-            this.Alphabetic.Controls.Add(this.Just_Big);
-            this.Alphabetic.Controls.Add(this.Just_Small);
-            this.Alphabetic.Controls.Add(this.Big_Small);
-            this.Alphabetic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Alphabetic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.Alphabetic.Location = new System.Drawing.Point(12, 75);
-            this.Alphabetic.Margin = new System.Windows.Forms.Padding(6);
-            this.Alphabetic.Name = "Alphabetic";
-            this.Alphabetic.Size = new System.Drawing.Size(272, 113);
-            this.Alphabetic.TabIndex = 7;
-            this.Alphabetic.TabStop = false;
-            this.Alphabetic.Text = "Alphabetic Characters";
+            this.Alphabetic_G.Controls.Add(this.Just_Big);
+            this.Alphabetic_G.Controls.Add(this.Just_Small);
+            this.Alphabetic_G.Controls.Add(this.Big_Small);
+            this.Alphabetic_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Alphabetic_G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.Alphabetic_G.Location = new System.Drawing.Point(12, 75);
+            this.Alphabetic_G.Margin = new System.Windows.Forms.Padding(6);
+            this.Alphabetic_G.Name = "Alphabetic_G";
+            this.Alphabetic_G.Size = new System.Drawing.Size(272, 113);
+            this.Alphabetic_G.TabIndex = 7;
+            this.Alphabetic_G.TabStop = false;
+            this.Alphabetic_G.Text = "Alphabetic Characters";
             // 
             // Just_Big
             // 
@@ -348,8 +348,8 @@
             this.themeForm1.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
-            this.Special.ResumeLayout(false);
-            this.Alphabetic.ResumeLayout(false);
+            this.Special_G.ResumeLayout(false);
+            this.Alphabetic_G.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -365,10 +365,10 @@
         private ReaLTaiizor.ForeverNumeric PLength;
         private ReaLTaiizor.LabelEdit Length;
         private ReaLTaiizor.ForeverRadioButton Big_Small;
-        private System.Windows.Forms.GroupBox Alphabetic;
+        private System.Windows.Forms.GroupBox Alphabetic_G;
         private ReaLTaiizor.ForeverRadioButton Just_Big;
         private ReaLTaiizor.ForeverRadioButton Just_Small;
-        private System.Windows.Forms.GroupBox Special;
+        private System.Windows.Forms.GroupBox Special_G;
         private ReaLTaiizor.ForeverRadioButton Just_Number;
         private ReaLTaiizor.ForeverRadioButton Just_Symbol;
         private ReaLTaiizor.ForeverRadioButton Number_Symbol;

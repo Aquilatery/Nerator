@@ -49,7 +49,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Generate.cs" />
+    <Compile Include="Generator.cs" />
     <Compile Include="MAIN.cs">
       <SubType>Form</SubType>
     </Compile>

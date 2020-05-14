@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using static Nerator.Generate;
+using static Nerator.Generator;
 
 namespace Nerator
 {
@@ -25,21 +25,21 @@ namespace Nerator
         private Alphabetic GET_AC()
         {
             if (Just_Big.Checked)
-                return Generate.Alphabetic.JB;
+                return Alphabetic.JB;
             else if (Just_Small.Checked)
-                return Generate.Alphabetic.JS;
+                return Alphabetic.JS;
             else
-                return Generate.Alphabetic.BS;
+                return Alphabetic.BS;
         }
 
         private Special GET_SL()
         {
             if (Just_Number.Checked)
-                return Generate.Special.JN;
+                return Special.JN;
             else if (Just_Symbol.Checked)
-                return Generate.Special.JS;
+                return Special.JS;
             else
-                return Generate.Special.NS;
+                return Special.NS;
         }
     }
 }
