@@ -20,7 +20,7 @@ namespace Nerator
         private void Expand_CheckedChanged(object sender)
         {
             if (Expand.Checked)
-                Size = new Size(335, 545);
+                Size = new Size(335, 595);
             else
                 Size = new Size(335, 202);
             CenterToScreen();
@@ -30,6 +30,11 @@ namespace Nerator
         {
             Copy(Password.Text);
             Password.Focus();
+        }
+
+        private void TopMost_T_CheckedChanged(object sender)
+        {
+            TopMost = TopMost_T.Checked;
         }
 
         private Alphabetic GET_AC()
