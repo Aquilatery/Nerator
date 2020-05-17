@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 // Bir bütünleştirilmiş koda ilişkin Genel Bilgiler aşağıdaki öznitelikler kümesiyle
 // denetlenir. Bütünleştirilmiş kod ile ilişkili bilgileri değiştirmek için
 // bu öznitelik değerlerini değiştirin.
-[assembly: AssemblyTitle("Soferity - Nerator v1.0.0.3")]
-[assembly: AssemblyDescription("Soferity - Nerator v1.0.0.3")]
+[assembly: AssemblyTitle("Soferity - Nerator v1.0.0.4")]
+[assembly: AssemblyDescription("Soferity - Nerator v1.0.0.4")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Soferity LLC")]
 [assembly: AssemblyProduct("Soferity - Nerator")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // Tüm değerleri belirtebilir veya varsayılan Derleme ve Düzeltme Numaralarını kullanmak için
 // aşağıda gösterildiği gibi '*' kullanabilirsiniz:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.3")]
-[assembly: AssemblyFileVersion("1.0.0.3")]
+[assembly: AssemblyVersion("1.0.0.4")]
+[assembly: AssemblyFileVersion("1.0.0.4")]
