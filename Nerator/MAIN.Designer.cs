@@ -119,6 +119,7 @@
             this.Settings.Controls.Add(this.Alphabetic_GB);
             this.Settings.Controls.Add(this.PLength);
             this.Settings.Controls.Add(this.Length);
+            this.Settings.ForeColor = System.Drawing.Color.Silver;
             this.Settings.Location = new System.Drawing.Point(20, 202);
             this.Settings.Margin = new System.Windows.Forms.Padding(10);
             this.Settings.Name = "Settings";
@@ -420,7 +421,6 @@
         private ReaLTaiizor.ForeverRadioButton Just_Number;
         private ReaLTaiizor.ForeverRadioButton Just_Symbol;
         private ReaLTaiizor.ForeverRadioButton Number_Symbol;
-        private ReaLTaiizor.Button Create;
         private ReaLTaiizor.ForeverButton Copy_B;
         private ReaLTaiizor.ForeverButton Create_B;
         private ReaLTaiizor.ForeverToggle Expand;
