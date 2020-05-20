@@ -158,6 +158,7 @@
             // 
             // Special_GB
             // 
+            this.Special_GB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Special_GB.Controls.Add(this.Just_Number);
             this.Special_GB.Controls.Add(this.Just_Symbol);
             this.Special_GB.Controls.Add(this.Number_Symbol);
@@ -173,7 +174,7 @@
             // 
             // Just_Number
             // 
-            this.Just_Number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+            this.Just_Number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Just_Number.Checked = false;
             this.Just_Number.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Number.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -188,7 +189,7 @@
             // 
             // Just_Symbol
             // 
-            this.Just_Symbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+            this.Just_Symbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Just_Symbol.Checked = false;
             this.Just_Symbol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Symbol.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -203,7 +204,7 @@
             // 
             // Number_Symbol
             // 
-            this.Number_Symbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+            this.Number_Symbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Number_Symbol.Checked = true;
             this.Number_Symbol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number_Symbol.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -218,6 +219,7 @@
             // 
             // Alphabetic_GB
             // 
+            this.Alphabetic_GB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Alphabetic_GB.Controls.Add(this.Just_Big);
             this.Alphabetic_GB.Controls.Add(this.Just_Small);
             this.Alphabetic_GB.Controls.Add(this.Big_Small);
@@ -233,7 +235,7 @@
             // 
             // Just_Big
             // 
-            this.Just_Big.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+            this.Just_Big.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Just_Big.Checked = false;
             this.Just_Big.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Big.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -248,7 +250,7 @@
             // 
             // Just_Small
             // 
-            this.Just_Small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+            this.Just_Small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Just_Small.Checked = false;
             this.Just_Small.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Small.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -263,7 +265,7 @@
             // 
             // Big_Small
             // 
-            this.Big_Small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+            this.Big_Small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Big_Small.Checked = true;
             this.Big_Small.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Big_Small.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -279,7 +281,7 @@
             // PLength
             // 
             this.PLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(93)))));
-            this.PLength.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.PLength.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.PLength.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.PLength.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PLength.ForeColor = System.Drawing.Color.DimGray;

@@ -5,7 +5,7 @@ namespace Nerator
 {
     public static class Generator
     {
-        private static Random RNDM = new Random();
+        private static Random RM = new Random();
 
         private static string AC_JB = "ABCDEFGHIJKLMNOPRSTUVYZQWX";
         private static string AC_JS = "abcdefghijklmnoprstuvyzqwx";
@@ -67,7 +67,7 @@ namespace Nerator
             while (Number > 1)
             {
                 Number--;
-                int Result = RNDM.Next(Number + 1);
+                int Result = RM.Next(Number + 1);
                 var Value = Array[Result];
                 Array[Result] = Array[Number];
                 Array[Number] = Value;
@@ -78,15 +78,15 @@ namespace Nerator
         private static string Shuffle_Mode_2(string Text)
         {
             string Result = null;
-            int ArraySize = Text.Length;
-            int[] RandomArray = new int[ArraySize];
+            int Size = Text.Length;
+            int[] RandomArray = new int[Size];
 
-            for (int C = 0; C < ArraySize; C++)
+            for (int C = 0; C < Size; C++)
                 RandomArray[C] = C;
 
             Shuffle_Helper(RandomArray);
 
-            for (int C = 0; C < ArraySize; C++)
+            for (int C = 0; C < Size; C++)
                 Result += Text[RandomArray[C]];
 
             return Result;
@@ -94,13 +94,13 @@ namespace Nerator
 
         private static void Shuffle_Helper(int[] Array)
         {
-            int ArraySize = Array.Length;
+            int Size = Array.Length;
             int Random;
             int Temp;
 
-            for (int C = 0; C < ArraySize; C++)
+            for (int C = 0; C < Size; C++)
             {
-                Random = C + (int)(RNDM.NextDouble() * (ArraySize - C));
+                Random = C + (int)(RM.NextDouble() * (Size - C));
 
                 Temp = Array[Random];
                 Array[Random] = Array[C];
