@@ -84,6 +84,9 @@
             // Expand
             // 
             this.Expand.BackColor = System.Drawing.Color.Transparent;
+            this.Expand.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.Expand.BaseColorRed = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.Expand.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(85)))), ((int)(((byte)(86)))));
             this.Expand.Checked = false;
             this.Expand.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Expand.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -93,6 +96,8 @@
             this.Expand.Size = new System.Drawing.Size(76, 33);
             this.Expand.TabIndex = 5;
             this.Expand.Text = "foreverToggle1";
+            this.Expand.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Expand.ToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
             this.Expand.CheckedChanged += new ReaLTaiizor.ForeverToggle.CheckedChangedEventHandler(this.Expand_CheckedChanged);
             // 
             // Copy_B
@@ -113,6 +118,10 @@
             // Settings
             // 
             this.Settings.BackColor = System.Drawing.Color.Transparent;
+            this.Settings.BodyColorA = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.Settings.BodyColorB = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Settings.BodyColorC = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Settings.BodyColorD = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.Settings.Controls.Add(this.labelEdit2);
             this.Settings.Controls.Add(this.TopMost_T);
             this.Settings.Controls.Add(this.Special_GB);
@@ -144,6 +153,9 @@
             // TopMost_T
             // 
             this.TopMost_T.BackColor = System.Drawing.Color.Transparent;
+            this.TopMost_T.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.TopMost_T.BaseColorRed = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(85)))), ((int)(((byte)(96)))));
+            this.TopMost_T.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(85)))), ((int)(((byte)(86)))));
             this.TopMost_T.Checked = false;
             this.TopMost_T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TopMost_T.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -154,6 +166,8 @@
             this.TopMost_T.Size = new System.Drawing.Size(76, 33);
             this.TopMost_T.TabIndex = 9;
             this.TopMost_T.Text = "TopMost_T";
+            this.TopMost_T.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.TopMost_T.ToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
             this.TopMost_T.CheckedChanged += new ReaLTaiizor.ForeverToggle.CheckedChangedEventHandler(this.TopMost_T_CheckedChanged);
             // 
             // Special_GB
@@ -175,6 +189,8 @@
             // Just_Number
             // 
             this.Just_Number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Just_Number.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Just_Number.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Just_Number.Checked = false;
             this.Just_Number.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Number.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -190,6 +206,8 @@
             // Just_Symbol
             // 
             this.Just_Symbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Just_Symbol.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Just_Symbol.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Just_Symbol.Checked = false;
             this.Just_Symbol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Symbol.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -205,6 +223,8 @@
             // Number_Symbol
             // 
             this.Number_Symbol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Number_Symbol.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Number_Symbol.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Number_Symbol.Checked = true;
             this.Number_Symbol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number_Symbol.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -236,6 +256,8 @@
             // Just_Big
             // 
             this.Just_Big.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Just_Big.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Just_Big.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Just_Big.Checked = false;
             this.Just_Big.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Big.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -251,6 +273,8 @@
             // Just_Small
             // 
             this.Just_Small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Just_Small.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Just_Small.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Just_Small.Checked = false;
             this.Just_Small.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Just_Small.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -266,6 +290,8 @@
             // Big_Small
             // 
             this.Big_Small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Big_Small.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.Big_Small.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.Big_Small.Checked = true;
             this.Big_Small.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Big_Small.Font = new System.Drawing.Font("Segoe UI", 10F);
