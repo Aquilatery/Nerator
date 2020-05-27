@@ -308,7 +308,6 @@
             // 
             this.PLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(93)))));
             this.PLength.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.PLength.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.PLength.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PLength.ForeColor = System.Drawing.Color.DimGray;
             this.PLength.Location = new System.Drawing.Point(209, 36);
