@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Nerator
@@ -11,7 +12,7 @@ namespace Nerator
         private static string AC_JS = "abcdefghijklmnoprstuvyzqwx";
         private static string AC_BS = AC_JB + AC_JS;
 
-        private static string SL_JN = "111222333444555666777888999000";
+        private static string SL_JN = "1234567890"; // "111222333444555666777888999000"
         private static string SL_JS = "!'\"^+%&/=?_@€ß*-+#\\<|>.,~½£$({[]})Æé";
         private static string SL_NS = SL_JN + SL_JS;
 
@@ -57,7 +58,8 @@ namespace Nerator
                     Dictionary += SL_JS;
                     break;
             }
-            return Shuffle_Mode_1(Dictionary).Substring(0, Length);
+            //return Shuffle_Mode_1(Dictionary).Substring(0, Length);
+            return Shuffle_Mode_3(Dictionary, Length);
         }
 
         private static string Shuffle_Mode_1(string Text)
@@ -91,6 +93,11 @@ namespace Nerator
 
             return Result;
         }
+		
+		private static string Shuffle_Mode_3(string Text, int Lenght)
+		{
+			return new string(Enumerable.Repeat(Text, Lenght).Select(s => s[RM.Next(s.Length)]).ToArray());
+		}
 
         private static void Shuffle_Helper(int[] Array)
         {
