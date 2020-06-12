@@ -94,10 +94,10 @@ namespace Nerator
             return Result;
         }
 		
-		private static string Shuffle_Mode_3(string Text, int Lenght)
-		{
-			return new string(Enumerable.Repeat(Text, Lenght).Select(s => s[RM.Next(s.Length)]).ToArray());
-		}
+        private static string Shuffle_Mode_3(string Text, int Lenght)
+        {
+            return new string(Enumerable.Repeat(Text, Lenght).Select(s => s[RM.Next(s.Length)]).ToArray());
+        }
 
         private static void Shuffle_Helper(int[] Array)
         {
