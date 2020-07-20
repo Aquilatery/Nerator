@@ -6,15 +6,15 @@ namespace Nerator
 {
     public static class Generator
     {
-        private static Random RM = new Random();
+        private static readonly Random RM = new Random();
 
-        private static string AC_JB = "ABCDEFGHIJKLMNOPRSTUVYZQWX";
-        private static string AC_JS = "abcdefghijklmnoprstuvyzqwx";
-        private static string AC_BS = AC_JB + AC_JS;
+        private static readonly string AC_JB = "ABCDEFGHIJKLMNOPRSTUVYZQWX";
+        private static readonly string AC_JS = "abcdefghijklmnoprstuvyzqwx";
+        private static readonly string AC_BS = AC_JB + AC_JS;
 
-        private static string SL_JN = "1234567890"; // "111222333444555666777888999000"
-        private static string SL_JS = "!'\"^+%&/=?_@€ß*-+#\\<|>.,~½£$({[]})Æé";
-        private static string SL_NS = SL_JN + SL_JS;
+        private static readonly string SL_JN = "1234567890"; // "111222333444555666777888999000"
+        private static readonly string SL_JS = "!'\"^+%&/=?_@€ß*-+#\\<|>.,~½£$({[]})Æé";
+        private static readonly string SL_NS = SL_JN + SL_JS;
 
         public static void Copy(string Text)
         {
