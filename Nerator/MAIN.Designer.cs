@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAIN));
-            themeForm1 = new ReaLTaiizor.Forms.Form.Theme();
-            Expand = new ReaLTaiizor.Controls.Toggle.ForeverToggle();
-            Copy_B = new ReaLTaiizor.Controls.Button.ForeverButton();
-            Settings = new ReaLTaiizor.Controls.GroupBox.ThunderGroupBox();
-            labelEdit2 = new ReaLTaiizor.Controls.LabelEdit.LabelEdit();
-            TopMost_T = new ReaLTaiizor.Controls.Toggle.ForeverToggle();
+            themeForm1 = new ReaLTaiizor.Forms.ThemeForm();
+            Expand = new ReaLTaiizor.Controls.ForeverToggle();
+            Copy_B = new ReaLTaiizor.Controls.ForeverButton();
+            Settings = new ReaLTaiizor.Controls.ThunderGroupBox();
+            labelEdit2 = new ReaLTaiizor.Controls.LabelEdit();
+            TopMost_T = new ReaLTaiizor.Controls.ForeverToggle();
             Special_GB = new System.Windows.Forms.GroupBox();
-            Just_Number = new ReaLTaiizor.Controls.RadioButton.ForeverRadioButton();
-            Just_Symbol = new ReaLTaiizor.Controls.RadioButton.ForeverRadioButton();
-            Number_Symbol = new ReaLTaiizor.Controls.RadioButton.ForeverRadioButton();
+            Just_Number = new ReaLTaiizor.Controls.ForeverRadioButton();
+            Just_Symbol = new ReaLTaiizor.Controls.ForeverRadioButton();
+            Number_Symbol = new ReaLTaiizor.Controls.ForeverRadioButton();
             Alphabetic_GB = new System.Windows.Forms.GroupBox();
-            Just_Big = new ReaLTaiizor.Controls.RadioButton.ForeverRadioButton();
-            Just_Small = new ReaLTaiizor.Controls.RadioButton.ForeverRadioButton();
-            Big_Small = new ReaLTaiizor.Controls.RadioButton.ForeverRadioButton();
-            PLength = new ReaLTaiizor.Controls.Numeric.ForeverNumeric();
-            Length = new ReaLTaiizor.Controls.LabelEdit.LabelEdit();
-            labelEdit1 = new ReaLTaiizor.Controls.LabelEdit.LabelEdit();
-            Create_B = new ReaLTaiizor.Controls.Button.ForeverButton();
-            Password = new ReaLTaiizor.Controls.TextBoxEdit.TextBoxEdit();
-            Description = new ReaLTaiizor.Controls.LabelEdit.LabelEdit();
-            controlBox1 = new ReaLTaiizor.Controls.ControlBox.ControlBox();
+            Just_Big = new ReaLTaiizor.Controls.ForeverRadioButton();
+            Just_Small = new ReaLTaiizor.Controls.ForeverRadioButton();
+            Big_Small = new ReaLTaiizor.Controls.ForeverRadioButton();
+            PLength = new ReaLTaiizor.Controls.ForeverNumeric();
+            Length = new ReaLTaiizor.Controls.LabelEdit();
+            labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
+            Create_B = new ReaLTaiizor.Controls.ForeverButton();
+            Password = new ReaLTaiizor.Controls.TextBoxEdit();
+            Description = new ReaLTaiizor.Controls.LabelEdit();
+            controlBox1 = new ReaLTaiizor.Controls.ControlBox();
             themeForm1.SuspendLayout();
             Settings.SuspendLayout();
             Special_GB.SuspendLayout();
@@ -92,13 +92,13 @@
             Expand.Font = new System.Drawing.Font("Segoe UI", 10F);
             Expand.Location = new System.Drawing.Point(131, 155);
             Expand.Name = "Expand";
-            Expand.Options = ReaLTaiizor.Controls.Toggle.ForeverToggle._Options.Style2;
+            Expand.Options = ReaLTaiizor.Controls.ForeverToggle._Options.Style2;
             Expand.Size = new System.Drawing.Size(76, 33);
             Expand.TabIndex = 5;
             Expand.Text = "foreverToggle1";
             Expand.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             Expand.ToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            Expand.CheckedChanged += new ReaLTaiizor.Controls.Toggle.ForeverToggle.CheckedChangedEventHandler(Expand_CheckedChanged);
+            Expand.CheckedChanged += new ReaLTaiizor.Controls.ForeverToggle.CheckedChangedEventHandler(Expand_CheckedChanged);
             // 
             // Copy_B
             // 
@@ -162,13 +162,13 @@
             TopMost_T.Location = new System.Drawing.Point(208, 325);
             TopMost_T.Margin = new System.Windows.Forms.Padding(6);
             TopMost_T.Name = "TopMost_T";
-            TopMost_T.Options = ReaLTaiizor.Controls.Toggle.ForeverToggle._Options.Style3;
+            TopMost_T.Options = ReaLTaiizor.Controls.ForeverToggle._Options.Style3;
             TopMost_T.Size = new System.Drawing.Size(76, 33);
             TopMost_T.TabIndex = 9;
             TopMost_T.Text = "TopMost_T";
             TopMost_T.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             TopMost_T.ToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            TopMost_T.CheckedChanged += new ReaLTaiizor.Controls.Toggle.ForeverToggle.CheckedChangedEventHandler(TopMost_T_CheckedChanged);
+            TopMost_T.CheckedChanged += new ReaLTaiizor.Controls.ForeverToggle.CheckedChangedEventHandler(TopMost_T_CheckedChanged);
             // 
             // Special_GB
             // 
@@ -198,7 +198,7 @@
             Just_Number.Location = new System.Drawing.Point(9, 81);
             Just_Number.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
             Just_Number.Name = "Just_Number";
-            Just_Number.Options = ReaLTaiizor.Controls.RadioButton.ForeverRadioButton._Options.Style1;
+            Just_Number.Options = ReaLTaiizor.Controls.ForeverRadioButton._Options.Style1;
             Just_Number.Size = new System.Drawing.Size(254, 22);
             Just_Number.TabIndex = 9;
             Just_Number.Text = "Number Only - 123456";
@@ -215,7 +215,7 @@
             Just_Symbol.Location = new System.Drawing.Point(9, 53);
             Just_Symbol.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             Just_Symbol.Name = "Just_Symbol";
-            Just_Symbol.Options = ReaLTaiizor.Controls.RadioButton.ForeverRadioButton._Options.Style1;
+            Just_Symbol.Options = ReaLTaiizor.Controls.ForeverRadioButton._Options.Style1;
             Just_Symbol.Size = new System.Drawing.Size(254, 22);
             Just_Symbol.TabIndex = 8;
             Just_Symbol.Text = "Special Symbol Only - $&£/*+";
@@ -232,7 +232,7 @@
             Number_Symbol.Location = new System.Drawing.Point(9, 25);
             Number_Symbol.Margin = new System.Windows.Forms.Padding(6, 6, 6, 3);
             Number_Symbol.Name = "Number_Symbol";
-            Number_Symbol.Options = ReaLTaiizor.Controls.RadioButton.ForeverRadioButton._Options.Style1;
+            Number_Symbol.Options = ReaLTaiizor.Controls.ForeverRadioButton._Options.Style1;
             Number_Symbol.Size = new System.Drawing.Size(254, 22);
             Number_Symbol.TabIndex = 7;
             Number_Symbol.Text = "Number and Special Symbol - 1$2&3£";
@@ -265,7 +265,7 @@
             Just_Big.Location = new System.Drawing.Point(9, 79);
             Just_Big.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
             Just_Big.Name = "Just_Big";
-            Just_Big.Options = ReaLTaiizor.Controls.RadioButton.ForeverRadioButton._Options.Style1;
+            Just_Big.Options = ReaLTaiizor.Controls.ForeverRadioButton._Options.Style1;
             Just_Big.Size = new System.Drawing.Size(254, 22);
             Just_Big.TabIndex = 8;
             Just_Big.Text = "Capital Letter Only - ABCDEF";
@@ -282,7 +282,7 @@
             Just_Small.Location = new System.Drawing.Point(9, 51);
             Just_Small.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             Just_Small.Name = "Just_Small";
-            Just_Small.Options = ReaLTaiizor.Controls.RadioButton.ForeverRadioButton._Options.Style1;
+            Just_Small.Options = ReaLTaiizor.Controls.ForeverRadioButton._Options.Style1;
             Just_Small.Size = new System.Drawing.Size(254, 22);
             Just_Small.TabIndex = 7;
             Just_Small.Text = "Small Letter Only - abcdef";
@@ -299,7 +299,7 @@
             Big_Small.Location = new System.Drawing.Point(9, 23);
             Big_Small.Margin = new System.Windows.Forms.Padding(6, 6, 6, 3);
             Big_Small.Name = "Big_Small";
-            Big_Small.Options = ReaLTaiizor.Controls.RadioButton.ForeverRadioButton._Options.Style1;
+            Big_Small.Options = ReaLTaiizor.Controls.ForeverRadioButton._Options.Style1;
             Big_Small.Size = new System.Drawing.Size(254, 22);
             Big_Small.TabIndex = 6;
             Big_Small.Text = "Uppercase and Lowercase - AaBbCc";
@@ -432,26 +432,26 @@
 
         #endregion
 
-        private ReaLTaiizor.Forms.Form.Theme themeForm1;
-        private ReaLTaiizor.Controls.ControlBox.ControlBox controlBox1;
-        private ReaLTaiizor.Controls.TextBoxEdit.TextBoxEdit Password;
-        private ReaLTaiizor.Controls.LabelEdit.LabelEdit Description;
-        private ReaLTaiizor.Controls.GroupBox.ThunderGroupBox Settings;
-        private ReaLTaiizor.Controls.LabelEdit.LabelEdit labelEdit1;
-        private ReaLTaiizor.Controls.Numeric.ForeverNumeric PLength;
-        private ReaLTaiizor.Controls.LabelEdit.LabelEdit Length;
-        private ReaLTaiizor.Controls.RadioButton.ForeverRadioButton Big_Small;
+        private ReaLTaiizor.Forms.ThemeForm themeForm1;
+        private ReaLTaiizor.Controls.ControlBox controlBox1;
+        private ReaLTaiizor.Controls.TextBoxEdit Password;
+        private ReaLTaiizor.Controls.LabelEdit Description;
+        private ReaLTaiizor.Controls.ThunderGroupBox Settings;
+        private ReaLTaiizor.Controls.LabelEdit labelEdit1;
+        private ReaLTaiizor.Controls.ForeverNumeric PLength;
+        private ReaLTaiizor.Controls.LabelEdit Length;
+        private ReaLTaiizor.Controls.ForeverRadioButton Big_Small;
         private System.Windows.Forms.GroupBox Alphabetic_GB;
-        private ReaLTaiizor.Controls.RadioButton.ForeverRadioButton Just_Big;
-        private ReaLTaiizor.Controls.RadioButton.ForeverRadioButton Just_Small;
+        private ReaLTaiizor.Controls.ForeverRadioButton Just_Big;
+        private ReaLTaiizor.Controls.ForeverRadioButton Just_Small;
         private System.Windows.Forms.GroupBox Special_GB;
-        private ReaLTaiizor.Controls.RadioButton.ForeverRadioButton Just_Number;
-        private ReaLTaiizor.Controls.RadioButton.ForeverRadioButton Just_Symbol;
-        private ReaLTaiizor.Controls.RadioButton.ForeverRadioButton Number_Symbol;
-        private ReaLTaiizor.Controls.Button.ForeverButton Copy_B;
-        private ReaLTaiizor.Controls.Button.ForeverButton Create_B;
-        private ReaLTaiizor.Controls.Toggle.ForeverToggle Expand;
-        private ReaLTaiizor.Controls.LabelEdit.LabelEdit labelEdit2;
-        private ReaLTaiizor.Controls.Toggle.ForeverToggle TopMost_T;
+        private ReaLTaiizor.Controls.ForeverRadioButton Just_Number;
+        private ReaLTaiizor.Controls.ForeverRadioButton Just_Symbol;
+        private ReaLTaiizor.Controls.ForeverRadioButton Number_Symbol;
+        private ReaLTaiizor.Controls.ForeverButton Copy_B;
+        private ReaLTaiizor.Controls.ForeverButton Create_B;
+        private ReaLTaiizor.Controls.ForeverToggle Expand;
+        private ReaLTaiizor.Controls.LabelEdit labelEdit2;
+        private ReaLTaiizor.Controls.ForeverToggle TopMost_T;
     }
 }
