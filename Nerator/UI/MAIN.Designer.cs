@@ -1,4 +1,4 @@
-﻿namespace Nerator
+﻿namespace Nerator.UI
 {
     partial class MAIN
     {

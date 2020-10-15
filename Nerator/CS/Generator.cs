@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Nerator
+namespace Nerator.CS
 {
     public static class Generator
     {

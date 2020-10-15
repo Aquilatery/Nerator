@@ -1,4 +1,5 @@
 ﻿using System;
+using Nerator.UI;
 using System.Windows.Forms;
 
 namespace Nerator

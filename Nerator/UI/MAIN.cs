@@ -2,9 +2,9 @@
 using Conforyon;
 using System.Drawing;
 using System.Windows.Forms;
-using static Nerator.Generator;
+using static Nerator.CS.Generator;
 
-namespace Nerator
+namespace Nerator.UI
 {
     public partial class MAIN : Form
     {
