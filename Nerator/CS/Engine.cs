@@ -14,6 +14,8 @@ namespace Nerator.CS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            new Setting();
+
             switch (WindowMode)
             {
                 case WindowType.MAIN:
