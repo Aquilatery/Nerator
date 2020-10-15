@@ -56,8 +56,10 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CS\Engine.cs" />
     <Compile Include="CS\Generator.cs" />
     <Compile Include="CS\Setting.cs" />
+    <Compile Include="CS\Window.cs" />
     <Compile Include="UI\MAIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +73,12 @@
     </Compile>
     <Compile Include="UI\TEST.Designer.cs">
       <DependentUpon>TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TESTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TESTER.Designer.cs">
+      <DependentUpon>TESTER.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UI\MAIN.resx">
       <DependentUpon>MAIN.cs</DependentUpon>
@@ -87,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="UI\TEST.resx">
       <DependentUpon>TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TESTER.resx">
+      <DependentUpon>TESTER.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -115,6 +126,10 @@
     <Resource Include="Resources\Password.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ABC.png" />
+    <Content Include="Resources\ABCBrick.png" />
+    <Content Include="Resources\ActivityHistory.png" />
+    <Content Include="Resources\CopyClipboard.png" />
     <Content Include="Resources\Encrypt.png" />
     <Content Include="Resources\GrandMasterKey.png" />
     <Content Include="Resources\ICO.ico" />
@@ -122,11 +137,17 @@
     <Content Include="Resources\KeepLocked.png" />
     <Content Include="Resources\Lease.png" />
     <Content Include="Resources\Lock.png" />
+    <Content Include="Resources\OrderHistory.png" />
     <Content Include="Resources\PasswordGreen.png" />
+    <Content Include="Resources\QuillInk.png" />
     <Content Include="Resources\SafeOk.png" />
     <Content Include="Resources\Secure.png" />
     <Content Include="Resources\ShowPassword.png" />
+    <Content Include="Resources\StoryTelling.png" />
     <Content Include="Resources\Unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UC\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

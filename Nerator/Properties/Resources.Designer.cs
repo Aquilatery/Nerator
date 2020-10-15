@@ -63,6 +63,46 @@ namespace Nerator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap ABC {
+            get {
+                object obj = ResourceManager.GetObject("ABC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ABCBrick {
+            get {
+                object obj = ResourceManager.GetObject("ABCBrick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ActivityHistory {
+            get {
+                object obj = ResourceManager.GetObject("ActivityHistory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap CopyClipboard {
+            get {
+                object obj = ResourceManager.GetObject("CopyClipboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Encrypt {
             get {
                 object obj = ResourceManager.GetObject("Encrypt", resourceCulture);
@@ -151,6 +191,16 @@ namespace Nerator.Properties {
         }
         
         /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrderHistory {
+            get {
+                object obj = ResourceManager.GetObject("OrderHistory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   (Simge) öğesine benzeyen System.Drawing.Icon türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
         internal static System.Drawing.Icon Password {
@@ -183,6 +233,16 @@ namespace Nerator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap QuillInk {
+            get {
+                object obj = ResourceManager.GetObject("QuillInk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap SafeOk {
             get {
                 object obj = ResourceManager.GetObject("SafeOk", resourceCulture);
@@ -206,6 +266,16 @@ namespace Nerator.Properties {
         internal static System.Drawing.Bitmap ShowPassword {
             get {
                 object obj = ResourceManager.GetObject("ShowPassword", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap StoryTelling {
+            get {
+                object obj = ResourceManager.GetObject("StoryTelling", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
