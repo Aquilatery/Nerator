@@ -36,7 +36,7 @@
     <StartupObject>Nerator.Nerator</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Password.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\ICO.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Conforyon, Version=1.4.7.4, Culture=neutral, processorArchitecture=MSIL">
@@ -113,6 +113,20 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Encrypt.png" />
+    <Content Include="Resources\GrandMasterKey.png" />
+    <Content Include="Resources\ICO.ico" />
+    <Content Include="Resources\Keepass.png" />
+    <Content Include="Resources\KeepLocked.png" />
+    <Content Include="Resources\Lease.png" />
+    <Content Include="Resources\Lock.png" />
+    <Content Include="Resources\PasswordGreen.png" />
+    <Content Include="Resources\SafeOk.png" />
+    <Content Include="Resources\Secure.png" />
+    <Content Include="Resources\ShowPassword.png" />
+    <Content Include="Resources\Unlock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
