@@ -4,13 +4,13 @@ using System.Windows.Forms;
 
 namespace Nerator
 {
-    static class Nerator
+    internal static class Nerator
     {
         /// <summary>
         /// Uygulamanın ana girdi noktası.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

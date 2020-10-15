@@ -64,7 +64,7 @@ namespace Nerator.CS
             {
                 Number--;
                 int Result = RM.Next(Number + 1);
-                var Value = Array[Result];
+                char Value = Array[Result];
                 Array[Result] = Array[Number];
                 Array[Number] = Value;
             }
@@ -78,12 +78,16 @@ namespace Nerator.CS
             int[] RandomArray = new int[Size];
 
             for (int C = 0; C < Size; C++)
+            {
                 RandomArray[C] = C;
+            }
 
             Shuffle_Helper(RandomArray);
 
             for (int C = 0; C < Size; C++)
+            {
                 Result += Text[RandomArray[C]];
+            }
 
             return Result;
         }
