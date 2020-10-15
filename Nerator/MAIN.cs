@@ -1,4 +1,5 @@
 ﻿using System;
+using Conforyon;
 using System.Drawing;
 using System.Windows.Forms;
 using static Nerator.Generator;
@@ -28,7 +29,7 @@ namespace Nerator
 
         private void Copy_B_Click(object sender, EventArgs e)
         {
-            Copy(Password.Text);
+            ClipBoard.CopyText(Password.Text, true);
             Password.Focus();
         }
 

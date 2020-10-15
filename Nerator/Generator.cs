@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Windows.Forms;
 
 namespace Nerator
 {
@@ -8,18 +7,13 @@ namespace Nerator
     {
         private static readonly Random RM = new Random();
 
-        private static readonly string AC_JB = "ABCDEFGHIJKLMNOPRSTUVYZQWX";
-        private static readonly string AC_JS = "abcdefghijklmnoprstuvyzqwx";
-        private static readonly string AC_BS = AC_JB + AC_JS;
+        private const string AC_JB = "ABCDEFGHIJKLMNOPRSTUVYZQWX";
+        private const string AC_JS = "abcdefghijklmnoprstuvyzqwx";
+        private const string AC_BS = AC_JB + AC_JS;
 
-        private static readonly string SL_JN = "1234567890"; // "111222333444555666777888999000"
-        private static readonly string SL_JS = "!'\"^+%&/=?_@€ß*-+#\\<|>.,~½£$({[]})Æé";
-        private static readonly string SL_NS = SL_JN + SL_JS;
-
-        public static void Copy(string Text)
-        {
-            Clipboard.SetDataObject(Text, false);
-        }
+        private const string SL_JN = "1234567890"; // "111222333444555666777888999000"
+        private const string SL_JS = "!'\"^+%&/=?_@€ß*-+#\\<|>.,~½£$({[]})Æé";
+        private const string SL_NS = SL_JN + SL_JS;
 
         public enum Alphabetic
         {
