@@ -8,6 +8,7 @@ using static Nerator.CS.History;
 using static Nerator.CS.Setting;
 using System.Collections.Generic;
 using static Nerator.CS.Variable;
+using static Nerator.CS.Strength;
 using static Nerator.CS.Generator;
 
 namespace Nerator.UI
@@ -17,20 +18,21 @@ namespace Nerator.UI
         public LIGHT()
         {
             InitializeComponent();
+            LoadConfig();
             HistoryLoad();
         }
 
         private void CEB_Click(object sender, EventArgs e)
         {
-            PWDTB.Text = Create(GetInt("15", PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
+            PWDTB.Text = Create(GetInt(PasswordLenght.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
             if (HYS.Checked)
             {
                 Add(HistoryFileName, PWDTB.Text, DefaultDateTime);
                 HistoryAdd(PWDTB.Text, GetTime(DefaultDateTime, DefaultDateTime), GetDate(DefaultDateTime, DefaultDateTime));
             }
-            Random RM = new Random();
-            PLPB.Value = RM.Next(PLPB.Maximum);
-            Status.Message = "Üretilen yeni şifre: " + PWDTB.Text;
+            PLPB.Value = StrengthMode(CheckScore2(PWDTB.Text));
+            PLPB.Style = StrengthStyle(PLPB.Value);
+            Status.Message = "Yeni şifre oluşturma başarıyla tamamlandı!";
         }
 
         private void CYB_Click(object sender, EventArgs e)
@@ -40,12 +42,12 @@ namespace Nerator.UI
                 ClipBoard.CopyText(PWDTB.Text, true);
                 if (PWDTB.Text == Clipboard.GetText())
                 {
-                    Status.Message = PWDTB.Text + " başarıyla kopyalandı!";
+                    Status.Message = "Oluşturulan şifre başarıyla kopyalandı!";
                     PWDTB.Focus();
                 }
                 else
                 {
-                    Status.Message = PWDTB.Text + " kopyalama başarısız!";
+                    Status.Message = "Oluşturulan şifre kopyalaması başarısız!";
                 }
             }
         }
@@ -62,7 +64,7 @@ namespace Nerator.UI
                 HYP.Controls.Clear();
             }
 
-            new History(HistoryFileName);
+            _ = new History(HistoryFileName);
 
             Dictionary<string, string> History = Loader(HistoryFileName);
 
@@ -107,6 +109,17 @@ namespace Nerator.UI
             {
                 Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
             }
+        }
+
+        private void LoadConfig()
+        {
+            HYS.Checked = HistoryMode;
+        }
+
+        private void LIGHT_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            HistoryMode = HYS.Checked;
+            Save(ConfigFileName);
         }
     }
 }

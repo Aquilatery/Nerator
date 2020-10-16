@@ -22,7 +22,7 @@ namespace Nerator.CS
                 if (MTX.WaitOne(TimeSpan.Zero, true))
                 {
                     MTX.ReleaseMutex();
-                    new Setting(ConfigFileName);
+                    _ = new Setting(ConfigFileName);
                     Application.Run(OpenWindowMode(WindowMode));
                 }
                 else
@@ -30,7 +30,7 @@ namespace Nerator.CS
                     MessageBox.Show("Already Open!", "Nerator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (System.Exception Ex)
+            catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message + "\n" + Ex.StackTrace);
             }

@@ -11,28 +11,22 @@
 
         public static AlphabeticType GetAlphabeticMode(string Type)
         {
-            switch (Type)
+            return Type switch
             {
-                case "JB":
-                    return AlphabeticType.JB;
-                case "JS":
-                    return AlphabeticType.JS;
-                default:
-                    return AlphabeticType.BS;
-            }
+                "JB" => AlphabeticType.JB,
+                "JS" => AlphabeticType.JS,
+                _ => AlphabeticType.BS,
+            };
         }
 
         public static string GetAlphabeticMode(AlphabeticType Type)
         {
-            switch (Type)
+            return Type switch
             {
-                case AlphabeticType.JB:
-                    return "JB";
-                case AlphabeticType.JS:
-                    return "JS";
-                default:
-                    return "BS";
-            }
+                AlphabeticType.JB => "JB",
+                AlphabeticType.JS => "JS",
+                _ => "BS",
+            };
         }
 
         public enum SpecialType
@@ -44,28 +38,22 @@
 
         public static SpecialType GetSpecialMode(string Type)
         {
-            switch (Type)
+            return Type switch
             {
-                case "JN":
-                    return SpecialType.JN;
-                case "JS":
-                    return SpecialType.JS;
-                default:
-                    return SpecialType.NS;
-            }
+                "JN" => SpecialType.JN,
+                "JS" => SpecialType.JS,
+                _ => SpecialType.NS,
+            };
         }
 
         public static string GetSpecialMode(SpecialType Type)
         {
-            switch (Type)
+            return Type switch
             {
-                case SpecialType.JN:
-                    return "JN";
-                case SpecialType.JS:
-                    return "JS";
-                default:
-                    return "NS";
-            }
+                SpecialType.JN => "JN",
+                SpecialType.JS => "JS",
+                _ => "NS",
+            };
         }
     }
 }

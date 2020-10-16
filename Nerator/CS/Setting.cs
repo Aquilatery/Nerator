@@ -25,7 +25,7 @@ namespace Nerator.CS
             }
         }
 
-        private void Load(string ConfigFileName)
+        private static void Load(string ConfigFileName)
         {
             string SS = File.ReadAllText(ConfigFileName);
             if (!string.IsNullOrEmpty(SS) && !string.IsNullOrWhiteSpace(SS))
@@ -95,14 +95,14 @@ namespace Nerator.CS
             set => _SpecialMode = value;
         }
 
-        private static bool _TopMostMode = false;
+        private static bool _TopMostMode;
         public static bool TopMostMode
         {
             get => _TopMostMode;
             set => _TopMostMode = value;
         }
 
-        private static bool _EXExpandMode = false;
+        private static bool _EXExpandMode;
         public static bool EXExpandMode
         {
             get => _EXExpandMode;
