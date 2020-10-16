@@ -1,7 +1,7 @@
 ﻿
 namespace Nerator.UI
 {
-    partial class TESTER
+    partial class DARK
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@ namespace Nerator.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TESTER));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DARK));
             this.foreverForm1 = new ReaLTaiizor.Forms.ForeverForm();
-            this.foreverMinimize1 = new ReaLTaiizor.Controls.ForeverMinimize();
-            this.foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
             this.foreverTabPage1 = new ReaLTaiizor.Controls.ForeverTabPage();
             this.Generate = new System.Windows.Forms.TabPage();
             this.History = new System.Windows.Forms.TabPage();
             this.Setting = new System.Windows.Forms.TabPage();
+            this.foreverMinimize1 = new ReaLTaiizor.Controls.ForeverMinimize();
+            this.foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
             this.foreverForm1.SuspendLayout();
             this.foreverTabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -66,40 +66,6 @@ namespace Nerator.UI
             this.foreverForm1.Text = "Nerator - New Generation Password Generator";
             this.foreverForm1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.foreverForm1.TextLight = System.Drawing.Color.SeaGreen;
-            // 
-            // foreverMinimize1
-            // 
-            this.foreverMinimize1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.foreverMinimize1.BackColor = System.Drawing.Color.White;
-            this.foreverMinimize1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverMinimize1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.foreverMinimize1.DefaultLocation = false;
-            this.foreverMinimize1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.foreverMinimize1.Font = new System.Drawing.Font("Marlett", 12F);
-            this.foreverMinimize1.Location = new System.Drawing.Point(393, 16);
-            this.foreverMinimize1.Name = "foreverMinimize1";
-            this.foreverMinimize1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.foreverMinimize1.Size = new System.Drawing.Size(18, 18);
-            this.foreverMinimize1.TabIndex = 1;
-            this.foreverMinimize1.Text = "foreverMinimize1";
-            this.foreverMinimize1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            // 
-            // foreverClose1
-            // 
-            this.foreverClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.foreverClose1.BackColor = System.Drawing.Color.White;
-            this.foreverClose1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverClose1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.foreverClose1.DefaultLocation = true;
-            this.foreverClose1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.foreverClose1.Font = new System.Drawing.Font("Marlett", 10F);
-            this.foreverClose1.Location = new System.Drawing.Point(417, 16);
-            this.foreverClose1.Name = "foreverClose1";
-            this.foreverClose1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.foreverClose1.Size = new System.Drawing.Size(18, 18);
-            this.foreverClose1.TabIndex = 0;
-            this.foreverClose1.Text = "foreverClose1";
-            this.foreverClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
             // foreverTabPage1
             // 
@@ -153,7 +119,41 @@ namespace Nerator.UI
             this.Setting.TabIndex = 2;
             this.Setting.Text = "Setting";
             // 
-            // TESTER
+            // foreverMinimize1
+            // 
+            this.foreverMinimize1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.foreverMinimize1.BackColor = System.Drawing.Color.White;
+            this.foreverMinimize1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.foreverMinimize1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverMinimize1.DefaultLocation = false;
+            this.foreverMinimize1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.foreverMinimize1.Font = new System.Drawing.Font("Marlett", 12F);
+            this.foreverMinimize1.Location = new System.Drawing.Point(393, 16);
+            this.foreverMinimize1.Name = "foreverMinimize1";
+            this.foreverMinimize1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.foreverMinimize1.Size = new System.Drawing.Size(18, 18);
+            this.foreverMinimize1.TabIndex = 1;
+            this.foreverMinimize1.Text = "foreverMinimize1";
+            this.foreverMinimize1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            // 
+            // foreverClose1
+            // 
+            this.foreverClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.foreverClose1.BackColor = System.Drawing.Color.White;
+            this.foreverClose1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.foreverClose1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverClose1.DefaultLocation = true;
+            this.foreverClose1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.foreverClose1.Font = new System.Drawing.Font("Marlett", 10F);
+            this.foreverClose1.Location = new System.Drawing.Point(417, 16);
+            this.foreverClose1.Name = "foreverClose1";
+            this.foreverClose1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.foreverClose1.Size = new System.Drawing.Size(18, 18);
+            this.foreverClose1.TabIndex = 0;
+            this.foreverClose1.Text = "foreverClose1";
+            this.foreverClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            // 
+            // DARK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -162,9 +162,9 @@ namespace Nerator.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "TESTER";
+            this.Name = "DARK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TESTER";
+            this.Text = "DARK";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.foreverForm1.ResumeLayout(false);
             this.foreverTabPage1.ResumeLayout(false);

@@ -6,9 +6,9 @@ using static Nerator.CS.Generator;
 
 namespace Nerator.UI
 {
-    public partial class MAIN : Form
+    public partial class EX : Form
     {
-        public MAIN()
+        public EX()
         {
             InitializeComponent();
         }

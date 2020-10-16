@@ -1,6 +1,6 @@
 ﻿namespace Nerator.UI
 {
-    partial class MAIN
+    partial class EX
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MAIN));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EX));
             themeForm1 = new ReaLTaiizor.Forms.ThemeForm();
             Expand = new ReaLTaiizor.Controls.ForeverToggle();
             Copy_B = new ReaLTaiizor.Controls.ForeverButton();
@@ -406,7 +406,7 @@
             controlBox1.TabIndex = 0;
             controlBox1.Text = "controlBox1";
             // 
-            // MAIN
+            // EX
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -416,7 +416,7 @@
             Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
             MaximizeBox = false;
             MinimumSize = new System.Drawing.Size(261, 61);
-            Name = "MAIN";
+            Name = "EX";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Soferity - Nerator";
             TransparencyKey = System.Drawing.Color.Fuchsia;

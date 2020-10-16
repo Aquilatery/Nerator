@@ -1,5 +1,4 @@
-﻿using Nerator.UI;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using static Nerator.CS.Window;
 using static Nerator.CS.Setting;
 
@@ -9,27 +8,17 @@ namespace Nerator.CS
     {
         public Engine()
         {
-            Form SUI = null;
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-
-            new Setting();
-
-            switch (WindowMode)
+            try
             {
-                case WindowType.MAIN:
-                    SUI = new MAIN();
-                    break;
-                case WindowType.TESTER:
-                    SUI = new TESTER();
-                    break;
-                default:
-                    SUI = new TEST();
-                    break;
+                new Setting(ConfigFileName);
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(OpenWindowMode(WindowMode));
             }
-
-            Application.Run(SUI);
+            catch (System.Exception Ex)
+            {
+                MessageBox.Show(Ex.Message + "\n" + Ex.StackTrace);
+            }
         }
     }
 }

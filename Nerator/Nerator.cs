@@ -1,11 +1,17 @@
-﻿namespace Nerator
+﻿using System;
+using Nerator.CS;
+
+namespace Nerator
 {
     internal static class Nerator
     {
         /// <summary>
         /// Uygulamanın ana girdi noktası.
         /// </summary>
-        [System.MTAThread]
-        private static void Main() => new CS.Engine();
+        [MTAThread]
+        private static void Main()
+        {
+            new Engine();
+        }
     }
 }
