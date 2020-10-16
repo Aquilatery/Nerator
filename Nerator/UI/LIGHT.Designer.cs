@@ -377,6 +377,7 @@ namespace Nerator.UI
             PWLN.TabIndex = 4;
             PWLN.Text = "PWLN";
             PWLN.ValueNumber = 15F;
+            PWLN.Visible = false;
             // 
             // SMCB
             // 
