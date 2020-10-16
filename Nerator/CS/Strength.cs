@@ -127,7 +127,7 @@ namespace Nerator.CS
             };
         }
 
-        public static ColorStyle StrengthStyle(int Type)
+        public static ColorStyle StyleMode(int Type)
         {
             return Type switch
             {
@@ -147,7 +147,7 @@ namespace Nerator.CS
                 return StrengthType.Blank;
             }
 
-            if (!IsValidPassword(Password) && Password.Length <= 8)
+            if ((!IsValidPassword(Password) || !IsStrongPassword(Password)) && Password.Length <= 8)
             {
                 return StrengthType.Weak;
             }

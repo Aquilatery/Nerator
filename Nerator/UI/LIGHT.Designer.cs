@@ -45,6 +45,7 @@ namespace Nerator.UI
             this.History = new System.Windows.Forms.TabPage();
             this.HYP = new System.Windows.Forms.Panel();
             this.Setting = new System.Windows.Forms.TabPage();
+            this.TMCB = new ReaLTaiizor.Controls.MaterialCheckBox();
             this.DKPL = new ReaLTaiizor.Controls.Panel();
             this.DKP2 = new ReaLTaiizor.Controls.Panel();
             this.DKP3 = new ReaLTaiizor.Controls.Panel();
@@ -56,16 +57,22 @@ namespace Nerator.UI
             this.MNPB = new System.Windows.Forms.PictureBox();
             this.LTPL = new ReaLTaiizor.Controls.Panel();
             this.LTP2 = new ReaLTaiizor.Controls.Panel();
+            this.PWLN = new ReaLTaiizor.Controls.HopeNumeric();
             this.LTP3 = new ReaLTaiizor.Controls.Panel();
             this.LTP1 = new ReaLTaiizor.Controls.Panel();
             this.LTB1 = new ReaLTaiizor.Controls.Badge();
             this.LTB2 = new ReaLTaiizor.Controls.Badge();
             this.SNPB = new System.Windows.Forms.PictureBox();
-            this.hopeNumeric1 = new ReaLTaiizor.Controls.HopeNumeric();
             this.RTPB = new System.Windows.Forms.PictureBox();
             this.MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
             this.STATUST = new System.Windows.Forms.Timer(this.components);
             this.STATUSMT = new System.Windows.Forms.Timer(this.components);
+            this.TETT = new ReaLTaiizor.Controls.MetroToolTip();
+            this.materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
+            this.materialCheckBox2 = new ReaLTaiizor.Controls.MaterialCheckBox();
+            this.materialCheckBox3 = new ReaLTaiizor.Controls.MaterialCheckBox();
+            this.AMCB = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.SMCB = new ReaLTaiizor.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.LOPB)).BeginInit();
             this.MTC.SuspendLayout();
             this.Generate.SuspendLayout();
@@ -143,7 +150,7 @@ namespace Nerator.UI
             this.SSBR.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.SSBR.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.SSBR.ForeColor = System.Drawing.Color.White;
-            this.SSBR.Location = new System.Drawing.Point(0, 337);
+            this.SSBR.Location = new System.Drawing.Point(0, 336);
             this.SSBR.Name = "SSBR";
             this.SSBR.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
             this.SSBR.ShowTimeDate = true;
@@ -204,7 +211,7 @@ namespace Nerator.UI
             this.MTC.Controls.Add(this.Setting);
             this.MTC.Depth = 0;
             this.MTC.ItemSize = new System.Drawing.Size(44, 18);
-            this.MTC.Location = new System.Drawing.Point(12, 99);
+            this.MTC.Location = new System.Drawing.Point(12, 98);
             this.MTC.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.MTC.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.MTC.Multiline = true;
@@ -289,16 +296,39 @@ namespace Nerator.UI
             // Setting
             // 
             this.Setting.BackColor = System.Drawing.SystemColors.Control;
+            this.Setting.Controls.Add(this.TMCB);
             this.Setting.Controls.Add(this.DKPL);
             this.Setting.Controls.Add(this.LTPL);
-            this.Setting.Controls.Add(this.hopeNumeric1);
             this.Setting.Controls.Add(this.RTPB);
+            this.Setting.Controls.Add(this.PWLN);
+            this.Setting.Controls.Add(this.SMCB);
+            this.Setting.Controls.Add(this.AMCB);
             this.Setting.Location = new System.Drawing.Point(4, 4);
             this.Setting.Name = "Setting";
             this.Setting.Padding = new System.Windows.Forms.Padding(3);
             this.Setting.Size = new System.Drawing.Size(327, 201);
             this.Setting.TabIndex = 2;
             this.Setting.Text = "Setting";
+            // 
+            // TMCB
+            // 
+            this.TMCB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.TMCB.AutoSize = true;
+            this.TMCB.Checked = true;
+            this.TMCB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TMCB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TMCB.Depth = 0;
+            this.TMCB.Location = new System.Drawing.Point(108, 61);
+            this.TMCB.Margin = new System.Windows.Forms.Padding(0);
+            this.TMCB.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.TMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.TMCB.Name = "TMCB";
+            this.TMCB.Ripple = true;
+            this.TMCB.Size = new System.Drawing.Size(103, 37);
+            this.TMCB.TabIndex = 12;
+            this.TMCB.Text = "Top Most";
+            this.TMCB.UseVisualStyleBackColor = true;
+            this.TMCB.CheckedChanged += new System.EventHandler(this.TMCB_CheckedChanged);
             // 
             // DKPL
             // 
@@ -314,13 +344,14 @@ namespace Nerator.UI
             this.DKPL.Controls.Add(this.MNPB);
             this.DKPL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DKPL.EdgeColor = System.Drawing.SystemColors.Control;
-            this.DKPL.Location = new System.Drawing.Point(218, 103);
+            this.DKPL.Location = new System.Drawing.Point(218, 98);
             this.DKPL.Name = "DKPL";
             this.DKPL.Padding = new System.Windows.Forms.Padding(5);
             this.DKPL.Size = new System.Drawing.Size(103, 97);
             this.DKPL.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.DKPL.TabIndex = 11;
             this.DKPL.Text = "DKPL";
+            this.TETT.SetToolTip(this.DKPL, "Dark Theme");
             this.DKPL.Click += new System.EventHandler(this.THEME_Click);
             this.DKPL.MouseEnter += new System.EventHandler(this.THEME_MouseEnter);
             this.DKPL.MouseLeave += new System.EventHandler(this.THEME_MouseLeave);
@@ -338,6 +369,7 @@ namespace Nerator.UI
             this.DKP2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.DKP2.TabIndex = 15;
             this.DKP2.Text = "DKP2";
+            this.TETT.SetToolTip(this.DKP2, "Dark Theme");
             // 
             // DKP3
             // 
@@ -352,6 +384,7 @@ namespace Nerator.UI
             this.DKP3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.DKP3.TabIndex = 14;
             this.DKP3.Text = "DKP3";
+            this.TETT.SetToolTip(this.DKP3, "Dark Theme");
             // 
             // DKP1
             // 
@@ -366,6 +399,7 @@ namespace Nerator.UI
             this.DKP1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.DKP1.TabIndex = 11;
             this.DKP1.Text = "DKP1";
+            this.TETT.SetToolTip(this.DKP1, "Dark Theme");
             // 
             // badge2
             // 
@@ -382,6 +416,7 @@ namespace Nerator.UI
             this.badge2.Size = new System.Drawing.Size(20, 20);
             this.badge2.TabIndex = 13;
             this.badge2.Text = "DKB1";
+            this.TETT.SetToolTip(this.badge2, "Dark Theme");
             this.badge2.Value = 0;
             // 
             // DKB1
@@ -399,6 +434,7 @@ namespace Nerator.UI
             this.DKB1.Size = new System.Drawing.Size(20, 20);
             this.DKB1.TabIndex = 13;
             this.DKB1.Text = "DKB1";
+            this.TETT.SetToolTip(this.DKB1, "Dark Theme");
             this.DKB1.Value = 0;
             // 
             // badge1
@@ -417,6 +453,7 @@ namespace Nerator.UI
             this.badge1.Size = new System.Drawing.Size(20, 20);
             this.badge1.TabIndex = 12;
             this.badge1.Text = "DKB2";
+            this.TETT.SetToolTip(this.badge1, "Dark Theme");
             this.badge1.Value = 0;
             // 
             // DKB2
@@ -435,6 +472,7 @@ namespace Nerator.UI
             this.DKB2.Size = new System.Drawing.Size(20, 20);
             this.DKB2.TabIndex = 12;
             this.DKB2.Text = "DKB2";
+            this.TETT.SetToolTip(this.DKB2, "Dark Theme");
             this.DKB2.Value = 0;
             // 
             // MNPB
@@ -448,6 +486,7 @@ namespace Nerator.UI
             this.MNPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MNPB.TabIndex = 11;
             this.MNPB.TabStop = false;
+            this.TETT.SetToolTip(this.MNPB, "Dark Theme");
             // 
             // LTPL
             // 
@@ -461,13 +500,14 @@ namespace Nerator.UI
             this.LTPL.Controls.Add(this.SNPB);
             this.LTPL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LTPL.EdgeColor = System.Drawing.SystemColors.Control;
-            this.LTPL.Location = new System.Drawing.Point(6, 103);
+            this.LTPL.Location = new System.Drawing.Point(6, 98);
             this.LTPL.Name = "LTPL";
             this.LTPL.Padding = new System.Windows.Forms.Padding(5);
             this.LTPL.Size = new System.Drawing.Size(103, 97);
             this.LTPL.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.LTPL.TabIndex = 10;
             this.LTPL.Text = "LTPL";
+            this.TETT.SetToolTip(this.LTPL, "Light Theme");
             this.LTPL.Click += new System.EventHandler(this.THEME_Click);
             this.LTPL.MouseEnter += new System.EventHandler(this.THEME_MouseEnter);
             this.LTPL.MouseLeave += new System.EventHandler(this.THEME_MouseLeave);
@@ -485,6 +525,35 @@ namespace Nerator.UI
             this.LTP2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.LTP2.TabIndex = 15;
             this.LTP2.Text = "LTP2";
+            this.TETT.SetToolTip(this.LTP2, "Light Theme");
+            // 
+            // PWLN
+            // 
+            this.PWLN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.PWLN.BackColor = System.Drawing.Color.White;
+            this.PWLN.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.PWLN.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.PWLN.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.PWLN.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PWLN.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.PWLN.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.PWLN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PWLN.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PWLN.ForeColor = System.Drawing.Color.Black;
+            this.PWLN.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PWLN.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PWLN.Location = new System.Drawing.Point(3, 60);
+            this.PWLN.MaxNum = 50F;
+            this.PWLN.MinNum = 6F;
+            this.PWLN.Name = "PWLN";
+            this.PWLN.Precision = 0;
+            this.PWLN.Size = new System.Drawing.Size(120, 32);
+            this.PWLN.Step = 1F;
+            this.PWLN.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
+            this.PWLN.TabIndex = 4;
+            this.PWLN.Text = "PWLN";
+            this.TETT.SetToolTip(this.PWLN, "Light Theme");
+            this.PWLN.ValueNumber = 15F;
             // 
             // LTP3
             // 
@@ -499,6 +568,7 @@ namespace Nerator.UI
             this.LTP3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.LTP3.TabIndex = 14;
             this.LTP3.Text = "LTP3";
+            this.TETT.SetToolTip(this.LTP3, "Light Theme");
             // 
             // LTP1
             // 
@@ -513,6 +583,7 @@ namespace Nerator.UI
             this.LTP1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.LTP1.TabIndex = 11;
             this.LTP1.Text = "LTP1";
+            this.TETT.SetToolTip(this.LTP1, "Light Theme");
             // 
             // LTB1
             // 
@@ -529,6 +600,7 @@ namespace Nerator.UI
             this.LTB1.Size = new System.Drawing.Size(20, 20);
             this.LTB1.TabIndex = 13;
             this.LTB1.Text = "LTB1";
+            this.TETT.SetToolTip(this.LTB1, "Light Theme");
             this.LTB1.Value = 0;
             // 
             // LTB2
@@ -547,6 +619,7 @@ namespace Nerator.UI
             this.LTB2.Size = new System.Drawing.Size(20, 20);
             this.LTB2.TabIndex = 12;
             this.LTB2.Text = "LTB2";
+            this.TETT.SetToolTip(this.LTB2, "Light Theme");
             this.LTB2.Value = 0;
             // 
             // SNPB
@@ -560,32 +633,7 @@ namespace Nerator.UI
             this.SNPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SNPB.TabIndex = 11;
             this.SNPB.TabStop = false;
-            // 
-            // hopeNumeric1
-            // 
-            this.hopeNumeric1.BackColor = System.Drawing.Color.White;
-            this.hopeNumeric1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.hopeNumeric1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric1.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric1.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric1.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeNumeric1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeNumeric1.ForeColor = System.Drawing.Color.Black;
-            this.hopeNumeric1.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric1.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric1.Location = new System.Drawing.Point(201, 6);
-            this.hopeNumeric1.MaxNum = 10F;
-            this.hopeNumeric1.MinNum = 0F;
-            this.hopeNumeric1.Name = "hopeNumeric1";
-            this.hopeNumeric1.Precision = 0;
-            this.hopeNumeric1.Size = new System.Drawing.Size(120, 32);
-            this.hopeNumeric1.Step = 1F;
-            this.hopeNumeric1.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
-            this.hopeNumeric1.TabIndex = 4;
-            this.hopeNumeric1.Text = "hopeNumeric1";
-            this.hopeNumeric1.ValueNumber = 0F;
+            this.TETT.SetToolTip(this.SNPB, "Light Theme");
             // 
             // RTPB
             // 
@@ -608,7 +656,7 @@ namespace Nerator.UI
             this.MTS.Depth = 0;
             this.MTS.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.MTS.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
-            this.MTS.Location = new System.Drawing.Point(12, 76);
+            this.MTS.Location = new System.Drawing.Point(12, 75);
             this.MTS.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.MTS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.MTS.Name = "MTS";
@@ -629,11 +677,120 @@ namespace Nerator.UI
             this.STATUSMT.Interval = 50;
             this.STATUSMT.Tick += new System.EventHandler(this.STATUSMT_Tick);
             // 
+            // TETT
+            // 
+            this.TETT.BackColor = System.Drawing.Color.White;
+            this.TETT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TETT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.TETT.IsDerivedStyle = true;
+            this.TETT.OwnerDraw = true;
+            this.TETT.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.TETT.StyleManager = null;
+            this.TETT.ThemeAuthor = "Taiizor";
+            this.TETT.ThemeName = "MetroLight";
+            // 
+            // materialCheckBox1
+            // 
+            this.materialCheckBox1.Depth = 0;
+            this.materialCheckBox1.Location = new System.Drawing.Point(0, 0);
+            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialCheckBox1.Name = "materialCheckBox1";
+            this.materialCheckBox1.Ripple = true;
+            this.materialCheckBox1.Size = new System.Drawing.Size(104, 37);
+            this.materialCheckBox1.TabIndex = 0;
+            this.materialCheckBox1.Text = "materialCheckBox1";
+            this.materialCheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // materialCheckBox2
+            // 
+            this.materialCheckBox2.Depth = 0;
+            this.materialCheckBox2.Location = new System.Drawing.Point(0, 0);
+            this.materialCheckBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialCheckBox2.Name = "materialCheckBox2";
+            this.materialCheckBox2.Ripple = true;
+            this.materialCheckBox2.Size = new System.Drawing.Size(104, 37);
+            this.materialCheckBox2.TabIndex = 0;
+            this.materialCheckBox2.Text = "materialCheckBox2";
+            this.materialCheckBox2.UseVisualStyleBackColor = true;
+            // 
+            // materialCheckBox3
+            // 
+            this.materialCheckBox3.Depth = 0;
+            this.materialCheckBox3.Location = new System.Drawing.Point(0, 0);
+            this.materialCheckBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox3.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialCheckBox3.Name = "materialCheckBox3";
+            this.materialCheckBox3.Ripple = true;
+            this.materialCheckBox3.Size = new System.Drawing.Size(104, 37);
+            this.materialCheckBox3.TabIndex = 0;
+            this.materialCheckBox3.Text = "materialCheckBox3";
+            this.materialCheckBox3.UseVisualStyleBackColor = true;
+            // 
+            // AMCB
+            // 
+            this.AMCB.AutoResize = false;
+            this.AMCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.AMCB.Depth = 0;
+            this.AMCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.AMCB.DropDownHeight = 174;
+            this.AMCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AMCB.DropDownWidth = 135;
+            this.AMCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.AMCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.AMCB.FormattingEnabled = true;
+            this.AMCB.Hint = "Alphabetic Mode";
+            this.AMCB.ItemHeight = 43;
+            this.AMCB.Items.AddRange(new object[] {
+            "Mixed",
+            "Uppercase",
+            "Lowercase"});
+            this.AMCB.Location = new System.Drawing.Point(6, 6);
+            this.AMCB.MaxDropDownItems = 4;
+            this.AMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.AMCB.Name = "AMCB";
+            this.AMCB.Size = new System.Drawing.Size(135, 49);
+            this.AMCB.TabIndex = 13;
+            this.TETT.SetToolTip(this.AMCB, "Select Alphabetic Mode");
+            this.AMCB.UseAccent = false;
+            // 
+            // SMCB
+            // 
+            this.SMCB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SMCB.AutoResize = false;
+            this.SMCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SMCB.Depth = 0;
+            this.SMCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.SMCB.DropDownHeight = 174;
+            this.SMCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SMCB.DropDownWidth = 135;
+            this.SMCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.SMCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SMCB.FormattingEnabled = true;
+            this.SMCB.Hint = "Special Mode";
+            this.SMCB.ItemHeight = 43;
+            this.SMCB.Items.AddRange(new object[] {
+            "Mixed",
+            "Symbol",
+            "Number"});
+            this.SMCB.Location = new System.Drawing.Point(186, 6);
+            this.SMCB.MaxDropDownItems = 4;
+            this.SMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.SMCB.Name = "SMCB";
+            this.SMCB.Size = new System.Drawing.Size(135, 49);
+            this.SMCB.TabIndex = 14;
+            this.TETT.SetToolTip(this.SMCB, "Select Special Mode");
+            this.SMCB.UseAccent = false;
+            // 
             // LIGHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(359, 359);
+            this.ClientSize = new System.Drawing.Size(359, 358);
             this.Controls.Add(this.SSBR);
             this.Controls.Add(this.MTS);
             this.Controls.Add(this.MTC);
@@ -641,6 +798,8 @@ namespace Nerator.UI
             this.Controls.Add(this.TELE);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(359, 358);
+            this.MinimumSize = new System.Drawing.Size(359, 358);
             this.Name = "LIGHT";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -653,6 +812,7 @@ namespace Nerator.UI
             ((System.ComponentModel.ISupportInitialize)(this.WRPB)).EndInit();
             this.History.ResumeLayout(false);
             this.Setting.ResumeLayout(false);
+            this.Setting.PerformLayout();
             this.DKPL.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MNPB)).EndInit();
             this.LTPL.ResumeLayout(false);
@@ -681,7 +841,7 @@ namespace Nerator.UI
         private System.Windows.Forms.Timer STATUST;
         private System.Windows.Forms.Timer STATUSMT;
         private System.Windows.Forms.PictureBox WRPB;
-        private ReaLTaiizor.Controls.HopeNumeric hopeNumeric1;
+        private ReaLTaiizor.Controls.HopeNumeric PWLN;
         private System.Windows.Forms.PictureBox RTPB;
         private ReaLTaiizor.Controls.Panel LTPL;
         private ReaLTaiizor.Controls.Panel LTP2;
@@ -699,5 +859,12 @@ namespace Nerator.UI
         private System.Windows.Forms.PictureBox MNPB;
         private ReaLTaiizor.Controls.Badge badge2;
         private ReaLTaiizor.Controls.Badge badge1;
+        private ReaLTaiizor.Controls.MetroToolTip TETT;
+        private ReaLTaiizor.Controls.MaterialCheckBox TMCB;
+        private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox1;
+        private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox2;
+        private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox3;
+        private ReaLTaiizor.Controls.MaterialComboBox AMCB;
+        private ReaLTaiizor.Controls.MaterialComboBox SMCB;
     }
 }

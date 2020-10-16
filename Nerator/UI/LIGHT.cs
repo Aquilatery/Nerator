@@ -26,14 +26,15 @@ namespace Nerator.UI
 
         private void CEB_Click(object sender, EventArgs e)
         {
-            PWDTB.Text = Create(GetInt(PasswordLenght.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
+            string GP = Create(GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
+            PWDTB.Text = GP;
             if (HYS.Checked)
             {
-                Add(HistoryFileName, PWDTB.Text, DefaultDateTime);
-                HistoryAdd(PWDTB.Text, GetTime(DefaultDateTime, DefaultDateTime), GetDate(DefaultDateTime, DefaultDateTime));
+                Add(HistoryFileName, GP, DefaultDateTime);
+                HistoryAdd(GP, GetTime(DefaultDateTime, DefaultDateTime), GetDate(DefaultDateTime, DefaultDateTime));
             }
-            PLPB.Value = StrengthMode(CheckScore2(PWDTB.Text));
-            PLPB.Style = StrengthStyle(PLPB.Value);
+            PLPB.Value = StrengthMode(CheckScore2(GP));
+            PLPB.Style = StyleMode(PLPB.Value);
             Status.Message = "Yeni şifre oluşturma başarıyla tamamlandı!";
         }
 
@@ -54,6 +55,11 @@ namespace Nerator.UI
             }
         }
 
+        private void TMCB_CheckedChanged(object sender, EventArgs e)
+        {
+            TopMost = TMCB.Checked;
+            TopMostMode = TopMost;
+        }
 
         private void THEME_MouseEnter(object sender, EventArgs e)
         {
@@ -144,6 +150,14 @@ namespace Nerator.UI
         private void LoadConfig()
         {
             HYS.Checked = HistoryMode;
+
+            TMCB.Checked = TopMostMode;
+            if (TMCB.Checked)
+            {
+                TMCB_CheckedChanged(null, null);
+            }
+
+            PWLN.ValueNumber = PasswordLenght;
             MTC.SelectedTab = OpenPageMode(PageMode);
             MTS.BaseTabControl = MTC;
         }
@@ -161,6 +175,8 @@ namespace Nerator.UI
         private void LIGHT_FormClosed(object sender, FormClosedEventArgs e)
         {
             HistoryMode = HYS.Checked;
+            TopMostMode = TMCB.Checked;
+            PasswordLenght = GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
             PageMode = GetPageMode(MTC.SelectedTab.Text);
             Save(ConfigFileName);
         }
