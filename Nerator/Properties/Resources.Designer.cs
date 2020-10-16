@@ -223,6 +223,16 @@ namespace Nerator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Moon {
+            get {
+                object obj = ResourceManager.GetObject("Moon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap OrderHistory {
             get {
                 object obj = ResourceManager.GetObject("OrderHistory", resourceCulture);
@@ -323,6 +333,16 @@ namespace Nerator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Sun {
+            get {
+                object obj = ResourceManager.GetObject("Sun", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Unlock {
             get {
                 object obj = ResourceManager.GetObject("Unlock", resourceCulture);
@@ -336,6 +356,16 @@ namespace Nerator.Properties {
         internal static System.Drawing.Bitmap WaitRabbit {
             get {
                 object obj = ResourceManager.GetObject("WaitRabbit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhiteCat {
+            get {
+                object obj = ResourceManager.GetObject("WhiteCat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
