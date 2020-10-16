@@ -30,145 +30,145 @@ namespace Nerator.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DARK));
-            this.foreverForm1 = new ReaLTaiizor.Forms.ForeverForm();
-            this.foreverTabPage1 = new ReaLTaiizor.Controls.ForeverTabPage();
-            this.Generate = new System.Windows.Forms.TabPage();
-            this.History = new System.Windows.Forms.TabPage();
-            this.Setting = new System.Windows.Forms.TabPage();
-            this.foreverMinimize1 = new ReaLTaiizor.Controls.ForeverMinimize();
-            this.foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
-            this.foreverForm1.SuspendLayout();
-            this.foreverTabPage1.SuspendLayout();
-            this.SuspendLayout();
+            foreverForm1 = new ReaLTaiizor.Forms.ForeverForm();
+            foreverTabPage1 = new ReaLTaiizor.Controls.ForeverTabPage();
+            Generate = new System.Windows.Forms.TabPage();
+            History = new System.Windows.Forms.TabPage();
+            Setting = new System.Windows.Forms.TabPage();
+            foreverMinimize1 = new ReaLTaiizor.Controls.ForeverMinimize();
+            foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
+            foreverForm1.SuspendLayout();
+            foreverTabPage1.SuspendLayout();
+            SuspendLayout();
             // 
             // foreverForm1
             // 
-            this.foreverForm1.BackColor = System.Drawing.Color.White;
-            this.foreverForm1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.foreverForm1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.foreverForm1.Controls.Add(this.foreverTabPage1);
-            this.foreverForm1.Controls.Add(this.foreverMinimize1);
-            this.foreverForm1.Controls.Add(this.foreverClose1);
-            this.foreverForm1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.foreverForm1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.foreverForm1.ForeverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.foreverForm1.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverForm1.HeaderMaximize = false;
-            this.foreverForm1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 12F);
-            this.foreverForm1.Image = global::Nerator.Properties.Resources.Lease;
-            this.foreverForm1.Location = new System.Drawing.Point(0, 0);
-            this.foreverForm1.MinimumSize = new System.Drawing.Size(210, 50);
-            this.foreverForm1.Name = "foreverForm1";
-            this.foreverForm1.Padding = new System.Windows.Forms.Padding(1, 51, 1, 1);
-            this.foreverForm1.Sizable = false;
-            this.foreverForm1.Size = new System.Drawing.Size(447, 276);
-            this.foreverForm1.TabIndex = 0;
-            this.foreverForm1.Text = "Nerator - New Generation Password Generator";
-            this.foreverForm1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.foreverForm1.TextLight = System.Drawing.Color.SeaGreen;
+            foreverForm1.BackColor = System.Drawing.Color.White;
+            foreverForm1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            foreverForm1.BorderColor = System.Drawing.Color.SeaGreen;
+            foreverForm1.Controls.Add(foreverTabPage1);
+            foreverForm1.Controls.Add(foreverMinimize1);
+            foreverForm1.Controls.Add(foreverClose1);
+            foreverForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            foreverForm1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            foreverForm1.ForeverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            foreverForm1.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            foreverForm1.HeaderMaximize = false;
+            foreverForm1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 12F);
+            foreverForm1.Image = global::Nerator.Properties.Resources.Lease;
+            foreverForm1.Location = new System.Drawing.Point(0, 0);
+            foreverForm1.MinimumSize = new System.Drawing.Size(210, 50);
+            foreverForm1.Name = "foreverForm1";
+            foreverForm1.Padding = new System.Windows.Forms.Padding(1, 51, 1, 1);
+            foreverForm1.Sizable = false;
+            foreverForm1.Size = new System.Drawing.Size(447, 276);
+            foreverForm1.TabIndex = 0;
+            foreverForm1.Text = "Nerator - New Generation Password Generator";
+            foreverForm1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            foreverForm1.TextLight = System.Drawing.Color.SeaGreen;
             // 
             // foreverTabPage1
             // 
-            this.foreverTabPage1.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.foreverTabPage1.ActiveFontColor = System.Drawing.Color.White;
-            this.foreverTabPage1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverTabPage1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.foreverTabPage1.Controls.Add(this.Generate);
-            this.foreverTabPage1.Controls.Add(this.History);
-            this.foreverTabPage1.Controls.Add(this.Setting);
-            this.foreverTabPage1.DeactiveFontColor = System.Drawing.Color.White;
-            this.foreverTabPage1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.foreverTabPage1.HotTrack = true;
-            this.foreverTabPage1.ItemSize = new System.Drawing.Size(120, 40);
-            this.foreverTabPage1.Location = new System.Drawing.Point(4, 54);
-            this.foreverTabPage1.Multiline = true;
-            this.foreverTabPage1.Name = "foreverTabPage1";
-            this.foreverTabPage1.SelectedIndex = 0;
-            this.foreverTabPage1.ShowToolTips = true;
-            this.foreverTabPage1.Size = new System.Drawing.Size(439, 218);
-            this.foreverTabPage1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.foreverTabPage1.TabIndex = 2;
+            foreverTabPage1.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            foreverTabPage1.ActiveFontColor = System.Drawing.Color.White;
+            foreverTabPage1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            foreverTabPage1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            foreverTabPage1.Controls.Add(Generate);
+            foreverTabPage1.Controls.Add(History);
+            foreverTabPage1.Controls.Add(Setting);
+            foreverTabPage1.DeactiveFontColor = System.Drawing.Color.White;
+            foreverTabPage1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            foreverTabPage1.HotTrack = true;
+            foreverTabPage1.ItemSize = new System.Drawing.Size(120, 40);
+            foreverTabPage1.Location = new System.Drawing.Point(4, 54);
+            foreverTabPage1.Multiline = true;
+            foreverTabPage1.Name = "foreverTabPage1";
+            foreverTabPage1.SelectedIndex = 0;
+            foreverTabPage1.ShowToolTips = true;
+            foreverTabPage1.Size = new System.Drawing.Size(439, 218);
+            foreverTabPage1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            foreverTabPage1.TabIndex = 2;
             // 
             // Generate
             // 
-            this.Generate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.Generate.Location = new System.Drawing.Point(4, 44);
-            this.Generate.Name = "Generate";
-            this.Generate.Padding = new System.Windows.Forms.Padding(3);
-            this.Generate.Size = new System.Drawing.Size(431, 170);
-            this.Generate.TabIndex = 0;
-            this.Generate.Text = "Generate";
+            Generate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            Generate.Location = new System.Drawing.Point(4, 44);
+            Generate.Name = "Generate";
+            Generate.Padding = new System.Windows.Forms.Padding(3);
+            Generate.Size = new System.Drawing.Size(431, 170);
+            Generate.TabIndex = 0;
+            Generate.Text = "Generate";
             // 
             // History
             // 
-            this.History.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.History.Location = new System.Drawing.Point(4, 44);
-            this.History.Name = "History";
-            this.History.Padding = new System.Windows.Forms.Padding(3);
-            this.History.Size = new System.Drawing.Size(431, 170);
-            this.History.TabIndex = 1;
-            this.History.Text = "History";
+            History.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            History.Location = new System.Drawing.Point(4, 44);
+            History.Name = "History";
+            History.Padding = new System.Windows.Forms.Padding(3);
+            History.Size = new System.Drawing.Size(431, 170);
+            History.TabIndex = 1;
+            History.Text = "History";
             // 
             // Setting
             // 
-            this.Setting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.Setting.Location = new System.Drawing.Point(4, 44);
-            this.Setting.Name = "Setting";
-            this.Setting.Padding = new System.Windows.Forms.Padding(3);
-            this.Setting.Size = new System.Drawing.Size(431, 170);
-            this.Setting.TabIndex = 2;
-            this.Setting.Text = "Setting";
+            Setting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            Setting.Location = new System.Drawing.Point(4, 44);
+            Setting.Name = "Setting";
+            Setting.Padding = new System.Windows.Forms.Padding(3);
+            Setting.Size = new System.Drawing.Size(431, 170);
+            Setting.TabIndex = 2;
+            Setting.Text = "Setting";
             // 
             // foreverMinimize1
             // 
-            this.foreverMinimize1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.foreverMinimize1.BackColor = System.Drawing.Color.White;
-            this.foreverMinimize1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverMinimize1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.foreverMinimize1.DefaultLocation = false;
-            this.foreverMinimize1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.foreverMinimize1.Font = new System.Drawing.Font("Marlett", 12F);
-            this.foreverMinimize1.Location = new System.Drawing.Point(393, 16);
-            this.foreverMinimize1.Name = "foreverMinimize1";
-            this.foreverMinimize1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.foreverMinimize1.Size = new System.Drawing.Size(18, 18);
-            this.foreverMinimize1.TabIndex = 1;
-            this.foreverMinimize1.Text = "foreverMinimize1";
-            this.foreverMinimize1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            foreverMinimize1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            foreverMinimize1.BackColor = System.Drawing.Color.White;
+            foreverMinimize1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            foreverMinimize1.Cursor = System.Windows.Forms.Cursors.Hand;
+            foreverMinimize1.DefaultLocation = false;
+            foreverMinimize1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            foreverMinimize1.Font = new System.Drawing.Font("Marlett", 12F);
+            foreverMinimize1.Location = new System.Drawing.Point(393, 16);
+            foreverMinimize1.Name = "foreverMinimize1";
+            foreverMinimize1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            foreverMinimize1.Size = new System.Drawing.Size(18, 18);
+            foreverMinimize1.TabIndex = 1;
+            foreverMinimize1.Text = "foreverMinimize1";
+            foreverMinimize1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
             // foreverClose1
             // 
-            this.foreverClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.foreverClose1.BackColor = System.Drawing.Color.White;
-            this.foreverClose1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.foreverClose1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.foreverClose1.DefaultLocation = true;
-            this.foreverClose1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.foreverClose1.Font = new System.Drawing.Font("Marlett", 10F);
-            this.foreverClose1.Location = new System.Drawing.Point(417, 16);
-            this.foreverClose1.Name = "foreverClose1";
-            this.foreverClose1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.foreverClose1.Size = new System.Drawing.Size(18, 18);
-            this.foreverClose1.TabIndex = 0;
-            this.foreverClose1.Text = "foreverClose1";
-            this.foreverClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            foreverClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            foreverClose1.BackColor = System.Drawing.Color.White;
+            foreverClose1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            foreverClose1.Cursor = System.Windows.Forms.Cursors.Hand;
+            foreverClose1.DefaultLocation = true;
+            foreverClose1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            foreverClose1.Font = new System.Drawing.Font("Marlett", 10F);
+            foreverClose1.Location = new System.Drawing.Point(417, 16);
+            foreverClose1.Name = "foreverClose1";
+            foreverClose1.OverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            foreverClose1.Size = new System.Drawing.Size(18, 18);
+            foreverClose1.TabIndex = 0;
+            foreverClose1.Text = "foreverClose1";
+            foreverClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
             // DARK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 276);
-            this.Controls.Add(this.foreverForm1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "DARK";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DARK";
-            this.TransparencyKey = System.Drawing.Color.Fuchsia;
-            this.foreverForm1.ResumeLayout(false);
-            this.foreverTabPage1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(447, 276);
+            Controls.Add(foreverForm1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            Name = "DARK";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "DARK";
+            TransparencyKey = System.Drawing.Color.Fuchsia;
+            foreverForm1.ResumeLayout(false);
+            foreverTabPage1.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

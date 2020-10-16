@@ -41,7 +41,7 @@ namespace Nerator.CS
             try
             {
                 int Number = Convert.ToInt32(Variable);
-                if (Bigger >= Smaller && Number <= Bigger && Number >= Smaller)
+                if (Number <= Bigger && Number >= Smaller)
                 {
                     return Number;
                 }

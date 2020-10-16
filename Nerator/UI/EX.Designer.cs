@@ -202,6 +202,7 @@
             Just_Number.Size = new System.Drawing.Size(254, 22);
             Just_Number.TabIndex = 9;
             Just_Number.Text = "Number Only - 123456";
+            Just_Number.CheckedChanged += new ReaLTaiizor.Controls.ForeverRadioButton.CheckedChangedEventHandler(Special_CheckedChanged);
             // 
             // Just_Symbol
             // 
@@ -219,6 +220,7 @@
             Just_Symbol.Size = new System.Drawing.Size(254, 22);
             Just_Symbol.TabIndex = 8;
             Just_Symbol.Text = "Special Symbol Only - $&£/*+";
+            Just_Symbol.CheckedChanged += new ReaLTaiizor.Controls.ForeverRadioButton.CheckedChangedEventHandler(Special_CheckedChanged);
             // 
             // Number_Symbol
             // 
@@ -236,6 +238,7 @@
             Number_Symbol.Size = new System.Drawing.Size(254, 22);
             Number_Symbol.TabIndex = 7;
             Number_Symbol.Text = "Number and Special Symbol - 1$2&3£";
+            Number_Symbol.CheckedChanged += new ReaLTaiizor.Controls.ForeverRadioButton.CheckedChangedEventHandler(Special_CheckedChanged);
             // 
             // Alphabetic_GB
             // 
@@ -269,6 +272,7 @@
             Just_Big.Size = new System.Drawing.Size(254, 22);
             Just_Big.TabIndex = 8;
             Just_Big.Text = "Capital Letter Only - ABCDEF";
+            Just_Big.CheckedChanged += new ReaLTaiizor.Controls.ForeverRadioButton.CheckedChangedEventHandler(Alphabetic_CheckedChanged);
             // 
             // Just_Small
             // 
@@ -286,6 +290,7 @@
             Just_Small.Size = new System.Drawing.Size(254, 22);
             Just_Small.TabIndex = 7;
             Just_Small.Text = "Small Letter Only - abcdef";
+            Just_Small.CheckedChanged += new ReaLTaiizor.Controls.ForeverRadioButton.CheckedChangedEventHandler(Alphabetic_CheckedChanged);
             // 
             // Big_Small
             // 
@@ -303,11 +308,15 @@
             Big_Small.Size = new System.Drawing.Size(254, 22);
             Big_Small.TabIndex = 6;
             Big_Small.Text = "Uppercase and Lowercase - AaBbCc";
+            Big_Small.CheckedChanged += new ReaLTaiizor.Controls.ForeverRadioButton.CheckedChangedEventHandler(Alphabetic_CheckedChanged);
             // 
             // PLength
             // 
             PLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(93)))));
             PLength.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            PLength.ButtonColorA = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            PLength.ButtonColorB = System.Drawing.Color.White;
+            PLength.ButtonColorC = System.Drawing.Color.White;
             PLength.Font = new System.Drawing.Font("Segoe UI", 10F);
             PLength.ForeColor = System.Drawing.Color.DimGray;
             PLength.Location = new System.Drawing.Point(209, 36);
@@ -394,6 +403,7 @@
             // 
             controlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             controlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            controlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             controlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             controlBox1.DefaultLocation = true;
             controlBox1.EnableHoverHighlight = true;
@@ -401,6 +411,8 @@
             controlBox1.EnableMinimizeButton = true;
             controlBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             controlBox1.Location = new System.Drawing.Point(235, 18);
+            controlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            controlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             controlBox1.Name = "controlBox1";
             controlBox1.Size = new System.Drawing.Size(90, 25);
             controlBox1.TabIndex = 0;
@@ -415,11 +427,13 @@
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
             MaximizeBox = false;
-            MinimumSize = new System.Drawing.Size(261, 61);
+            MaximumSize = new System.Drawing.Size(335, 595);
+            MinimumSize = new System.Drawing.Size(335, 202);
             Name = "EX";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Soferity - Nerator";
             TransparencyKey = System.Drawing.Color.Fuchsia;
+            FormClosed += new System.Windows.Forms.FormClosedEventHandler(EX_FormClosed);
             themeForm1.ResumeLayout(false);
             themeForm1.PerformLayout();
             Settings.ResumeLayout(false);

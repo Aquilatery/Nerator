@@ -1,8 +1,12 @@
 ﻿using System;
 using Conforyon;
+using Nerator.CS;
 using System.Drawing;
 using System.Windows.Forms;
+using static Nerator.CS.Setting;
+using static Nerator.CS.Variable;
 using static Nerator.CS.Generator;
+using static Nerator.CS.Character;
 
 namespace Nerator.UI
 {
@@ -11,11 +15,12 @@ namespace Nerator.UI
         public EX()
         {
             InitializeComponent();
+            LoadConfig();
         }
 
         private void Create_B_Click(object sender, EventArgs e)
         {
-            Password.Text = Create(Convert.ToInt32(PLength.Value), GET_AC(), GET_SL());
+            Password.Text = Create(GetInt(PLength.Value.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
         }
 
         private void Expand_CheckedChanged(object sender)
@@ -29,6 +34,7 @@ namespace Nerator.UI
                 Size = new Size(335, 202);
             }
 
+            EXExpandMode = Expand.Checked;
             CenterToScreen();
         }
 
@@ -41,38 +47,78 @@ namespace Nerator.UI
         private void TopMost_T_CheckedChanged(object sender)
         {
             TopMost = TopMost_T.Checked;
+            TopMostMode = TopMost;
         }
 
-        private Alphabetic GET_AC()
+        private void Alphabetic_CheckedChanged(object sender)
         {
             if (Just_Big.Checked)
             {
-                return Alphabetic.JB;
+                AlphabeticMode = AlphabeticType.JB;
             }
             else if (Just_Small.Checked)
             {
-                return Alphabetic.JS;
+                AlphabeticMode = AlphabeticType.JS;
             }
             else
             {
-                return Alphabetic.BS;
+                AlphabeticMode = AlphabeticType.BS;
             }
         }
 
-        private Special GET_SL()
+        private void Special_CheckedChanged(object sender)
         {
             if (Just_Number.Checked)
             {
-                return Special.JN;
+                SpecialMode = SpecialType.JN;
             }
             else if (Just_Symbol.Checked)
             {
-                return Special.JS;
+                SpecialMode = SpecialType.JS;
             }
             else
             {
-                return Special.NS;
+                SpecialMode = SpecialType.NS;
             }
+        }
+
+        private void LoadConfig()
+        {
+            Expand.Checked = EXExpandMode;
+            if (Expand.Checked)
+                Expand_CheckedChanged(null);
+            PLength.Value = PasswordLenght;
+            TopMost_T.Checked = TopMostMode;
+            switch (AlphabeticMode)
+            {
+                case AlphabeticType.JB:
+                    Just_Big.Checked = true;
+                    break;
+                case AlphabeticType.JS:
+                    Just_Small.Checked = true;
+                    break;
+                default:
+                    Big_Small.Checked = true;
+                    break;
+            }
+            switch (SpecialMode)
+            {
+                case SpecialType.JN:
+                    Just_Number.Checked = true;
+                    break;
+                case SpecialType.JS:
+                    Just_Symbol.Checked = true;
+                    break;
+                default:
+                    Number_Symbol.Checked = true;
+                    break;
+            }
+        }
+
+        private void EX_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            PasswordLenght = GetInt(PLength.Value.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
+            Save(ConfigFileName);
         }
     }
 }

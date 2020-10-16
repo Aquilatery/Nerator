@@ -10,6 +10,8 @@ namespace Nerator.CS
     public class Setting
     {
         public static string ConfigFileName => "Config.json";
+        public static int MinimumPasswordLenght => 6;
+        public static int MaximumPasswordLenght => 50;
 
         public Setting(string ConfigFileName)
         {
@@ -29,28 +31,30 @@ namespace Nerator.CS
             if (!string.IsNullOrEmpty(SS) && !string.IsNullOrWhiteSpace(SS))
             {
                 Dictionary<string, string> Settings = JsonConvert.DeserializeObject<Dictionary<string, string>>(SS);
-                if (Settings.ContainsKey("TopMost") && Settings.ContainsKey("WindowMode") && Settings.ContainsKey("SpecialMode") && Settings.ContainsKey("HistoryMode") && Settings.ContainsKey("AlphabeticMode") && Settings.ContainsKey("PasswordLenght"))
+                if (Settings.ContainsKey("WindowMode") && Settings.ContainsKey("SpecialMode") && Settings.ContainsKey("TopMostMode") && Settings.ContainsKey("HistoryMode") && Settings.ContainsKey("AlphabeticMode") && Settings.ContainsKey("EXExpandMode") && Settings.ContainsKey("PasswordLenght"))
                 {
-                    TopMost = GetBoolean(Settings["TopMost"], TopMost);
                     WindowMode = GetWindowMode(Settings["WindowMode"]);
                     SpecialMode = GetSpecialMode(Settings["SpecialMode"]);
+                    TopMostMode = GetBoolean(Settings["TopMostMode"], TopMostMode);
                     HistoryMode = GetBoolean(Settings["HistoryMode"], HistoryMode);
                     AlphabeticMode = GetAlphabeticMode(Settings["AlphabeticMode"]);
-                    PasswordLenght = GetInt(Settings["WindowMode"], PasswordLenght, 6, 50);
+                    EXExpandMode = GetBoolean(Settings["EXExpandMode"], EXExpandMode);
+                    PasswordLenght = GetInt(Settings["PasswordLenght"], PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
                 }
             }
             Save(ConfigFileName);
         }
 
-        public void Save(string ConfigFileName)
+        public static void Save(string ConfigFileName)
         {
             Dictionary<string, string> Settings = new Dictionary<string, string>()
             {
-                { "TopMost" , GetString(TopMost, TopMost) },
                 { "WindowMode" , GetWindowMode(WindowMode) },
                 { "SpecialMode" , GetSpecialMode(SpecialMode) },
+                { "TopMostMode" , GetString(TopMostMode, TopMostMode) },
                 { "HistoryMode" , GetString(HistoryMode, HistoryMode) },
                 { "AlphabeticMode" , GetAlphabeticMode(AlphabeticMode) },
+                { "EXExpandMode" , GetString(EXExpandMode, EXExpandMode) },
                 { "PasswordLenght" , GetString(PasswordLenght, PasswordLenght) }
             };
             File.WriteAllText(ConfigFileName, JsonConvert.SerializeObject(Settings, Formatting.Indented));
@@ -91,11 +95,18 @@ namespace Nerator.CS
             set => _SpecialMode = value;
         }
 
-        private static bool _TopMost = false;
-        public static bool TopMost
+        private static bool _TopMostMode = false;
+        public static bool TopMostMode
         {
-            get => _TopMost;
-            set => _TopMost = value;
+            get => _TopMostMode;
+            set => _TopMostMode = value;
+        }
+
+        private static bool _EXExpandMode = false;
+        public static bool EXExpandMode
+        {
+            get => _EXExpandMode;
+            set => _EXExpandMode = value;
         }
     }
 }

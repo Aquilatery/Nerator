@@ -30,246 +30,246 @@ namespace Nerator.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LIGHT));
-            this.labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PWDTB = new ReaLTaiizor.Controls.BigTextBox();
-            this.poisonProgressBar1 = new ReaLTaiizor.Controls.PoisonProgressBar();
-            this.foreverStatusBar1 = new ReaLTaiizor.Controls.ForeverStatusBar();
-            this.CEB = new ReaLTaiizor.Controls.MaterialButton();
-            this.CYB = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialTabControl1 = new ReaLTaiizor.Controls.MaterialTabControl();
-            this.History = new System.Windows.Forms.TabPage();
-            this.Generate = new System.Windows.Forms.TabPage();
-            this.materialTabSelector1 = new ReaLTaiizor.Controls.MaterialTabSelector();
-            this.Setting = new System.Windows.Forms.TabPage();
-            this.HYS = new ReaLTaiizor.Controls.MaterialSwitch();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.materialTabControl1.SuspendLayout();
-            this.Generate.SuspendLayout();
-            this.SuspendLayout();
+            labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            PWDTB = new ReaLTaiizor.Controls.BigTextBox();
+            poisonProgressBar1 = new ReaLTaiizor.Controls.PoisonProgressBar();
+            foreverStatusBar1 = new ReaLTaiizor.Controls.ForeverStatusBar();
+            CEB = new ReaLTaiizor.Controls.MaterialButton();
+            CYB = new ReaLTaiizor.Controls.MaterialButton();
+            materialTabControl1 = new ReaLTaiizor.Controls.MaterialTabControl();
+            History = new System.Windows.Forms.TabPage();
+            Generate = new System.Windows.Forms.TabPage();
+            materialTabSelector1 = new ReaLTaiizor.Controls.MaterialTabSelector();
+            Setting = new System.Windows.Forms.TabPage();
+            HYS = new ReaLTaiizor.Controls.MaterialSwitch();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
+            materialTabControl1.SuspendLayout();
+            Generate.SuspendLayout();
+            SuspendLayout();
             // 
             // labelEdit1
             // 
-            this.labelEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            labelEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelEdit1.BackColor = System.Drawing.Color.Transparent;
-            this.labelEdit1.Enabled = false;
-            this.labelEdit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.labelEdit1.ForeColor = System.Drawing.Color.White;
-            this.labelEdit1.Location = new System.Drawing.Point(0, 0);
-            this.labelEdit1.Name = "labelEdit1";
-            this.labelEdit1.Size = new System.Drawing.Size(359, 25);
-            this.labelEdit1.TabIndex = 1;
-            this.labelEdit1.Text = "Nerator";
-            this.labelEdit1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelEdit1.BackColor = System.Drawing.Color.Transparent;
+            labelEdit1.Enabled = false;
+            labelEdit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            labelEdit1.ForeColor = System.Drawing.Color.White;
+            labelEdit1.Location = new System.Drawing.Point(0, 0);
+            labelEdit1.Name = "labelEdit1";
+            labelEdit1.Size = new System.Drawing.Size(359, 25);
+            labelEdit1.TabIndex = 1;
+            labelEdit1.Text = "Nerator";
+            labelEdit1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::Nerator.Properties.Resources.ShowPassword;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = global::Nerator.Properties.Resources.ShowPassword;
+            pictureBox1.Location = new System.Drawing.Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(25, 24);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
             // 
             // PWDTB
             // 
-            this.PWDTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            PWDTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PWDTB.BackColor = System.Drawing.Color.Transparent;
-            this.PWDTB.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.PWDTB.ForeColor = System.Drawing.Color.DimGray;
-            this.PWDTB.Image = global::Nerator.Properties.Resources.Key1;
-            this.PWDTB.Location = new System.Drawing.Point(6, 6);
-            this.PWDTB.MaxLength = 50;
-            this.PWDTB.Multiline = false;
-            this.PWDTB.Name = "PWDTB";
-            this.PWDTB.ReadOnly = false;
-            this.PWDTB.Size = new System.Drawing.Size(315, 41);
-            this.PWDTB.TabIndex = 6;
-            this.PWDTB.Text = "Nerator";
-            this.PWDTB.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.PWDTB.UseSystemPasswordChar = false;
+            PWDTB.BackColor = System.Drawing.Color.Transparent;
+            PWDTB.Font = new System.Drawing.Font("Tahoma", 11F);
+            PWDTB.ForeColor = System.Drawing.Color.DimGray;
+            PWDTB.Image = global::Nerator.Properties.Resources.Key1;
+            PWDTB.Location = new System.Drawing.Point(6, 6);
+            PWDTB.MaxLength = 50;
+            PWDTB.Multiline = false;
+            PWDTB.Name = "PWDTB";
+            PWDTB.ReadOnly = false;
+            PWDTB.Size = new System.Drawing.Size(315, 41);
+            PWDTB.TabIndex = 6;
+            PWDTB.Text = "Nerator";
+            PWDTB.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            PWDTB.UseSystemPasswordChar = false;
             // 
             // poisonProgressBar1
             // 
-            this.poisonProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            poisonProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.poisonProgressBar1.Location = new System.Drawing.Point(10, 46);
-            this.poisonProgressBar1.Name = "poisonProgressBar1";
-            this.poisonProgressBar1.Size = new System.Drawing.Size(307, 5);
-            this.poisonProgressBar1.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
-            this.poisonProgressBar1.TabIndex = 12;
-            this.poisonProgressBar1.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
+            poisonProgressBar1.Location = new System.Drawing.Point(10, 46);
+            poisonProgressBar1.Name = "poisonProgressBar1";
+            poisonProgressBar1.Size = new System.Drawing.Size(307, 5);
+            poisonProgressBar1.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
+            poisonProgressBar1.TabIndex = 12;
+            poisonProgressBar1.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
             // 
             // foreverStatusBar1
             // 
-            this.foreverStatusBar1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.foreverStatusBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.foreverStatusBar1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.foreverStatusBar1.ForeColor = System.Drawing.Color.White;
-            this.foreverStatusBar1.Location = new System.Drawing.Point(0, 359);
-            this.foreverStatusBar1.Name = "foreverStatusBar1";
-            this.foreverStatusBar1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.foreverStatusBar1.ShowTimeDate = true;
-            this.foreverStatusBar1.Size = new System.Drawing.Size(359, 22);
-            this.foreverStatusBar1.TabIndex = 13;
-            this.foreverStatusBar1.Text = "foreverStatusBar1";
-            this.foreverStatusBar1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.foreverStatusBar1.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.foreverStatusBar1.TimeFormat = "HH:mm:ss";
+            foreverStatusBar1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            foreverStatusBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            foreverStatusBar1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            foreverStatusBar1.ForeColor = System.Drawing.Color.White;
+            foreverStatusBar1.Location = new System.Drawing.Point(0, 359);
+            foreverStatusBar1.Name = "foreverStatusBar1";
+            foreverStatusBar1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            foreverStatusBar1.ShowTimeDate = true;
+            foreverStatusBar1.Size = new System.Drawing.Size(359, 22);
+            foreverStatusBar1.TabIndex = 13;
+            foreverStatusBar1.Text = "foreverStatusBar1";
+            foreverStatusBar1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            foreverStatusBar1.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            foreverStatusBar1.TimeFormat = "HH:mm:ss";
             // 
             // CEB
             // 
-            this.CEB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.CEB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CEB.Depth = 0;
-            this.CEB.DrawShadows = true;
-            this.CEB.HighEmphasis = true;
-            this.CEB.Icon = global::Nerator.Properties.Resources.QuillInk;
-            this.CEB.Location = new System.Drawing.Point(6, 56);
-            this.CEB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.CEB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.CEB.Name = "CEB";
-            this.CEB.Size = new System.Drawing.Size(104, 36);
-            this.CEB.TabIndex = 14;
-            this.CEB.Text = "CREATE";
-            this.CEB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.CEB.UseAccentColor = false;
-            this.CEB.UseVisualStyleBackColor = true;
-            this.CEB.Click += new System.EventHandler(this.CEB_Click);
+            CEB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            CEB.Cursor = System.Windows.Forms.Cursors.Hand;
+            CEB.Depth = 0;
+            CEB.DrawShadows = true;
+            CEB.HighEmphasis = true;
+            CEB.Icon = global::Nerator.Properties.Resources.QuillInk;
+            CEB.Location = new System.Drawing.Point(6, 56);
+            CEB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            CEB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            CEB.Name = "CEB";
+            CEB.Size = new System.Drawing.Size(104, 36);
+            CEB.TabIndex = 14;
+            CEB.Text = "CREATE";
+            CEB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            CEB.UseAccentColor = false;
+            CEB.UseVisualStyleBackColor = true;
+            CEB.Click += new System.EventHandler(CEB_Click);
             // 
             // CYB
             // 
-            this.CYB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CYB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.CYB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CYB.Depth = 0;
-            this.CYB.DrawShadows = true;
-            this.CYB.HighEmphasis = true;
-            this.CYB.Icon = global::Nerator.Properties.Resources.CopyClipboard;
-            this.CYB.Location = new System.Drawing.Point(234, 56);
-            this.CYB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.CYB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.CYB.Name = "CYB";
-            this.CYB.Size = new System.Drawing.Size(87, 36);
-            this.CYB.TabIndex = 15;
-            this.CYB.Text = "COPY";
-            this.CYB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.CYB.UseAccentColor = false;
-            this.CYB.UseVisualStyleBackColor = true;
-            this.CYB.Click += new System.EventHandler(this.CYB_Click);
+            CYB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            CYB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            CYB.Cursor = System.Windows.Forms.Cursors.Hand;
+            CYB.Depth = 0;
+            CYB.DrawShadows = true;
+            CYB.HighEmphasis = true;
+            CYB.Icon = global::Nerator.Properties.Resources.CopyClipboard;
+            CYB.Location = new System.Drawing.Point(234, 56);
+            CYB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            CYB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            CYB.Name = "CYB";
+            CYB.Size = new System.Drawing.Size(87, 36);
+            CYB.TabIndex = 15;
+            CYB.Text = "COPY";
+            CYB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            CYB.UseAccentColor = false;
+            CYB.UseVisualStyleBackColor = true;
+            CYB.Click += new System.EventHandler(CYB_Click);
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.materialTabControl1.Controls.Add(this.Generate);
-            this.materialTabControl1.Controls.Add(this.History);
-            this.materialTabControl1.Controls.Add(this.Setting);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(12, 99);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.materialTabControl1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialTabControl1.Multiline = true;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.Padding = new System.Drawing.Point(0, 0);
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(335, 227);
-            this.materialTabControl1.TabIndex = 16;
+            materialTabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            materialTabControl1.Controls.Add(Generate);
+            materialTabControl1.Controls.Add(History);
+            materialTabControl1.Controls.Add(Setting);
+            materialTabControl1.Depth = 0;
+            materialTabControl1.Location = new System.Drawing.Point(12, 99);
+            materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            materialTabControl1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            materialTabControl1.Multiline = true;
+            materialTabControl1.Name = "materialTabControl1";
+            materialTabControl1.Padding = new System.Drawing.Point(0, 0);
+            materialTabControl1.SelectedIndex = 0;
+            materialTabControl1.Size = new System.Drawing.Size(335, 227);
+            materialTabControl1.TabIndex = 16;
             // 
             // History
             // 
-            this.History.BackColor = System.Drawing.SystemColors.Control;
-            this.History.Location = new System.Drawing.Point(4, 4);
-            this.History.Name = "History";
-            this.History.Padding = new System.Windows.Forms.Padding(3);
-            this.History.Size = new System.Drawing.Size(327, 201);
-            this.History.TabIndex = 0;
-            this.History.Text = "History";
+            History.BackColor = System.Drawing.SystemColors.Control;
+            History.Location = new System.Drawing.Point(4, 4);
+            History.Name = "History";
+            History.Padding = new System.Windows.Forms.Padding(3);
+            History.Size = new System.Drawing.Size(327, 201);
+            History.TabIndex = 0;
+            History.Text = "History";
             // 
             // Generate
             // 
-            this.Generate.BackColor = System.Drawing.SystemColors.Control;
-            this.Generate.Controls.Add(this.HYS);
-            this.Generate.Controls.Add(this.CEB);
-            this.Generate.Controls.Add(this.CYB);
-            this.Generate.Controls.Add(this.PWDTB);
-            this.Generate.Controls.Add(this.poisonProgressBar1);
-            this.Generate.Location = new System.Drawing.Point(4, 4);
-            this.Generate.Name = "Generate";
-            this.Generate.Padding = new System.Windows.Forms.Padding(3);
-            this.Generate.Size = new System.Drawing.Size(327, 201);
-            this.Generate.TabIndex = 1;
-            this.Generate.Text = "Generate";
+            Generate.BackColor = System.Drawing.SystemColors.Control;
+            Generate.Controls.Add(HYS);
+            Generate.Controls.Add(CEB);
+            Generate.Controls.Add(CYB);
+            Generate.Controls.Add(PWDTB);
+            Generate.Controls.Add(poisonProgressBar1);
+            Generate.Location = new System.Drawing.Point(4, 4);
+            Generate.Name = "Generate";
+            Generate.Padding = new System.Windows.Forms.Padding(3);
+            Generate.Size = new System.Drawing.Size(327, 201);
+            Generate.TabIndex = 1;
+            Generate.Text = "Generate";
             // 
             // materialTabSelector1
             // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTabSelector1.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
-            this.materialTabSelector1.Location = new System.Drawing.Point(12, 76);
-            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.materialTabSelector1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(335, 23);
-            this.materialTabSelector1.TabIndex = 17;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            this.materialTabSelector1.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
+            materialTabSelector1.BaseTabControl = materialTabControl1;
+            materialTabSelector1.Depth = 0;
+            materialTabSelector1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            materialTabSelector1.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
+            materialTabSelector1.Location = new System.Drawing.Point(12, 76);
+            materialTabSelector1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            materialTabSelector1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            materialTabSelector1.Name = "materialTabSelector1";
+            materialTabSelector1.Size = new System.Drawing.Size(335, 23);
+            materialTabSelector1.TabIndex = 17;
+            materialTabSelector1.Text = "materialTabSelector1";
+            materialTabSelector1.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
             // 
             // Setting
             // 
-            this.Setting.BackColor = System.Drawing.SystemColors.Control;
-            this.Setting.Location = new System.Drawing.Point(4, 4);
-            this.Setting.Name = "Setting";
-            this.Setting.Padding = new System.Windows.Forms.Padding(3);
-            this.Setting.Size = new System.Drawing.Size(327, 201);
-            this.Setting.TabIndex = 2;
-            this.Setting.Text = "Setting";
+            Setting.BackColor = System.Drawing.SystemColors.Control;
+            Setting.Location = new System.Drawing.Point(4, 4);
+            Setting.Name = "Setting";
+            Setting.Padding = new System.Windows.Forms.Padding(3);
+            Setting.Size = new System.Drawing.Size(327, 201);
+            Setting.TabIndex = 2;
+            Setting.Text = "Setting";
             // 
             // HYS
             // 
-            this.HYS.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HYS.AutoSize = true;
-            this.HYS.Checked = true;
-            this.HYS.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.HYS.Depth = 0;
-            this.HYS.Location = new System.Drawing.Point(117, 57);
-            this.HYS.Margin = new System.Windows.Forms.Padding(0);
-            this.HYS.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.HYS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.HYS.Name = "HYS";
-            this.HYS.Ripple = true;
-            this.HYS.Size = new System.Drawing.Size(108, 37);
-            this.HYS.TabIndex = 16;
-            this.HYS.Text = "History";
-            this.HYS.UseAccentColor = true;
-            this.HYS.UseVisualStyleBackColor = true;
+            HYS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            HYS.AutoSize = true;
+            HYS.Checked = true;
+            HYS.CheckState = System.Windows.Forms.CheckState.Checked;
+            HYS.Depth = 0;
+            HYS.Location = new System.Drawing.Point(117, 57);
+            HYS.Margin = new System.Windows.Forms.Padding(0);
+            HYS.MouseLocation = new System.Drawing.Point(-1, -1);
+            HYS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            HYS.Name = "HYS";
+            HYS.Ripple = true;
+            HYS.Size = new System.Drawing.Size(108, 37);
+            HYS.TabIndex = 16;
+            HYS.Text = "History";
+            HYS.UseAccentColor = true;
+            HYS.UseVisualStyleBackColor = true;
             // 
             // LIGHT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 381);
-            this.Controls.Add(this.materialTabSelector1);
-            this.Controls.Add(this.materialTabControl1);
-            this.Controls.Add(this.foreverStatusBar1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.labelEdit1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "LIGHT";
-            this.Sizable = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "New Generation Password Generator";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.materialTabControl1.ResumeLayout(false);
-            this.Generate.ResumeLayout(false);
-            this.Generate.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(359, 381);
+            Controls.Add(materialTabSelector1);
+            Controls.Add(materialTabControl1);
+            Controls.Add(foreverStatusBar1);
+            Controls.Add(pictureBox1);
+            Controls.Add(labelEdit1);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            Name = "LIGHT";
+            Sizable = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "New Generation Password Generator";
+            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
+            materialTabControl1.ResumeLayout(false);
+            Generate.ResumeLayout(false);
+            Generate.PerformLayout();
+            ResumeLayout(false);
 
         }
 

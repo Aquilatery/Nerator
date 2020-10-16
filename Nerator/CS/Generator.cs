@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using static Nerator.CS.Character;
 
 namespace Nerator.CS
 {
@@ -15,40 +16,30 @@ namespace Nerator.CS
         private const string SL_JS = "!'\"^+%&/=?_@€ß*-+#\\<|>.,~½£$({[]})Æé";
         private const string SL_NS = SL_JN + SL_JS;
 
-        public enum Alphabetic
-        {
-            BS, JB, JS
-        }
-
-        public enum Special
-        {
-            NS, JN, JS
-        }
-
-        public static string Create(int Length, Alphabetic AC, Special SL)
+        public static string Create(int Length, AlphabeticType AC, SpecialType SL)
         {
             string Dictionary = null;
             switch (AC)
             {
-                case Alphabetic.BS:
+                case AlphabeticType.BS:
                     Dictionary = AC_BS;
                     break;
-                case Alphabetic.JB:
+                case AlphabeticType.JB:
                     Dictionary = AC_JB;
                     break;
-                case Alphabetic.JS:
+                case AlphabeticType.JS:
                     Dictionary = AC_JS;
                     break;
             }
             switch (SL)
             {
-                case Special.NS:
+                case SpecialType.NS:
                     Dictionary += SL_NS;
                     break;
-                case Special.JN:
+                case SpecialType.JN:
                     Dictionary += SL_JN;
                     break;
-                case Special.JS:
+                case SpecialType.JS:
                     Dictionary += SL_JS;
                     break;
             }
