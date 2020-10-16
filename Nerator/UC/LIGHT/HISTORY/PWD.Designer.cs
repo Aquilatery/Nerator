@@ -29,121 +29,121 @@ namespace Nerator.UC.LIGHT.HISTORY
         /// </summary>
         private void InitializeComponent()
         {
-            this.COPY = new ReaLTaiizor.Controls.MaterialButton();
-            this.REMOVE = new ReaLTaiizor.Controls.MaterialButton();
-            this.FILL = new System.Windows.Forms.Panel();
-            this.TIMEDATE = new ReaLTaiizor.Controls.PoisonLabel();
-            this.PASSWORD = new ReaLTaiizor.Controls.PoisonLabel();
-            this.FILL.SuspendLayout();
-            this.SuspendLayout();
+            COPY = new ReaLTaiizor.Controls.MaterialButton();
+            REMOVE = new ReaLTaiizor.Controls.MaterialButton();
+            FILL = new System.Windows.Forms.Panel();
+            TIMEDATE = new ReaLTaiizor.Controls.PoisonLabel();
+            PASSWORD = new ReaLTaiizor.Controls.PoisonLabel();
+            FILL.SuspendLayout();
+            SuspendLayout();
             // 
             // COPY
             // 
-            this.COPY.AutoSize = false;
-            this.COPY.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.COPY.BackColor = System.Drawing.Color.Transparent;
-            this.COPY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.COPY.Depth = 0;
-            this.COPY.Dock = System.Windows.Forms.DockStyle.Right;
-            this.COPY.DrawShadows = false;
-            this.COPY.HighEmphasis = true;
-            this.COPY.Icon = global::Nerator.Properties.Resources.Copy;
-            this.COPY.Location = new System.Drawing.Point(224, 0);
-            this.COPY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.COPY.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.COPY.Name = "COPY";
-            this.COPY.Size = new System.Drawing.Size(44, 36);
-            this.COPY.TabIndex = 3;
-            this.COPY.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
-            this.COPY.UseAccentColor = false;
-            this.COPY.UseVisualStyleBackColor = false;
-            this.COPY.Click += new System.EventHandler(this.COPY_Click);
+            COPY.AutoSize = false;
+            COPY.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            COPY.BackColor = System.Drawing.Color.Transparent;
+            COPY.Cursor = System.Windows.Forms.Cursors.Hand;
+            COPY.Depth = 0;
+            COPY.Dock = System.Windows.Forms.DockStyle.Right;
+            COPY.DrawShadows = false;
+            COPY.HighEmphasis = true;
+            COPY.Icon = global::Nerator.Properties.Resources.Copy;
+            COPY.Location = new System.Drawing.Point(224, 0);
+            COPY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            COPY.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            COPY.Name = "COPY";
+            COPY.Size = new System.Drawing.Size(44, 36);
+            COPY.TabIndex = 3;
+            COPY.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
+            COPY.UseAccentColor = false;
+            COPY.UseVisualStyleBackColor = false;
+            COPY.Click += new System.EventHandler(COPY_Click);
             // 
             // REMOVE
             // 
-            this.REMOVE.AutoSize = false;
-            this.REMOVE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.REMOVE.BackColor = System.Drawing.Color.Transparent;
-            this.REMOVE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.REMOVE.Depth = 0;
-            this.REMOVE.Dock = System.Windows.Forms.DockStyle.Right;
-            this.REMOVE.DrawShadows = false;
-            this.REMOVE.HighEmphasis = true;
-            this.REMOVE.Icon = global::Nerator.Properties.Resources.Delete;
-            this.REMOVE.Location = new System.Drawing.Point(268, 0);
-            this.REMOVE.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.REMOVE.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.REMOVE.Name = "REMOVE";
-            this.REMOVE.Size = new System.Drawing.Size(44, 36);
-            this.REMOVE.TabIndex = 4;
-            this.REMOVE.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
-            this.REMOVE.UseAccentColor = true;
-            this.REMOVE.UseVisualStyleBackColor = false;
-            this.REMOVE.Click += new System.EventHandler(this.REMOVE_Click);
+            REMOVE.AutoSize = false;
+            REMOVE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            REMOVE.BackColor = System.Drawing.Color.Transparent;
+            REMOVE.Cursor = System.Windows.Forms.Cursors.Hand;
+            REMOVE.Depth = 0;
+            REMOVE.Dock = System.Windows.Forms.DockStyle.Right;
+            REMOVE.DrawShadows = false;
+            REMOVE.HighEmphasis = true;
+            REMOVE.Icon = global::Nerator.Properties.Resources.Delete;
+            REMOVE.Location = new System.Drawing.Point(268, 0);
+            REMOVE.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            REMOVE.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            REMOVE.Name = "REMOVE";
+            REMOVE.Size = new System.Drawing.Size(44, 36);
+            REMOVE.TabIndex = 4;
+            REMOVE.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
+            REMOVE.UseAccentColor = true;
+            REMOVE.UseVisualStyleBackColor = false;
+            REMOVE.Click += new System.EventHandler(REMOVE_Click);
             // 
             // FILL
             // 
-            this.FILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.FILL.Controls.Add(this.PASSWORD);
-            this.FILL.Controls.Add(this.TIMEDATE);
-            this.FILL.Controls.Add(this.COPY);
-            this.FILL.Controls.Add(this.REMOVE);
-            this.FILL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FILL.Location = new System.Drawing.Point(0, 1);
-            this.FILL.Margin = new System.Windows.Forms.Padding(0);
-            this.FILL.Name = "FILL";
-            this.FILL.Size = new System.Drawing.Size(312, 36);
-            this.FILL.TabIndex = 0;
+            FILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            FILL.Controls.Add(PASSWORD);
+            FILL.Controls.Add(TIMEDATE);
+            FILL.Controls.Add(COPY);
+            FILL.Controls.Add(REMOVE);
+            FILL.Dock = System.Windows.Forms.DockStyle.Fill;
+            FILL.Location = new System.Drawing.Point(0, 1);
+            FILL.Margin = new System.Windows.Forms.Padding(0);
+            FILL.Name = "FILL";
+            FILL.Size = new System.Drawing.Size(312, 36);
+            FILL.TabIndex = 0;
             // 
             // TIMEDATE
             // 
-            this.TIMEDATE.BackColor = System.Drawing.Color.Transparent;
-            this.TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TIMEDATE.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Small;
-            this.TIMEDATE.FontWeight = ReaLTaiizor.Extension.Poison.PoisonLabelWeight.Bold;
-            this.TIMEDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TIMEDATE.Location = new System.Drawing.Point(0, 0);
-            this.TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.TIMEDATE.Name = "TIMEDATE";
-            this.TIMEDATE.Size = new System.Drawing.Size(72, 36);
-            this.TIMEDATE.TabIndex = 5;
-            this.TIMEDATE.Text = "00:00:00\r\n00.00.0000";
-            this.TIMEDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TIMEDATE.UseCustomBackColor = true;
-            this.TIMEDATE.UseCustomForeColor = true;
+            TIMEDATE.BackColor = System.Drawing.Color.Transparent;
+            TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
+            TIMEDATE.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Small;
+            TIMEDATE.FontWeight = ReaLTaiizor.Extension.Poison.PoisonLabelWeight.Bold;
+            TIMEDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            TIMEDATE.Location = new System.Drawing.Point(0, 0);
+            TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            TIMEDATE.Name = "TIMEDATE";
+            TIMEDATE.Size = new System.Drawing.Size(72, 36);
+            TIMEDATE.TabIndex = 5;
+            TIMEDATE.Text = "00:00:00\r\n00.00.0000";
+            TIMEDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            TIMEDATE.UseCustomBackColor = true;
+            TIMEDATE.UseCustomForeColor = true;
             // 
             // PASSWORD
             // 
-            this.PASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            PASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PASSWORD.BackColor = System.Drawing.Color.Transparent;
-            this.PASSWORD.FontWeight = ReaLTaiizor.Extension.Poison.PoisonLabelWeight.Bold;
-            this.PASSWORD.ForeColor = System.Drawing.Color.SeaGreen;
-            this.PASSWORD.Location = new System.Drawing.Point(74, 0);
-            this.PASSWORD.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.PASSWORD.Name = "PASSWORD";
-            this.PASSWORD.Size = new System.Drawing.Size(148, 36);
-            this.PASSWORD.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
-            this.PASSWORD.TabIndex = 6;
-            this.PASSWORD.Text = "PASSWORD PASSWORD PASSWORD PASSWORD";
-            this.PASSWORD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PASSWORD.UseCustomBackColor = true;
-            this.PASSWORD.UseCustomForeColor = true;
+            PASSWORD.BackColor = System.Drawing.Color.Transparent;
+            PASSWORD.FontWeight = ReaLTaiizor.Extension.Poison.PoisonLabelWeight.Bold;
+            PASSWORD.ForeColor = System.Drawing.Color.SeaGreen;
+            PASSWORD.Location = new System.Drawing.Point(74, 0);
+            PASSWORD.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            PASSWORD.Name = "PASSWORD";
+            PASSWORD.Size = new System.Drawing.Size(148, 36);
+            PASSWORD.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
+            PASSWORD.TabIndex = 6;
+            PASSWORD.Text = "PASSWORD PASSWORD PASSWORD PASSWORD";
+            PASSWORD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            PASSWORD.UseCustomBackColor = true;
+            PASSWORD.UseCustomForeColor = true;
             // 
             // PWD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.FILL);
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.MaximumSize = new System.Drawing.Size(329, 38);
-            this.MinimumSize = new System.Drawing.Size(312, 38);
-            this.Name = "PWD";
-            this.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.Size = new System.Drawing.Size(312, 38);
-            this.FILL.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(FILL);
+            Margin = new System.Windows.Forms.Padding(0);
+            MaximumSize = new System.Drawing.Size(329, 38);
+            MinimumSize = new System.Drawing.Size(312, 38);
+            Name = "PWD";
+            Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            Size = new System.Drawing.Size(312, 38);
+            FILL.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

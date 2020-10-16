@@ -155,8 +155,8 @@ namespace Nerator.UI
             // 
             // DARK
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             ClientSize = new System.Drawing.Size(447, 276);
             Controls.Add(foreverForm1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

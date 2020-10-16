@@ -29,300 +29,300 @@ namespace Nerator.UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LIGHT));
-            this.TELE = new ReaLTaiizor.Controls.LabelEdit();
-            this.LOPB = new System.Windows.Forms.PictureBox();
-            this.PWDTB = new ReaLTaiizor.Controls.BigTextBox();
-            this.PLPB = new ReaLTaiizor.Controls.PoisonProgressBar();
-            this.SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
-            this.CEB = new ReaLTaiizor.Controls.MaterialButton();
-            this.CYB = new ReaLTaiizor.Controls.MaterialButton();
-            this.MTC = new ReaLTaiizor.Controls.MaterialTabControl();
-            this.Generate = new System.Windows.Forms.TabPage();
-            this.HYS = new ReaLTaiizor.Controls.MaterialSwitch();
-            this.WRPB = new System.Windows.Forms.PictureBox();
-            this.History = new System.Windows.Forms.TabPage();
-            this.HYP = new System.Windows.Forms.Panel();
-            this.Setting = new System.Windows.Forms.TabPage();
-            this.MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
-            this.STATUST = new System.Windows.Forms.Timer(this.components);
-            this.STATUSMT = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.LOPB)).BeginInit();
-            this.MTC.SuspendLayout();
-            this.Generate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WRPB)).BeginInit();
-            this.History.SuspendLayout();
-            this.SuspendLayout();
+            TELE = new ReaLTaiizor.Controls.LabelEdit();
+            LOPB = new System.Windows.Forms.PictureBox();
+            PWDTB = new ReaLTaiizor.Controls.BigTextBox();
+            PLPB = new ReaLTaiizor.Controls.PoisonProgressBar();
+            SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
+            CEB = new ReaLTaiizor.Controls.MaterialButton();
+            CYB = new ReaLTaiizor.Controls.MaterialButton();
+            MTC = new ReaLTaiizor.Controls.MaterialTabControl();
+            Generate = new System.Windows.Forms.TabPage();
+            HYS = new ReaLTaiizor.Controls.MaterialSwitch();
+            WRPB = new System.Windows.Forms.PictureBox();
+            History = new System.Windows.Forms.TabPage();
+            HYP = new System.Windows.Forms.Panel();
+            Setting = new System.Windows.Forms.TabPage();
+            MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
+            STATUST = new System.Windows.Forms.Timer(components);
+            STATUSMT = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)(LOPB)).BeginInit();
+            MTC.SuspendLayout();
+            Generate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(WRPB)).BeginInit();
+            History.SuspendLayout();
+            SuspendLayout();
             // 
             // TELE
             // 
-            this.TELE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            TELE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TELE.BackColor = System.Drawing.Color.Transparent;
-            this.TELE.Enabled = false;
-            this.TELE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.TELE.ForeColor = System.Drawing.Color.White;
-            this.TELE.Location = new System.Drawing.Point(0, 0);
-            this.TELE.Name = "TELE";
-            this.TELE.Size = new System.Drawing.Size(359, 25);
-            this.TELE.TabIndex = 1;
-            this.TELE.Text = "Nerator";
-            this.TELE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            TELE.BackColor = System.Drawing.Color.Transparent;
+            TELE.Enabled = false;
+            TELE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            TELE.ForeColor = System.Drawing.Color.White;
+            TELE.Location = new System.Drawing.Point(0, 0);
+            TELE.Name = "TELE";
+            TELE.Size = new System.Drawing.Size(359, 25);
+            TELE.TabIndex = 1;
+            TELE.Text = "Nerator";
+            TELE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LOPB
             // 
-            this.LOPB.BackColor = System.Drawing.Color.Transparent;
-            this.LOPB.Enabled = false;
-            this.LOPB.Image = global::Nerator.Properties.Resources.ShowPassword;
-            this.LOPB.Location = new System.Drawing.Point(0, 0);
-            this.LOPB.Name = "LOPB";
-            this.LOPB.Size = new System.Drawing.Size(25, 24);
-            this.LOPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LOPB.TabIndex = 3;
-            this.LOPB.TabStop = false;
+            LOPB.BackColor = System.Drawing.Color.Transparent;
+            LOPB.Enabled = false;
+            LOPB.Image = global::Nerator.Properties.Resources.ShowPassword;
+            LOPB.Location = new System.Drawing.Point(0, 0);
+            LOPB.Name = "LOPB";
+            LOPB.Size = new System.Drawing.Size(25, 24);
+            LOPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            LOPB.TabIndex = 3;
+            LOPB.TabStop = false;
             // 
             // PWDTB
             // 
-            this.PWDTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            PWDTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PWDTB.BackColor = System.Drawing.Color.White;
-            this.PWDTB.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.PWDTB.ForeColor = System.Drawing.Color.DimGray;
-            this.PWDTB.Image = global::Nerator.Properties.Resources.PasteSpecial;
-            this.PWDTB.Location = new System.Drawing.Point(6, 106);
-            this.PWDTB.MaxLength = 50;
-            this.PWDTB.Multiline = false;
-            this.PWDTB.Name = "PWDTB";
-            this.PWDTB.ReadOnly = false;
-            this.PWDTB.Size = new System.Drawing.Size(315, 41);
-            this.PWDTB.TabIndex = 6;
-            this.PWDTB.Text = "Nerator";
-            this.PWDTB.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.PWDTB.UseSystemPasswordChar = false;
+            PWDTB.BackColor = System.Drawing.Color.White;
+            PWDTB.Font = new System.Drawing.Font("Tahoma", 11F);
+            PWDTB.ForeColor = System.Drawing.Color.DimGray;
+            PWDTB.Image = global::Nerator.Properties.Resources.PasteSpecial;
+            PWDTB.Location = new System.Drawing.Point(6, 106);
+            PWDTB.MaxLength = 50;
+            PWDTB.Multiline = false;
+            PWDTB.Name = "PWDTB";
+            PWDTB.ReadOnly = false;
+            PWDTB.Size = new System.Drawing.Size(315, 41);
+            PWDTB.TabIndex = 6;
+            PWDTB.Text = "Nerator";
+            PWDTB.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            PWDTB.UseSystemPasswordChar = false;
             // 
             // PLPB
             // 
-            this.PLPB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            PLPB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PLPB.Location = new System.Drawing.Point(10, 146);
-            this.PLPB.Name = "PLPB";
-            this.PLPB.Size = new System.Drawing.Size(307, 5);
-            this.PLPB.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
-            this.PLPB.TabIndex = 12;
-            this.PLPB.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
-            this.PLPB.Value = 50;
+            PLPB.Location = new System.Drawing.Point(10, 146);
+            PLPB.Name = "PLPB";
+            PLPB.Size = new System.Drawing.Size(307, 5);
+            PLPB.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
+            PLPB.TabIndex = 12;
+            PLPB.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
+            PLPB.Value = 50;
             // 
             // SSBR
             // 
-            this.SSBR.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.SSBR.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SSBR.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.SSBR.ForeColor = System.Drawing.Color.White;
-            this.SSBR.Location = new System.Drawing.Point(0, 337);
-            this.SSBR.Name = "SSBR";
-            this.SSBR.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.SSBR.ShowTimeDate = true;
-            this.SSBR.Size = new System.Drawing.Size(359, 22);
-            this.SSBR.TabIndex = 13;
-            this.SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
-            this.SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SSBR.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.SSBR.TimeFormat = "HH:mm:ss";
+            SSBR.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            SSBR.Dock = System.Windows.Forms.DockStyle.Bottom;
+            SSBR.Font = new System.Drawing.Font("Segoe UI", 8F);
+            SSBR.ForeColor = System.Drawing.Color.White;
+            SSBR.Location = new System.Drawing.Point(0, 337);
+            SSBR.Name = "SSBR";
+            SSBR.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            SSBR.ShowTimeDate = true;
+            SSBR.Size = new System.Drawing.Size(359, 22);
+            SSBR.TabIndex = 13;
+            SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
+            SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            SSBR.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            SSBR.TimeFormat = "HH:mm:ss";
             // 
             // CEB
             // 
-            this.CEB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.CEB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.CEB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CEB.Depth = 0;
-            this.CEB.DrawShadows = true;
-            this.CEB.HighEmphasis = true;
-            this.CEB.Icon = global::Nerator.Properties.Resources.QuillInk;
-            this.CEB.Location = new System.Drawing.Point(6, 156);
-            this.CEB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.CEB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.CEB.Name = "CEB";
-            this.CEB.Size = new System.Drawing.Size(104, 36);
-            this.CEB.TabIndex = 14;
-            this.CEB.Text = "CREATE";
-            this.CEB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.CEB.UseAccentColor = false;
-            this.CEB.UseVisualStyleBackColor = true;
-            this.CEB.Click += new System.EventHandler(this.CEB_Click);
+            CEB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            CEB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            CEB.Cursor = System.Windows.Forms.Cursors.Hand;
+            CEB.Depth = 0;
+            CEB.DrawShadows = true;
+            CEB.HighEmphasis = true;
+            CEB.Icon = global::Nerator.Properties.Resources.QuillInk;
+            CEB.Location = new System.Drawing.Point(6, 156);
+            CEB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            CEB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            CEB.Name = "CEB";
+            CEB.Size = new System.Drawing.Size(104, 36);
+            CEB.TabIndex = 14;
+            CEB.Text = "CREATE";
+            CEB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            CEB.UseAccentColor = false;
+            CEB.UseVisualStyleBackColor = true;
+            CEB.Click += new System.EventHandler(CEB_Click);
             // 
             // CYB
             // 
-            this.CYB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CYB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.CYB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CYB.Depth = 0;
-            this.CYB.DrawShadows = true;
-            this.CYB.HighEmphasis = true;
-            this.CYB.Icon = global::Nerator.Properties.Resources.CopyClipboard;
-            this.CYB.Location = new System.Drawing.Point(234, 156);
-            this.CYB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.CYB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.CYB.Name = "CYB";
-            this.CYB.Size = new System.Drawing.Size(87, 36);
-            this.CYB.TabIndex = 15;
-            this.CYB.Text = "COPY";
-            this.CYB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.CYB.UseAccentColor = false;
-            this.CYB.UseVisualStyleBackColor = true;
-            this.CYB.Click += new System.EventHandler(this.CYB_Click);
+            CYB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            CYB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            CYB.Cursor = System.Windows.Forms.Cursors.Hand;
+            CYB.Depth = 0;
+            CYB.DrawShadows = true;
+            CYB.HighEmphasis = true;
+            CYB.Icon = global::Nerator.Properties.Resources.CopyClipboard;
+            CYB.Location = new System.Drawing.Point(234, 156);
+            CYB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            CYB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            CYB.Name = "CYB";
+            CYB.Size = new System.Drawing.Size(87, 36);
+            CYB.TabIndex = 15;
+            CYB.Text = "COPY";
+            CYB.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            CYB.UseAccentColor = false;
+            CYB.UseVisualStyleBackColor = true;
+            CYB.Click += new System.EventHandler(CYB_Click);
             // 
             // MTC
             // 
-            this.MTC.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.MTC.Controls.Add(this.Generate);
-            this.MTC.Controls.Add(this.History);
-            this.MTC.Controls.Add(this.Setting);
-            this.MTC.Depth = 0;
-            this.MTC.ItemSize = new System.Drawing.Size(44, 18);
-            this.MTC.Location = new System.Drawing.Point(12, 99);
-            this.MTC.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.MTC.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.MTC.Multiline = true;
-            this.MTC.Name = "MTC";
-            this.MTC.Padding = new System.Drawing.Point(0, 0);
-            this.MTC.SelectedIndex = 0;
-            this.MTC.Size = new System.Drawing.Size(335, 227);
-            this.MTC.TabIndex = 16;
+            MTC.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            MTC.Controls.Add(Generate);
+            MTC.Controls.Add(History);
+            MTC.Controls.Add(Setting);
+            MTC.Depth = 0;
+            MTC.ItemSize = new System.Drawing.Size(44, 18);
+            MTC.Location = new System.Drawing.Point(12, 99);
+            MTC.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            MTC.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            MTC.Multiline = true;
+            MTC.Name = "MTC";
+            MTC.Padding = new System.Drawing.Point(0, 0);
+            MTC.SelectedIndex = 0;
+            MTC.Size = new System.Drawing.Size(335, 227);
+            MTC.TabIndex = 16;
             // 
             // Generate
             // 
-            this.Generate.BackColor = System.Drawing.SystemColors.Control;
-            this.Generate.Controls.Add(this.HYS);
-            this.Generate.Controls.Add(this.CEB);
-            this.Generate.Controls.Add(this.CYB);
-            this.Generate.Controls.Add(this.PWDTB);
-            this.Generate.Controls.Add(this.PLPB);
-            this.Generate.Controls.Add(this.WRPB);
-            this.Generate.Location = new System.Drawing.Point(4, 4);
-            this.Generate.Name = "Generate";
-            this.Generate.Padding = new System.Windows.Forms.Padding(3);
-            this.Generate.Size = new System.Drawing.Size(327, 201);
-            this.Generate.TabIndex = 1;
-            this.Generate.Text = "Generate";
+            Generate.BackColor = System.Drawing.SystemColors.Control;
+            Generate.Controls.Add(HYS);
+            Generate.Controls.Add(CEB);
+            Generate.Controls.Add(CYB);
+            Generate.Controls.Add(PWDTB);
+            Generate.Controls.Add(PLPB);
+            Generate.Controls.Add(WRPB);
+            Generate.Location = new System.Drawing.Point(4, 4);
+            Generate.Name = "Generate";
+            Generate.Padding = new System.Windows.Forms.Padding(3);
+            Generate.Size = new System.Drawing.Size(327, 201);
+            Generate.TabIndex = 1;
+            Generate.Text = "Generate";
             // 
             // HYS
             // 
-            this.HYS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.HYS.AutoSize = true;
-            this.HYS.Checked = true;
-            this.HYS.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.HYS.Depth = 0;
-            this.HYS.Location = new System.Drawing.Point(117, 157);
-            this.HYS.Margin = new System.Windows.Forms.Padding(0);
-            this.HYS.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.HYS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.HYS.Name = "HYS";
-            this.HYS.Ripple = true;
-            this.HYS.Size = new System.Drawing.Size(108, 37);
-            this.HYS.TabIndex = 16;
-            this.HYS.Text = "History";
-            this.HYS.UseAccentColor = true;
-            this.HYS.UseVisualStyleBackColor = true;
+            HYS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            HYS.AutoSize = true;
+            HYS.Checked = true;
+            HYS.CheckState = System.Windows.Forms.CheckState.Checked;
+            HYS.Depth = 0;
+            HYS.Location = new System.Drawing.Point(117, 157);
+            HYS.Margin = new System.Windows.Forms.Padding(0);
+            HYS.MouseLocation = new System.Drawing.Point(-1, -1);
+            HYS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            HYS.Name = "HYS";
+            HYS.Ripple = true;
+            HYS.Size = new System.Drawing.Size(108, 37);
+            HYS.TabIndex = 16;
+            HYS.Text = "History";
+            HYS.UseAccentColor = true;
+            HYS.UseVisualStyleBackColor = true;
             // 
             // WRPB
             // 
-            this.WRPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            WRPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.WRPB.BackColor = System.Drawing.Color.Transparent;
-            this.WRPB.Image = global::Nerator.Properties.Resources.WaitRabbit;
-            this.WRPB.Location = new System.Drawing.Point(0, 0);
-            this.WRPB.Margin = new System.Windows.Forms.Padding(0);
-            this.WRPB.Name = "WRPB";
-            this.WRPB.Size = new System.Drawing.Size(327, 103);
-            this.WRPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.WRPB.TabIndex = 17;
-            this.WRPB.TabStop = false;
+            WRPB.BackColor = System.Drawing.Color.Transparent;
+            WRPB.Image = global::Nerator.Properties.Resources.WaitRabbit;
+            WRPB.Location = new System.Drawing.Point(0, 0);
+            WRPB.Margin = new System.Windows.Forms.Padding(0);
+            WRPB.Name = "WRPB";
+            WRPB.Size = new System.Drawing.Size(327, 103);
+            WRPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            WRPB.TabIndex = 17;
+            WRPB.TabStop = false;
             // 
             // History
             // 
-            this.History.BackColor = System.Drawing.SystemColors.Control;
-            this.History.Controls.Add(this.HYP);
-            this.History.Location = new System.Drawing.Point(4, 4);
-            this.History.Name = "History";
-            this.History.Padding = new System.Windows.Forms.Padding(3);
-            this.History.Size = new System.Drawing.Size(327, 201);
-            this.History.TabIndex = 0;
-            this.History.Text = "History";
+            History.BackColor = System.Drawing.SystemColors.Control;
+            History.Controls.Add(HYP);
+            History.Location = new System.Drawing.Point(4, 4);
+            History.Name = "History";
+            History.Padding = new System.Windows.Forms.Padding(3);
+            History.Size = new System.Drawing.Size(327, 201);
+            History.TabIndex = 0;
+            History.Text = "History";
             // 
             // HYP
             // 
-            this.HYP.AutoScroll = true;
-            this.HYP.BackColor = System.Drawing.Color.Transparent;
-            this.HYP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HYP.Location = new System.Drawing.Point(3, 3);
-            this.HYP.Margin = new System.Windows.Forms.Padding(0);
-            this.HYP.Name = "HYP";
-            this.HYP.Size = new System.Drawing.Size(321, 195);
-            this.HYP.TabIndex = 0;
+            HYP.AutoScroll = true;
+            HYP.BackColor = System.Drawing.Color.Transparent;
+            HYP.Dock = System.Windows.Forms.DockStyle.Fill;
+            HYP.Location = new System.Drawing.Point(3, 3);
+            HYP.Margin = new System.Windows.Forms.Padding(0);
+            HYP.Name = "HYP";
+            HYP.Size = new System.Drawing.Size(321, 195);
+            HYP.TabIndex = 0;
             // 
             // Setting
             // 
-            this.Setting.BackColor = System.Drawing.SystemColors.Control;
-            this.Setting.Location = new System.Drawing.Point(4, 4);
-            this.Setting.Name = "Setting";
-            this.Setting.Padding = new System.Windows.Forms.Padding(3);
-            this.Setting.Size = new System.Drawing.Size(327, 201);
-            this.Setting.TabIndex = 2;
-            this.Setting.Text = "Setting";
+            Setting.BackColor = System.Drawing.SystemColors.Control;
+            Setting.Location = new System.Drawing.Point(4, 4);
+            Setting.Name = "Setting";
+            Setting.Padding = new System.Windows.Forms.Padding(3);
+            Setting.Size = new System.Drawing.Size(327, 201);
+            Setting.TabIndex = 2;
+            Setting.Text = "Setting";
             // 
             // MTS
             // 
-            this.MTS.BaseTabControl = this.MTC;
-            this.MTS.Depth = 0;
-            this.MTS.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.MTS.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
-            this.MTS.Location = new System.Drawing.Point(12, 76);
-            this.MTS.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.MTS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.MTS.Name = "MTS";
-            this.MTS.Size = new System.Drawing.Size(335, 23);
-            this.MTS.TabIndex = 17;
-            this.MTS.Text = "materialTabSelector1";
-            this.MTS.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
+            MTS.BaseTabControl = MTC;
+            MTS.Depth = 0;
+            MTS.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            MTS.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
+            MTS.Location = new System.Drawing.Point(12, 76);
+            MTS.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            MTS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            MTS.Name = "MTS";
+            MTS.Size = new System.Drawing.Size(335, 23);
+            MTS.TabIndex = 17;
+            MTS.Text = "materialTabSelector1";
+            MTS.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
             // 
             // STATUST
             // 
-            this.STATUST.Enabled = true;
-            this.STATUST.Interval = 1000;
-            this.STATUST.Tick += new System.EventHandler(this.STATUST_Tick);
+            STATUST.Enabled = true;
+            STATUST.Interval = 1000;
+            STATUST.Tick += new System.EventHandler(STATUST_Tick);
             // 
             // STATUSMT
             // 
-            this.STATUSMT.Enabled = true;
-            this.STATUSMT.Interval = 50;
-            this.STATUSMT.Tick += new System.EventHandler(this.STATUSMT_Tick);
+            STATUSMT.Enabled = true;
+            STATUSMT.Interval = 50;
+            STATUSMT.Tick += new System.EventHandler(STATUSMT_Tick);
             // 
             // LIGHT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(359, 359);
-            this.Controls.Add(this.SSBR);
-            this.Controls.Add(this.MTS);
-            this.Controls.Add(this.MTC);
-            this.Controls.Add(this.LOPB);
-            this.Controls.Add(this.TELE);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "LIGHT";
-            this.Sizable = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "New Generation Password Generator";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LIGHT_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.LOPB)).EndInit();
-            this.MTC.ResumeLayout(false);
-            this.Generate.ResumeLayout(false);
-            this.Generate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WRPB)).EndInit();
-            this.History.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            ClientSize = new System.Drawing.Size(359, 359);
+            Controls.Add(SSBR);
+            Controls.Add(MTS);
+            Controls.Add(MTC);
+            Controls.Add(LOPB);
+            Controls.Add(TELE);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            Name = "LIGHT";
+            Sizable = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "New Generation Password Generator";
+            FormClosed += new System.Windows.Forms.FormClosedEventHandler(LIGHT_FormClosed);
+            ((System.ComponentModel.ISupportInitialize)(LOPB)).EndInit();
+            MTC.ResumeLayout(false);
+            Generate.ResumeLayout(false);
+            Generate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(WRPB)).EndInit();
+            History.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 
