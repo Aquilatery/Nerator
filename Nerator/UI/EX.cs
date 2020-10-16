@@ -86,7 +86,10 @@ namespace Nerator.UI
         {
             Expand.Checked = EXExpandMode;
             if (Expand.Checked)
+            {
                 Expand_CheckedChanged(null);
+            }
+
             PLength.Value = PasswordLenght;
             TopMost_T.Checked = TopMostMode;
             switch (AlphabeticMode)

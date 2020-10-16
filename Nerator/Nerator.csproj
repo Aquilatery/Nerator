@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="CS\Engine.cs" />
     <Compile Include="CS\Generator.cs" />
+    <Compile Include="CS\History.cs" />
     <Compile Include="CS\Setting.cs" />
     <Compile Include="CS\Status.cs" />
     <Compile Include="CS\Variable.cs" />

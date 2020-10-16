@@ -2,14 +2,15 @@
 using Conforyon;
 using Nerator.CS;
 using System.Windows.Forms;
+using static Nerator.CS.History;
 
 namespace Nerator.UC.DARK.HISTORY
 {
     public partial class PWD : UserControl
     {
-        bool CheckRemove = true;
+        private bool CheckRemove = true;
 
-        public PWD(string Password = null, string Time = null, string Date = null, bool Double = true)
+        public PWD(string Password = null, string Time = null, string Date = null, bool Check = true)
         {
             if (!string.IsNullOrEmpty(Password) && !string.IsNullOrWhiteSpace(Password) && !string.IsNullOrEmpty(Time) && !string.IsNullOrWhiteSpace(Time) && !string.IsNullOrEmpty(Date) && !string.IsNullOrWhiteSpace(Date))
             {
@@ -25,19 +26,28 @@ namespace Nerator.UC.DARK.HISTORY
 
                 TIMEDATE.Text = Time + "\n" + Date;
 
-                CheckRemove = Double;
+                CheckRemove = Check;
             }
             else
+            {
                 Dispose();
+            }
         }
 
         private void COPY_Click(object sender, EventArgs e)
         {
-            ClipBoard.CopyText(PASSWORD.Text, true);
-            if (PASSWORD.Text == Clipboard.GetText())
-                Status.Message = PASSWORD.Text + " geçmişten başarıyla kopyalandı!";
-            else
-                Status.Message = PASSWORD.Text + " geçmişten kopyalama başarısız!";
+            if (Clipboard.GetText() != PASSWORD.Text)
+            {
+                ClipBoard.CopyText(PASSWORD.Text, true);
+                if (PASSWORD.Text == Clipboard.GetText())
+                {
+                    Status.Message = PASSWORD.Text + " geçmişten başarıyla kopyalandı!";
+                }
+                else
+                {
+                    Status.Message = PASSWORD.Text + " geçmişten kopyalama başarısız!";
+                }
+            }
         }
 
         private void REMOVE_Click(object sender, EventArgs e)
@@ -45,12 +55,17 @@ namespace Nerator.UC.DARK.HISTORY
             if (CheckRemove)
             {
                 CheckRemove = false;
-                Status.Message = "Silmek istiyorsanız bir kere daha tıklayın!";
+                Status.Message = "Geçmişten silmek istiyorsanız tekrar tıklayın!";
             }
             else
             {
-                Status.Message = PASSWORD.Text + " geçmişten başarıyla silindi!";
-                Dispose(); //Hide - Visible - etc.
+                if (Remove(HistoryFileName, PASSWORD.Text))
+                {
+                    Status.Message = PASSWORD.Text + " geçmişten başarıyla silindi!";
+                    Dispose(); //Hide - Visible - etc.
+                }
+                else
+                    Status.Message = PASSWORD.Text + " geçmişten silinemedi!";
             }
         }
     }

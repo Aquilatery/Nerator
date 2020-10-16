@@ -5,21 +5,12 @@ namespace Nerator.CS
     public static class Status
     {
         private const string _DefaultStatus = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
-        public static string DefaultStatus
-        {
-            get
-            {
-                return _DefaultStatus;
-            }
-        }
+        public static string DefaultStatus => _DefaultStatus;
 
         private static string _Message = _DefaultStatus;
         public static string Message
         {
-            get
-            {
-                return _Message;
-            }
+            get => _Message;
             set
             {
                 _Message = value;
@@ -30,14 +21,8 @@ namespace Nerator.CS
         private static long _ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
         public static long ChangedStatus
         {
-            get
-            {
-                return _ChangedStatus;
-            }
-            set
-            {
-                _ChangedStatus = value;
-            }
+            get => _ChangedStatus;
+            set => _ChangedStatus = value;
         }
     }
 }

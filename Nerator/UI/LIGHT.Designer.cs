@@ -38,19 +38,19 @@ namespace Nerator.UI
             this.SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
             this.CEB = new ReaLTaiizor.Controls.MaterialButton();
             this.CYB = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialTabControl1 = new ReaLTaiizor.Controls.MaterialTabControl();
-            this.History = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.MTC = new ReaLTaiizor.Controls.MaterialTabControl();
             this.Generate = new System.Windows.Forms.TabPage();
             this.HYS = new ReaLTaiizor.Controls.MaterialSwitch();
+            this.History = new System.Windows.Forms.TabPage();
+            this.HYP = new System.Windows.Forms.Panel();
             this.Setting = new System.Windows.Forms.TabPage();
-            this.materialTabSelector1 = new ReaLTaiizor.Controls.MaterialTabSelector();
+            this.MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
             this.STATUST = new System.Windows.Forms.Timer(this.components);
             this.STATUSMT = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.materialTabControl1.SuspendLayout();
-            this.History.SuspendLayout();
+            this.MTC.SuspendLayout();
             this.Generate.SuspendLayout();
+            this.History.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelEdit1
@@ -168,45 +168,24 @@ namespace Nerator.UI
             this.CYB.UseVisualStyleBackColor = true;
             this.CYB.Click += new System.EventHandler(this.CYB_Click);
             // 
-            // materialTabControl1
+            // MTC
             // 
-            this.materialTabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.materialTabControl1.Controls.Add(this.Generate);
-            this.materialTabControl1.Controls.Add(this.History);
-            this.materialTabControl1.Controls.Add(this.Setting);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.ItemSize = new System.Drawing.Size(44, 18);
-            this.materialTabControl1.Location = new System.Drawing.Point(12, 99);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.materialTabControl1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialTabControl1.Multiline = true;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.Padding = new System.Drawing.Point(0, 0);
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(335, 227);
-            this.materialTabControl1.TabIndex = 16;
-            // 
-            // History
-            // 
-            this.History.BackColor = System.Drawing.SystemColors.Control;
-            this.History.Controls.Add(this.panel1);
-            this.History.Location = new System.Drawing.Point(4, 4);
-            this.History.Name = "History";
-            this.History.Padding = new System.Windows.Forms.Padding(3);
-            this.History.Size = new System.Drawing.Size(327, 201);
-            this.History.TabIndex = 0;
-            this.History.Text = "History";
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(321, 195);
-            this.panel1.TabIndex = 0;
+            this.MTC.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.MTC.Controls.Add(this.Generate);
+            this.MTC.Controls.Add(this.History);
+            this.MTC.Controls.Add(this.Setting);
+            this.MTC.Depth = 0;
+            this.MTC.ItemSize = new System.Drawing.Size(44, 18);
+            this.MTC.Location = new System.Drawing.Point(12, 99);
+            this.MTC.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.MTC.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.MTC.Multiline = true;
+            this.MTC.Name = "MTC";
+            this.MTC.Padding = new System.Drawing.Point(0, 0);
+            this.MTC.SelectedIndex = 0;
+            this.MTC.Size = new System.Drawing.Size(335, 227);
+            this.MTC.TabIndex = 16;
+            this.MTC.SelectedIndexChanged += new System.EventHandler(this.MTC_SelectedIndexChanged);
             // 
             // Generate
             // 
@@ -242,6 +221,28 @@ namespace Nerator.UI
             this.HYS.UseAccentColor = true;
             this.HYS.UseVisualStyleBackColor = true;
             // 
+            // History
+            // 
+            this.History.BackColor = System.Drawing.SystemColors.Control;
+            this.History.Controls.Add(this.HYP);
+            this.History.Location = new System.Drawing.Point(4, 4);
+            this.History.Name = "History";
+            this.History.Padding = new System.Windows.Forms.Padding(3);
+            this.History.Size = new System.Drawing.Size(327, 201);
+            this.History.TabIndex = 0;
+            this.History.Text = "History";
+            // 
+            // HYP
+            // 
+            this.HYP.AutoScroll = true;
+            this.HYP.BackColor = System.Drawing.Color.Transparent;
+            this.HYP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HYP.Location = new System.Drawing.Point(3, 3);
+            this.HYP.Margin = new System.Windows.Forms.Padding(0);
+            this.HYP.Name = "HYP";
+            this.HYP.Size = new System.Drawing.Size(321, 195);
+            this.HYP.TabIndex = 0;
+            // 
             // Setting
             // 
             this.Setting.BackColor = System.Drawing.SystemColors.Control;
@@ -252,20 +253,20 @@ namespace Nerator.UI
             this.Setting.TabIndex = 2;
             this.Setting.Text = "Setting";
             // 
-            // materialTabSelector1
+            // MTS
             // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTabSelector1.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
-            this.materialTabSelector1.Location = new System.Drawing.Point(12, 76);
-            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.materialTabSelector1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(335, 23);
-            this.materialTabSelector1.TabIndex = 17;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            this.materialTabSelector1.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
+            this.MTS.BaseTabControl = this.MTC;
+            this.MTS.Depth = 0;
+            this.MTS.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.MTS.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
+            this.MTS.Location = new System.Drawing.Point(12, 76);
+            this.MTS.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.MTS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.MTS.Name = "MTS";
+            this.MTS.Size = new System.Drawing.Size(335, 23);
+            this.MTS.TabIndex = 17;
+            this.MTS.Text = "materialTabSelector1";
+            this.MTS.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
             // 
             // STATUST
             // 
@@ -284,8 +285,8 @@ namespace Nerator.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(359, 381);
-            this.Controls.Add(this.materialTabSelector1);
-            this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.MTS);
+            this.Controls.Add(this.MTC);
             this.Controls.Add(this.SSBR);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelEdit1);
@@ -296,10 +297,10 @@ namespace Nerator.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Generation Password Generator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.materialTabControl1.ResumeLayout(false);
-            this.History.ResumeLayout(false);
+            this.MTC.ResumeLayout(false);
             this.Generate.ResumeLayout(false);
             this.Generate.PerformLayout();
+            this.History.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -313,13 +314,13 @@ namespace Nerator.UI
         private ReaLTaiizor.Controls.ForeverStatusBar SSBR;
         private ReaLTaiizor.Controls.MaterialButton CEB;
         private ReaLTaiizor.Controls.MaterialButton CYB;
-        private ReaLTaiizor.Controls.MaterialTabControl materialTabControl1;
+        private ReaLTaiizor.Controls.MaterialTabControl MTC;
         private System.Windows.Forms.TabPage History;
         private System.Windows.Forms.TabPage Generate;
-        private ReaLTaiizor.Controls.MaterialTabSelector materialTabSelector1;
+        private ReaLTaiizor.Controls.MaterialTabSelector MTS;
         private System.Windows.Forms.TabPage Setting;
         private ReaLTaiizor.Controls.MaterialSwitch HYS;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel HYP;
         private System.Windows.Forms.Timer STATUST;
         private System.Windows.Forms.Timer STATUSMT;
     }
