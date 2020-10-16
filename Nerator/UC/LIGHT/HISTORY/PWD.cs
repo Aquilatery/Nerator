@@ -4,7 +4,7 @@ using Nerator.CS;
 using System.Windows.Forms;
 using static Nerator.CS.History;
 
-namespace Nerator.UC.DARK.HISTORY
+namespace Nerator.UC.LIGHT.HISTORY
 {
     public partial class PWD : UserControl
     {

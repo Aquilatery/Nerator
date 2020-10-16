@@ -1,5 +1,5 @@
 ﻿
-namespace Nerator.UC.DARK.HISTORY
+namespace Nerator.UC.LIGHT.HISTORY
 {
     partial class PWD
     {

@@ -82,6 +82,7 @@
 
   <ItemGroup>
     <Folder Include="Assets\" />
+    <Folder Include="UC\DARK\HISTORY\" />
   </ItemGroup>
 
 </Project>

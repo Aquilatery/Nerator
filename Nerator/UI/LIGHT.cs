@@ -3,7 +3,7 @@ using Conforyon;
 using Nerator.CS;
 using ReaLTaiizor.Forms;
 using System.Windows.Forms;
-using Nerator.UC.DARK.HISTORY;
+using Nerator.UC.LIGHT.HISTORY;
 using static Nerator.CS.History;
 using static Nerator.CS.Setting;
 using System.Collections.Generic;
