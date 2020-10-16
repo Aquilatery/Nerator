@@ -29,21 +29,24 @@ namespace Nerator.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LIGHT));
             this.labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PWDTB = new ReaLTaiizor.Controls.BigTextBox();
             this.poisonProgressBar1 = new ReaLTaiizor.Controls.PoisonProgressBar();
-            this.foreverStatusBar1 = new ReaLTaiizor.Controls.ForeverStatusBar();
+            this.SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
             this.CEB = new ReaLTaiizor.Controls.MaterialButton();
             this.CYB = new ReaLTaiizor.Controls.MaterialButton();
             this.materialTabControl1 = new ReaLTaiizor.Controls.MaterialTabControl();
             this.History = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Generate = new System.Windows.Forms.TabPage();
             this.HYS = new ReaLTaiizor.Controls.MaterialSwitch();
             this.Setting = new System.Windows.Forms.TabPage();
             this.materialTabSelector1 = new ReaLTaiizor.Controls.MaterialTabSelector();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.STATUST = new System.Windows.Forms.Timer(this.components);
+            this.STATUSMT = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialTabControl1.SuspendLayout();
             this.History.SuspendLayout();
@@ -107,22 +110,22 @@ namespace Nerator.UI
             this.poisonProgressBar1.TabIndex = 12;
             this.poisonProgressBar1.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
             // 
-            // foreverStatusBar1
+            // SSBR
             // 
-            this.foreverStatusBar1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.foreverStatusBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.foreverStatusBar1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.foreverStatusBar1.ForeColor = System.Drawing.Color.White;
-            this.foreverStatusBar1.Location = new System.Drawing.Point(0, 359);
-            this.foreverStatusBar1.Name = "foreverStatusBar1";
-            this.foreverStatusBar1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
-            this.foreverStatusBar1.ShowTimeDate = true;
-            this.foreverStatusBar1.Size = new System.Drawing.Size(359, 22);
-            this.foreverStatusBar1.TabIndex = 13;
-            this.foreverStatusBar1.Text = "foreverStatusBar1";
-            this.foreverStatusBar1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.foreverStatusBar1.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.foreverStatusBar1.TimeFormat = "HH:mm:ss";
+            this.SSBR.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.SSBR.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.SSBR.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.SSBR.ForeColor = System.Drawing.Color.White;
+            this.SSBR.Location = new System.Drawing.Point(0, 359);
+            this.SSBR.Name = "SSBR";
+            this.SSBR.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(159)))));
+            this.SSBR.ShowTimeDate = true;
+            this.SSBR.Size = new System.Drawing.Size(359, 22);
+            this.SSBR.TabIndex = 13;
+            this.SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
+            this.SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SSBR.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.SSBR.TimeFormat = "HH:mm:ss";
             // 
             // CEB
             // 
@@ -168,10 +171,11 @@ namespace Nerator.UI
             // materialTabControl1
             // 
             this.materialTabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.materialTabControl1.Controls.Add(this.History);
             this.materialTabControl1.Controls.Add(this.Generate);
+            this.materialTabControl1.Controls.Add(this.History);
             this.materialTabControl1.Controls.Add(this.Setting);
             this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.ItemSize = new System.Drawing.Size(44, 18);
             this.materialTabControl1.Location = new System.Drawing.Point(12, 99);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.materialTabControl1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -185,13 +189,24 @@ namespace Nerator.UI
             // History
             // 
             this.History.BackColor = System.Drawing.SystemColors.Control;
-            this.History.Controls.Add(this.flowLayoutPanel1);
+            this.History.Controls.Add(this.panel1);
             this.History.Location = new System.Drawing.Point(4, 4);
             this.History.Name = "History";
             this.History.Padding = new System.Windows.Forms.Padding(3);
             this.History.Size = new System.Drawing.Size(327, 201);
             this.History.TabIndex = 0;
             this.History.Text = "History";
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(321, 195);
+            this.panel1.TabIndex = 0;
             // 
             // Generate
             // 
@@ -252,16 +267,17 @@ namespace Nerator.UI
             this.materialTabSelector1.Text = "materialTabSelector1";
             this.materialTabSelector1.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
             // 
-            // flowLayoutPanel1
+            // STATUST
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(321, 195);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.STATUST.Enabled = true;
+            this.STATUST.Interval = 1000;
+            this.STATUST.Tick += new System.EventHandler(this.STATUST_Tick);
+            // 
+            // STATUSMT
+            // 
+            this.STATUSMT.Enabled = true;
+            this.STATUSMT.Interval = 50;
+            this.STATUSMT.Tick += new System.EventHandler(this.STATUSMT_Tick);
             // 
             // LIGHT
             // 
@@ -270,7 +286,7 @@ namespace Nerator.UI
             this.ClientSize = new System.Drawing.Size(359, 381);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
-            this.Controls.Add(this.foreverStatusBar1);
+            this.Controls.Add(this.SSBR);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelEdit1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -294,7 +310,7 @@ namespace Nerator.UI
         private System.Windows.Forms.PictureBox pictureBox1;
         private ReaLTaiizor.Controls.BigTextBox PWDTB;
         private ReaLTaiizor.Controls.PoisonProgressBar poisonProgressBar1;
-        private ReaLTaiizor.Controls.ForeverStatusBar foreverStatusBar1;
+        private ReaLTaiizor.Controls.ForeverStatusBar SSBR;
         private ReaLTaiizor.Controls.MaterialButton CEB;
         private ReaLTaiizor.Controls.MaterialButton CYB;
         private ReaLTaiizor.Controls.MaterialTabControl materialTabControl1;
@@ -303,6 +319,8 @@ namespace Nerator.UI
         private ReaLTaiizor.Controls.MaterialTabSelector materialTabSelector1;
         private System.Windows.Forms.TabPage Setting;
         private ReaLTaiizor.Controls.MaterialSwitch HYS;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer STATUST;
+        private System.Windows.Forms.Timer STATUSMT;
     }
 }

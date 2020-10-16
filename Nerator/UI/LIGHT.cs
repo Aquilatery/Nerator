@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Drawing;
+using Nerator.CS;
 using ReaLTaiizor.Forms;
 using System.Windows.Forms;
 using ReaLTaiizor.Controls;
@@ -12,28 +12,54 @@ namespace Nerator.UI
         public LIGHT()
         {
             InitializeComponent();
-            flowLayoutPanel1.Controls.Add(new PWD("53X", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1), Anchor = AnchorStyles.Left | AnchorStyles.Right, Dock = DockStyle.Top });
-            flowLayoutPanel1.Controls.Add(new PWD("5EX", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("SEX", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("S3X", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("53X", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("5EX", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("SEX", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("S3X", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("53X", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("5EX", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("SEX", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 1) });
-            flowLayoutPanel1.Controls.Add(new PWD("S3X", "00:00:00", "00.00.0000") { Margin = new Padding(0, 0, 0, 0) });
+            panel1.Controls.Add(new PWD("53X", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("5EX", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("SEX", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("S3X", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("53X", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("5EX", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("SEX", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("S3X", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("53X", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("5EX", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("SEX", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+            panel1.Controls.Add(new PWD("S3X", "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
         }
 
         private void CEB_Click(object sender, EventArgs e)
         {
-            MaterialMessageBox.Show(flowLayoutPanel1.Width + " - " + flowLayoutPanel1.Height);
+            MaterialMessageBox.Show(panel1.Width + " - " + panel1.Height);
         }
 
         private void CYB_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void STATUST_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                long Result = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - Status.ChangedStatus;
+                if (Result >= 3)
+                    Status.Message = Status.DefaultStatus;
+            }
+            catch (Exception Ex)
+            {
+                Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
+            }
+        }
+
+        private void STATUSMT_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                SSBR.Text = Status.Message;
+            }
+            catch (Exception Ex)
+            {
+                Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
+            }
         }
     }
 }

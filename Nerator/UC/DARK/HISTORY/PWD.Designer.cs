@@ -65,14 +65,14 @@ namespace Nerator.UC.DARK.HISTORY
             this.COPY.Dock = System.Windows.Forms.DockStyle.Right;
             this.COPY.DrawShadows = false;
             this.COPY.HighEmphasis = true;
-            this.COPY.Icon = global::Nerator.Properties.Resources.CopyClipboard;
-            this.COPY.Location = new System.Drawing.Point(224, 0);
+            this.COPY.Icon = global::Nerator.Properties.Resources.Copy;
+            this.COPY.Location = new System.Drawing.Point(224, 1);
             this.COPY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.COPY.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.COPY.Name = "COPY";
-            this.COPY.Size = new System.Drawing.Size(44, 36);
+            this.COPY.Size = new System.Drawing.Size(44, 34);
             this.COPY.TabIndex = 2;
-            this.COPY.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.COPY.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
             this.COPY.UseAccentColor = false;
             this.COPY.UseVisualStyleBackColor = true;
             this.COPY.Click += new System.EventHandler(this.COPY_Click);
@@ -86,14 +86,14 @@ namespace Nerator.UC.DARK.HISTORY
             this.REMOVE.Dock = System.Windows.Forms.DockStyle.Right;
             this.REMOVE.DrawShadows = false;
             this.REMOVE.HighEmphasis = true;
-            this.REMOVE.Icon = global::Nerator.Properties.Resources.CopyClipboard;
-            this.REMOVE.Location = new System.Drawing.Point(268, 0);
+            this.REMOVE.Icon = global::Nerator.Properties.Resources.Delete;
+            this.REMOVE.Location = new System.Drawing.Point(268, 1);
             this.REMOVE.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.REMOVE.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.REMOVE.Name = "REMOVE";
-            this.REMOVE.Size = new System.Drawing.Size(44, 36);
+            this.REMOVE.Size = new System.Drawing.Size(44, 34);
             this.REMOVE.TabIndex = 3;
-            this.REMOVE.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.REMOVE.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
             this.REMOVE.UseAccentColor = true;
             this.REMOVE.UseVisualStyleBackColor = true;
             this.REMOVE.Click += new System.EventHandler(this.REMOVE_Click);
@@ -104,10 +104,10 @@ namespace Nerator.UC.DARK.HISTORY
             this.TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
             this.TIMEDATE.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.TIMEDATE.IsDerivedStyle = true;
-            this.TIMEDATE.Location = new System.Drawing.Point(0, 0);
+            this.TIMEDATE.Location = new System.Drawing.Point(0, 1);
             this.TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.TIMEDATE.Name = "TIMEDATE";
-            this.TIMEDATE.Size = new System.Drawing.Size(78, 36);
+            this.TIMEDATE.Size = new System.Drawing.Size(78, 34);
             this.TIMEDATE.Style = ReaLTaiizor.Enum.Metro.Style.Light;
             this.TIMEDATE.StyleManager = null;
             this.TIMEDATE.TabIndex = 4;
@@ -129,6 +129,7 @@ namespace Nerator.UC.DARK.HISTORY
             this.MaximumSize = new System.Drawing.Size(329, 36);
             this.MinimumSize = new System.Drawing.Size(312, 36);
             this.Name = "PWD";
+            this.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.Size = new System.Drawing.Size(312, 36);
             this.ResumeLayout(false);
 

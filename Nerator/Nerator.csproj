@@ -59,6 +59,7 @@
     <Compile Include="CS\Engine.cs" />
     <Compile Include="CS\Generator.cs" />
     <Compile Include="CS\Setting.cs" />
+    <Compile Include="CS\Status.cs" />
     <Compile Include="CS\Variable.cs" />
     <Compile Include="CS\Character.cs" />
     <Compile Include="CS\Window.cs" />
@@ -140,7 +141,10 @@
     <Content Include="Resources\ABC.png" />
     <Content Include="Resources\ABCBrick.png" />
     <Content Include="Resources\ActivityHistory.png" />
+    <Content Include="Resources\Copy.png" />
     <Content Include="Resources\CopyClipboard.png" />
+    <Content Include="Resources\CopyLink.png" />
+    <Content Include="Resources\Delete.png" />
     <Content Include="Resources\Encrypt.png" />
     <Content Include="Resources\GrandMasterKey.png" />
     <Content Include="Resources\ICO.ico" />
@@ -150,6 +154,7 @@
     <Content Include="Resources\Lock.png" />
     <Content Include="Resources\OrderHistory.png" />
     <Content Include="Resources\PasswordGreen.png" />
+    <Content Include="Resources\PasteSpecial.png" />
     <Content Include="Resources\QuillInk.png" />
     <Content Include="Resources\SafeOk.png" />
     <Content Include="Resources\Secure.png" />
