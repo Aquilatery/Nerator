@@ -1,4 +1,5 @@
 ﻿using System;
+using Nerator.CS;
 using System.Windows.Forms;
 using static Nerator.CS.Window;
 using static Nerator.CS.Setting;
@@ -28,6 +29,10 @@ namespace Nerator.UC.THEME
             {
                 WindowMode = WindowType.DARK;
                 Application.Restart();
+            }
+            else
+            {
+                Status.Message = "Dark theme already selected!";
             }
         }
     }

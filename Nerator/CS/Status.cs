@@ -4,7 +4,7 @@ namespace Nerator.CS
 {
     public static class Status
     {
-        private const string _DefaultStatus = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
+        private const string _DefaultStatus = "The application continues to run smoothly.";
         public static string DefaultStatus => _DefaultStatus;
 
         private static string _Message = _DefaultStatus;

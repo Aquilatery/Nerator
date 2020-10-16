@@ -26,16 +26,16 @@ namespace Nerator.UI
 
         private void CEB_Click(object sender, EventArgs e)
         {
-            string GP = Create(GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), GetAlphabetic(AMCB.SelectedItem, AlphabeticType.BS), GetSpecial(SMCB.SelectedItem, SpecialType.NS));
+            string GP = Create(GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
             PWDTB.Text = GP;
-            if (HYS.Checked)
+            if (HistoryMode)
             {
                 Add(HistoryFileName, GP, DefaultDateTime);
                 HistoryAdd(GP, GetTime(DefaultDateTime, DefaultDateTime), GetDate(DefaultDateTime, DefaultDateTime));
             }
             PLPB.Value = StrengthMode(CheckScore2(GP));
             PLPB.Style = StyleMode(PLPB.Value);
-            Status.Message = "Yeni şifre oluşturma başarıyla tamamlandı!";
+            Status.Message = "New password generation completed successfully!";
         }
 
         private void CYB_Click(object sender, EventArgs e)
@@ -45,13 +45,59 @@ namespace Nerator.UI
                 ClipBoard.CopyText(PWDTB.Text, true);
                 if (PWDTB.Text == Clipboard.GetText())
                 {
-                    Status.Message = "Oluşturulan şifre başarıyla kopyalandı!";
+                    Status.Message = "Generated password copied successfully!";
                     PWDTB.Focus();
                 }
                 else
                 {
-                    Status.Message = "Oluşturulan şifre kopyalaması başarısız!";
+                    Status.Message = "Failed to copy the generated password!";
                 }
+            }
+        }
+
+        private void AMCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (GetAlphabetic(AlphabeticMode) != AMCB.SelectedItem.ToString())
+                {
+                    AlphabeticMode = GetAlphabetic(AMCB.SelectedItem, AlphabeticType.BS);
+                    Status.Message = "Alphabetical mode changed to " + AMCB.SelectedItem.ToString() + ".";
+                }
+            }
+            catch (Exception Ex)
+            {
+                Status.Message = "Error - " + Ex.Source + ": " + Ex.Message;
+            }
+        }
+
+        private void SMCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (GetSpecial(SpecialMode) != SMCB.SelectedItem.ToString())
+                {
+                    SpecialMode = GetSpecial(SMCB.SelectedItem, SpecialType.NS);
+                    Status.Message = "Special mode changed to " + SMCB.SelectedItem.ToString() + ".";
+                }
+            }
+            catch (Exception Ex)
+            {
+                Status.Message = "Error - " + Ex.Source + ": " + Ex.Message;
+            }
+        }
+
+        private void HYS_CheckedChanged(object sender, EventArgs e)
+        {
+            HistoryMode = HYS.Checked;
+
+            if (HYS.Checked)
+            {
+                Status.Message = "Generated passwords will be saved in the history.";
+            }
+            else
+            {
+                Status.Message = "Generated passwords will not be saved in the history.";
             }
         }
 
@@ -59,6 +105,15 @@ namespace Nerator.UI
         {
             TopMost = TMCB.Checked;
             TopMostMode = TopMost;
+
+            if (TMCB.Checked)
+            {
+                Status.Message = "Nerator has been successfully pinned to the top.";
+            }
+            else
+            {
+                Status.Message = "Nerator has been restored to normal priority level.";
+            }
         }
 
         private void HistoryAdd(string Password, string Time, string Date, DockStyle Style = DockStyle.Top)
@@ -104,7 +159,7 @@ namespace Nerator.UI
             }
             catch (Exception Ex)
             {
-                Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
+                Status.Message = "Error - " + Ex.Source + ": " + Ex.Message;
             }
         }
 
@@ -116,7 +171,7 @@ namespace Nerator.UI
             }
             catch (Exception Ex)
             {
-                Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
+                Status.Message = "Error - " + Ex.Source + ": " + Ex.Message;
             }
         }
 
@@ -150,11 +205,8 @@ namespace Nerator.UI
 
         private void LIGHT_FormClosed(object sender, FormClosedEventArgs e)
         {
-            HistoryMode = HYS.Checked;
             TopMostMode = TMCB.Checked;
             PageMode = GetPageMode(MTC.SelectedTab.Text);
-            SpecialMode = GetSpecial(SMCB.SelectedItem, SpecialType.NS);
-            AlphabeticMode = GetAlphabetic(AMCB.SelectedItem, AlphabeticType.BS);
             PasswordLenght = GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
             Save(ConfigFileName);
         }

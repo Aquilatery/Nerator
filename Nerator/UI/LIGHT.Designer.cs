@@ -45,6 +45,8 @@ namespace Nerator.UI
             History = new System.Windows.Forms.TabPage();
             HYP = new System.Windows.Forms.Panel();
             Setting = new System.Windows.Forms.TabPage();
+            DKUC = new UC.THEME.DK();
+            LTUC = new UC.THEME.LT();
             TMCB = new ReaLTaiizor.Controls.MaterialCheckBox();
             RTPB = new System.Windows.Forms.PictureBox();
             PWLN = new ReaLTaiizor.Controls.HopeNumeric();
@@ -56,8 +58,6 @@ namespace Nerator.UI
             materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
             materialCheckBox2 = new ReaLTaiizor.Controls.MaterialCheckBox();
             materialCheckBox3 = new ReaLTaiizor.Controls.MaterialCheckBox();
-            LTUC = new UC.THEME.LT();
-            DKUC = new UC.THEME.DK();
             ((System.ComponentModel.ISupportInitialize)(LOPB)).BeginInit();
             MTC.SuspendLayout();
             Generate.SuspendLayout();
@@ -137,7 +137,7 @@ namespace Nerator.UI
             SSBR.ShowTimeDate = true;
             SSBR.Size = new System.Drawing.Size(359, 22);
             SSBR.TabIndex = 13;
-            SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
+            SSBR.Text = "The application continues to run smoothly.";
             SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             SSBR.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             SSBR.TimeFormat = "HH:mm:ss";
@@ -236,6 +236,7 @@ namespace Nerator.UI
             HYS.Text = "History";
             HYS.UseAccentColor = true;
             HYS.UseVisualStyleBackColor = true;
+            HYS.CheckedChanged += new System.EventHandler(HYS_CheckedChanged);
             // 
             // WRPB
             // 
@@ -290,6 +291,30 @@ namespace Nerator.UI
             Setting.Size = new System.Drawing.Size(327, 201);
             Setting.TabIndex = 2;
             Setting.Text = "Setting";
+            // 
+            // DKUC
+            // 
+            DKUC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            DKUC.BackColor = System.Drawing.Color.Transparent;
+            DKUC.Location = new System.Drawing.Point(218, 98);
+            DKUC.Margin = new System.Windows.Forms.Padding(5);
+            DKUC.MaximumSize = new System.Drawing.Size(103, 97);
+            DKUC.MinimumSize = new System.Drawing.Size(103, 97);
+            DKUC.Name = "DKUC";
+            DKUC.Size = new System.Drawing.Size(103, 97);
+            DKUC.TabIndex = 16;
+            // 
+            // LTUC
+            // 
+            LTUC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            LTUC.BackColor = System.Drawing.Color.Transparent;
+            LTUC.Location = new System.Drawing.Point(6, 98);
+            LTUC.Margin = new System.Windows.Forms.Padding(5);
+            LTUC.MaximumSize = new System.Drawing.Size(103, 97);
+            LTUC.MinimumSize = new System.Drawing.Size(103, 97);
+            LTUC.Name = "LTUC";
+            LTUC.Size = new System.Drawing.Size(103, 97);
+            LTUC.TabIndex = 15;
             // 
             // TMCB
             // 
@@ -381,6 +406,7 @@ namespace Nerator.UI
             SMCB.Size = new System.Drawing.Size(135, 49);
             SMCB.TabIndex = 14;
             SMCB.UseAccent = false;
+            SMCB.SelectedIndexChanged += new System.EventHandler(SMCB_SelectedIndexChanged);
             // 
             // AMCB
             // 
@@ -409,13 +435,14 @@ namespace Nerator.UI
             AMCB.Size = new System.Drawing.Size(135, 49);
             AMCB.TabIndex = 13;
             AMCB.UseAccent = false;
+            AMCB.SelectedIndexChanged += new System.EventHandler(AMCB_SelectedIndexChanged);
             // 
             // MTS
             // 
             MTS.BaseTabControl = MTC;
             MTS.Cursor = System.Windows.Forms.Cursors.Default;
             MTS.Depth = 0;
-            MTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            MTS.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             MTS.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
             MTS.Location = new System.Drawing.Point(12, 75);
             MTS.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -479,30 +506,6 @@ namespace Nerator.UI
             materialCheckBox3.TabIndex = 0;
             materialCheckBox3.Text = "materialCheckBox3";
             materialCheckBox3.UseVisualStyleBackColor = true;
-            // 
-            // LTUC
-            // 
-            LTUC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            LTUC.BackColor = System.Drawing.Color.Transparent;
-            LTUC.Location = new System.Drawing.Point(6, 98);
-            LTUC.Margin = new System.Windows.Forms.Padding(5);
-            LTUC.MaximumSize = new System.Drawing.Size(103, 97);
-            LTUC.MinimumSize = new System.Drawing.Size(103, 97);
-            LTUC.Name = "LTUC";
-            LTUC.Size = new System.Drawing.Size(103, 97);
-            LTUC.TabIndex = 15;
-            // 
-            // DKUC
-            // 
-            DKUC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            DKUC.BackColor = System.Drawing.Color.Transparent;
-            DKUC.Location = new System.Drawing.Point(218, 98);
-            DKUC.Margin = new System.Windows.Forms.Padding(5);
-            DKUC.MaximumSize = new System.Drawing.Size(103, 97);
-            DKUC.MinimumSize = new System.Drawing.Size(103, 97);
-            DKUC.Name = "DKUC";
-            DKUC.Size = new System.Drawing.Size(103, 97);
-            DKUC.TabIndex = 16;
             // 
             // LIGHT
             // 

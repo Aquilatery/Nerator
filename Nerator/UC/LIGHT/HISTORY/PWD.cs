@@ -2,7 +2,10 @@
 using Conforyon;
 using Nerator.CS;
 using System.Windows.Forms;
+using ReaLTaiizor.Enum.Poison;
 using static Nerator.CS.History;
+using static Nerator.CS.Strength;
+using static ReaLTaiizor.Colors.PoisonColors;
 
 namespace Nerator.UC.LIGHT.HISTORY
 {
@@ -17,15 +20,17 @@ namespace Nerator.UC.LIGHT.HISTORY
                 InitializeComponent();
 
                 PASSWORD.Text = Password;
-                /*
-                    oluşturulan şifre güvenliĞi ne ise
-                    password labelinin yazı rengi de
-                    ona dönüşsün. nasıl olsa güvenlik
-                    barı için algoritma yazacan.
-                */
-
+                PASSWORD.Style = StyleMode(StrengthMode(CheckScore2(Password)));
+                PASSWORD.ForeColor = PASSWORD.Style switch
+                {
+                    ColorStyle.Red => Red,
+                    ColorStyle.Orange => Orange,
+                    ColorStyle.Yellow => Yellow,
+                    ColorStyle.Blue => Blue,
+                    ColorStyle.Green => Green,
+                    _ => White,
+                };
                 TIMEDATE.Text = Time + "\n" + Date;
-
                 CheckRemove = Check;
             }
             else
@@ -41,11 +46,11 @@ namespace Nerator.UC.LIGHT.HISTORY
                 ClipBoard.CopyText(PASSWORD.Text, true);
                 if (PASSWORD.Text == Clipboard.GetText())
                 {
-                    Status.Message = PASSWORD.Text + " geçmişten başarıyla kopyalandı!";
+                    Status.Message = PASSWORD.Text + " copied!";
                 }
                 else
                 {
-                    Status.Message = PASSWORD.Text + " geçmişten kopyalama başarısız!";
+                    Status.Message = PASSWORD.Text + " could not be copied!";
                 }
             }
         }
@@ -55,18 +60,18 @@ namespace Nerator.UC.LIGHT.HISTORY
             if (CheckRemove)
             {
                 CheckRemove = false;
-                Status.Message = "Geçmişten silmek istiyorsanız tekrar tıklayın!";
+                Status.Message = "Click again to delete from history.";
             }
             else
             {
                 if (Remove(HistoryFileName, PASSWORD.Text))
                 {
-                    Status.Message = PASSWORD.Text + " geçmişten başarıyla silindi!";
+                    Status.Message = PASSWORD.Text + " deleted!";
                     Dispose(); //Hide - Visible - etc.
                 }
                 else
                 {
-                    Status.Message = PASSWORD.Text + " geçmişten silinemedi!";
+                    Status.Message = PASSWORD.Text + " could not be deleted!";
                 }
             }
         }
