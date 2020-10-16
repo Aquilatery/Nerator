@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+VisualStudioVersion = 16.0.30608.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerator", "Nerator\Nerator.csproj", "{4BB2AA8F-07E0-412C-B27B-6E031C4683B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerator", "Nerator\Nerator.csproj", "{FDA93B21-0154-4E04-87FC-DB09CEC2CC59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4BB2AA8F-07E0-412C-B27B-6E031C4683B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BB2AA8F-07E0-412C-B27B-6E031C4683B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BB2AA8F-07E0-412C-B27B-6E031C4683B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BB2AA8F-07E0-412C-B27B-6E031C4683B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA93B21-0154-4E04-87FC-DB09CEC2CC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA93B21-0154-4E04-87FC-DB09CEC2CC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA93B21-0154-4E04-87FC-DB09CEC2CC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA93B21-0154-4E04-87FC-DB09CEC2CC59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4E468D4D-2EA9-4451-B616-A3B513755B04}
+		SolutionGuid = {7FEE299A-A950-4CE9-9CD2-63BF1CB97F72}
 	EndGlobalSection
 EndGlobal

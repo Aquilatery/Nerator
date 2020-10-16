@@ -1,170 +1,87 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4BB2AA8F-07E0-412C-B27B-6E031C4683B8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Nerator</RootNamespace>
-    <AssemblyName>Nerator</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
+    <!--<TargetFramework>net48</TargetFramework>-->
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Nerator.Nerator</StartupObject>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
+    <Company>Soferity LLC</Company>
+    <Title>$(AssemblyName) - New Generation Password Generator</Title>
+    <Description>$(Title)</Description>
+    <AssemblyName>$(Title)</AssemblyName>
+    <Product>$(Title)</Product>
+    <InformationalVersion>$(Version)</InformationalVersion>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <Version>$([System.DateTime]::Today.ToString(yy)).$([System.DateTime]::Today.ToString(MM)).$([System.DateTime]::Today.ToString(dd)).$([System.DateTime]::Now.ToString(HH))$([System.DateTime]::Now.ToString(mm))</Version>
+    <AssemblyName>Nerator</AssemblyName>
+    <RootNamespace>$(AssemblyName)</RootNamespace>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
+    <Copyright>Copyright © $([System.DateTime]::Today.ToString(yyyy)) $(Company)</Copyright>
+    <Configurations>Debug;Release</Configurations>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
   </PropertyGroup>
+
   <PropertyGroup>
-    <ApplicationIcon>Resources\ICO.ico</ApplicationIcon>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
+    <ThreadPoolMinThreads>1</ThreadPoolMinThreads>
+    <ThreadPoolMaxThreads>100</ThreadPoolMaxThreads>
+    <!-- Supported as of .NET Core SDK 3.0 Preview 1 -->
+    <TieredCompilation>true</TieredCompilation>
+    <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Conforyon, Version=1.4.7.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Conforyon.1.4.7.4\lib\net48\Conforyon.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="ReaLTaiizor, Version=3.7.8.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ReaLTaiizor.3.7.8.1\lib\net48\ReaLTaiizor.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
+    <DisableFody>true</DisableFody>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net48'">
+    <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
+  
   <ItemGroup>
-    <Compile Include="CS\Engine.cs" />
-    <Compile Include="CS\Generator.cs" />
-    <Compile Include="CS\History.cs" />
-    <Compile Include="CS\Setting.cs" />
-    <Compile Include="CS\Status.cs" />
-    <Compile Include="CS\Variable.cs" />
-    <Compile Include="CS\Character.cs" />
-    <Compile Include="CS\Window.cs" />
-    <Compile Include="UC\DARK\HISTORY\PWD.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\DARK\HISTORY\PWD.Designer.cs">
-      <DependentUpon>PWD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\EX.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\EX.Designer.cs">
-      <DependentUpon>EX.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nerator.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\LIGHT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\LIGHT.Designer.cs">
-      <DependentUpon>LIGHT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\DARK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\DARK.Designer.cs">
-      <DependentUpon>DARK.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="UC\DARK\HISTORY\PWD.resx">
-      <DependentUpon>PWD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\EX.resx">
-      <DependentUpon>EX.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <AppConfigWithTargetPath Include="App.$(TargetFramework).config">
+      <TargetPath>$(AssemblyName).exe.config</TargetPath>
+    </AppConfigWithTargetPath>
+  </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="Conforyon" Version="1.4.7.4" />
+    <PackageReference Include="ReaLTaiizor" Version="3.7.8.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Costura.Fody" Version="5.0.0-alpha0281">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive; compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="UI\LIGHT.resx">
-      <DependentUpon>LIGHT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\DARK.resx">
-      <DependentUpon>DARK.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="App.config" />
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
-    <Resource Include="Resources\Key.ico" />
+    <Folder Include="Assets\" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Key.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Password.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Password.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\ABC.png" />
-    <Content Include="Resources\ABCBrick.png" />
-    <Content Include="Resources\ActivityHistory.png" />
-    <Content Include="Resources\Copy.png" />
-    <Content Include="Resources\CopyClipboard.png" />
-    <Content Include="Resources\CopyLink.png" />
-    <Content Include="Resources\Delete.png" />
-    <Content Include="Resources\Encrypt.png" />
-    <Content Include="Resources\GrandMasterKey.png" />
-    <Content Include="Resources\ICO.ico" />
-    <Content Include="Resources\Keepass.png" />
-    <Content Include="Resources\KeepLocked.png" />
-    <Content Include="Resources\Lease.png" />
-    <Content Include="Resources\Lock.png" />
-    <Content Include="Resources\OrderHistory.png" />
-    <Content Include="Resources\PasswordGreen.png" />
-    <Content Include="Resources\PasteSpecial.png" />
-    <Content Include="Resources\QuillInk.png" />
-    <Content Include="Resources\SafeOk.png" />
-    <Content Include="Resources\Secure.png" />
-    <Content Include="Resources\ShowPassword.png" />
-    <Content Include="Resources\StoryTelling.png" />
-    <Content Include="Resources\Unlock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UC\LIGHT\HISTORY\" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
