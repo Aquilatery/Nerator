@@ -32,8 +32,8 @@ namespace Nerator.UC.LIGHT.HISTORY
             COPY = new ReaLTaiizor.Controls.MaterialButton();
             REMOVE = new ReaLTaiizor.Controls.MaterialButton();
             FILL = new System.Windows.Forms.Panel();
-            TIMEDATE = new ReaLTaiizor.Controls.PoisonLabel();
             PASSWORD = new ReaLTaiizor.Controls.PoisonLabel();
+            TIMEDATE = new ReaLTaiizor.Controls.PoisonLabel();
             FILL.SuspendLayout();
             SuspendLayout();
             // 
@@ -95,23 +95,6 @@ namespace Nerator.UC.LIGHT.HISTORY
             FILL.Size = new System.Drawing.Size(312, 36);
             FILL.TabIndex = 0;
             // 
-            // TIMEDATE
-            // 
-            TIMEDATE.BackColor = System.Drawing.Color.Transparent;
-            TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
-            TIMEDATE.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Small;
-            TIMEDATE.FontWeight = ReaLTaiizor.Extension.Poison.PoisonLabelWeight.Bold;
-            TIMEDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            TIMEDATE.Location = new System.Drawing.Point(0, 0);
-            TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            TIMEDATE.Name = "TIMEDATE";
-            TIMEDATE.Size = new System.Drawing.Size(72, 36);
-            TIMEDATE.TabIndex = 5;
-            TIMEDATE.Text = "00:00:00\r\n00.00.0000";
-            TIMEDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            TIMEDATE.UseCustomBackColor = true;
-            TIMEDATE.UseCustomForeColor = true;
-            // 
             // PASSWORD
             // 
             PASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -129,6 +112,23 @@ namespace Nerator.UC.LIGHT.HISTORY
             PASSWORD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             PASSWORD.UseCustomBackColor = true;
             PASSWORD.UseCustomForeColor = true;
+            // 
+            // TIMEDATE
+            // 
+            TIMEDATE.BackColor = System.Drawing.Color.Transparent;
+            TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
+            TIMEDATE.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Small;
+            TIMEDATE.FontWeight = ReaLTaiizor.Extension.Poison.PoisonLabelWeight.Bold;
+            TIMEDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            TIMEDATE.Location = new System.Drawing.Point(0, 0);
+            TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            TIMEDATE.Name = "TIMEDATE";
+            TIMEDATE.Size = new System.Drawing.Size(72, 36);
+            TIMEDATE.TabIndex = 5;
+            TIMEDATE.Text = "00:00:00\r\n00.00.0000";
+            TIMEDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            TIMEDATE.UseCustomBackColor = true;
+            TIMEDATE.UseCustomForeColor = true;
             // 
             // PWD
             // 

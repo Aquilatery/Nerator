@@ -4,7 +4,6 @@ using Nerator.CS;
 using ReaLTaiizor.Forms;
 using System.Windows.Forms;
 using static Nerator.CS.Page;
-using static Nerator.CS.Window;
 using Nerator.UC.LIGHT.HISTORY;
 using static Nerator.CS.History;
 using static Nerator.CS.Setting;
@@ -60,33 +59,6 @@ namespace Nerator.UI
         {
             TopMost = TMCB.Checked;
             TopMostMode = TopMost;
-        }
-
-        private void THEME_MouseEnter(object sender, EventArgs e)
-        {
-            ReaLTaiizor.Controls.Panel PL = sender as ReaLTaiizor.Controls.Panel;
-            PL.EdgeColor = System.Drawing.Color.DodgerBlue;
-        }
-
-        private void THEME_MouseLeave(object sender, EventArgs e)
-        {
-            ReaLTaiizor.Controls.Panel PL = sender as ReaLTaiizor.Controls.Panel;
-            PL.EdgeColor = System.Drawing.SystemColors.Control;
-        }
-
-        private void THEME_Click(object sender, EventArgs e)
-        {
-            ReaLTaiizor.Controls.Panel PL = sender as ReaLTaiizor.Controls.Panel;
-            if (PL.Text == "LTPL" && WindowMode == WindowType.DARK)
-            {
-                WindowMode = WindowType.LIGHT;
-                Application.Restart();
-            }
-            else if (PL.Text == "DKPL" && WindowMode == WindowType.LIGHT)
-            {
-                WindowMode = WindowType.DARK;
-                Application.Restart();
-            }
         }
 
         private void HistoryAdd(string Password, string Time, string Date, DockStyle Style = DockStyle.Top)
