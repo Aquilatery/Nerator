@@ -28,6 +28,8 @@ namespace Nerator.UI
                 Add(HistoryFileName, PWDTB.Text, DefaultDateTime);
                 HistoryAdd(PWDTB.Text, GetTime(DefaultDateTime, DefaultDateTime), GetDate(DefaultDateTime, DefaultDateTime));
             }
+            Random RM = new Random();
+            PLPB.Value = RM.Next(PLPB.Maximum);
             Status.Message = "Üretilen yeni şifre: " + PWDTB.Text;
         }
 
@@ -66,7 +68,14 @@ namespace Nerator.UI
 
             foreach (string PKey in History.Keys)
             {
-                HistoryAdd(PKey, GetTime(GetLong(History[PKey], DefaultDateTime), DefaultDateTime), GetDate(GetLong(History[PKey], DefaultDateTime), DefaultDateTime));
+                if (++ListPasswordCount <= MaximumHistoryList)
+                {
+                    HistoryAdd(PKey, GetTime(GetLong(History[PKey], DefaultDateTime), DefaultDateTime), GetDate(GetLong(History[PKey], DefaultDateTime), DefaultDateTime));
+                }
+                else
+                {
+                    break;
+                }
             }
 
             History.Clear();

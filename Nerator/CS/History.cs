@@ -113,5 +113,12 @@ namespace Nerator.CS
                 return false;
             }
         }
+
+        private static int _ListPasswordCount = 0;
+        public static int ListPasswordCount
+        {
+            get => _ListPasswordCount;
+            set => _ListPasswordCount = value;
+        }
     }
 }

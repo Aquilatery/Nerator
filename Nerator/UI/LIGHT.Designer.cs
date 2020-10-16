@@ -34,7 +34,7 @@ namespace Nerator.UI
             this.labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PWDTB = new ReaLTaiizor.Controls.BigTextBox();
-            this.poisonProgressBar1 = new ReaLTaiizor.Controls.PoisonProgressBar();
+            this.PLPB = new ReaLTaiizor.Controls.PoisonProgressBar();
             this.SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
             this.CEB = new ReaLTaiizor.Controls.MaterialButton();
             this.CYB = new ReaLTaiizor.Controls.MaterialButton();
@@ -87,7 +87,7 @@ namespace Nerator.UI
             this.PWDTB.BackColor = System.Drawing.Color.Transparent;
             this.PWDTB.Font = new System.Drawing.Font("Tahoma", 11F);
             this.PWDTB.ForeColor = System.Drawing.Color.DimGray;
-            this.PWDTB.Image = global::Nerator.Properties.Resources.Key1;
+            this.PWDTB.Image = global::Nerator.Properties.Resources.PasteSpecial;
             this.PWDTB.Location = new System.Drawing.Point(6, 6);
             this.PWDTB.MaxLength = 50;
             this.PWDTB.Multiline = false;
@@ -99,16 +99,16 @@ namespace Nerator.UI
             this.PWDTB.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.PWDTB.UseSystemPasswordChar = false;
             // 
-            // poisonProgressBar1
+            // PLPB
             // 
-            this.poisonProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PLPB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.poisonProgressBar1.Location = new System.Drawing.Point(10, 46);
-            this.poisonProgressBar1.Name = "poisonProgressBar1";
-            this.poisonProgressBar1.Size = new System.Drawing.Size(307, 5);
-            this.poisonProgressBar1.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
-            this.poisonProgressBar1.TabIndex = 12;
-            this.poisonProgressBar1.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
+            this.PLPB.Location = new System.Drawing.Point(10, 46);
+            this.PLPB.Name = "PLPB";
+            this.PLPB.Size = new System.Drawing.Size(307, 5);
+            this.PLPB.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
+            this.PLPB.TabIndex = 12;
+            this.PLPB.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
             // 
             // SSBR
             // 
@@ -193,7 +193,7 @@ namespace Nerator.UI
             this.Generate.Controls.Add(this.CEB);
             this.Generate.Controls.Add(this.CYB);
             this.Generate.Controls.Add(this.PWDTB);
-            this.Generate.Controls.Add(this.poisonProgressBar1);
+            this.Generate.Controls.Add(this.PLPB);
             this.Generate.Location = new System.Drawing.Point(4, 4);
             this.Generate.Name = "Generate";
             this.Generate.Padding = new System.Windows.Forms.Padding(3);
@@ -309,7 +309,7 @@ namespace Nerator.UI
         private ReaLTaiizor.Controls.LabelEdit labelEdit1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private ReaLTaiizor.Controls.BigTextBox PWDTB;
-        private ReaLTaiizor.Controls.PoisonProgressBar poisonProgressBar1;
+        private ReaLTaiizor.Controls.PoisonProgressBar PLPB;
         private ReaLTaiizor.Controls.ForeverStatusBar SSBR;
         private ReaLTaiizor.Controls.MaterialButton CEB;
         private ReaLTaiizor.Controls.MaterialButton CYB;
