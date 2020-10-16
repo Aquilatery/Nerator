@@ -10,8 +10,10 @@ namespace Nerator.CS
     public class History
     {
         public static string HistoryFileName => "History.json";
-        public static int DefaultDateTime => Convert.ToInt32(DateTimeOffset.UtcNow.ToUnixTimeSeconds());
+        public static long DefaultDateTime => DateTimeOffset.UtcNow.ToUnixTimeSeconds();
         public static int DefaultDateTimeLenght => DefaultDateTime.ToString().Length;
+        public static string DefaultTime => "HH:mm:ss";
+        public static string DefaultDate => "dd.MM.yyyy";
         public static int MaximumHistoryList => 100;
 
         public History(string HistoryFileName)
@@ -68,15 +70,17 @@ namespace Nerator.CS
             File.WriteAllText(HistoryFileName, "{}");
         }
 
-        public static void Add(string HistoryFileName, string Password, int Time)
+        public static void Add(string HistoryFileName, string Password, long Time)
         {
             if (!File.Exists(HistoryFileName))
+            {
                 Save(HistoryFileName);
+            }
 
             string HS = File.ReadAllText(HistoryFileName);
             Dictionary<string, string> History = JsonConvert.DeserializeObject<Dictionary<string, string>>(HS);
 
-            if (!History.ContainsKey(Password) || (History.ContainsKey(Password) && GetInt(History[Password], DefaultDateTime) != Time))
+            if (!History.ContainsKey(Password) || (History.ContainsKey(Password) && GetLong(History[Password], DefaultDateTime) != Time))
             {
                 History[Password] = GetString(DefaultDateTime, DefaultDateTime);
 

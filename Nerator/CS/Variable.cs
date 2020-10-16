@@ -1,4 +1,5 @@
 ﻿using System;
+using static Nerator.CS.History;
 
 namespace Nerator.CS
 {
@@ -56,7 +57,31 @@ namespace Nerator.CS
             }
         }
 
+        public static long GetLong(string Variable, long Default)
+        {
+            try
+            {
+                return Convert.ToInt64(Variable);
+            }
+            catch
+            {
+                return Default;
+            }
+        }
+
         public static string GetString(int Variable, int Default)
+        {
+            try
+            {
+                return Variable.ToString();
+            }
+            catch
+            {
+                return Default.ToString();
+            }
+        }
+
+        public static string GetString(long Variable, long Default)
         {
             try
             {
@@ -102,6 +127,30 @@ namespace Nerator.CS
             catch
             {
                 return Default;
+            }
+        }
+
+        public static string GetTime(long Variable, long Default)
+        {
+            try
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(Variable).DateTime.ToLocalTime().ToString(DefaultTime);
+            }
+            catch
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(Default).DateTime.ToLocalTime().ToString(DefaultTime);
+            }
+        }
+
+        public static string GetDate(long Variable, long Default)
+        {
+            try
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(Variable).DateTime.ToLocalTime().ToString(DefaultDate);
+            }
+            catch
+            {
+                return DateTimeOffset.FromUnixTimeSeconds(Default).DateTime.ToLocalTime().ToString(DefaultDate);
             }
         }
     }

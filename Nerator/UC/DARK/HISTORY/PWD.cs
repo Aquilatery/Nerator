@@ -65,7 +65,9 @@ namespace Nerator.UC.DARK.HISTORY
                     Dispose(); //Hide - Visible - etc.
                 }
                 else
+                {
                     Status.Message = PASSWORD.Text + " geçmişten silinemedi!";
+                }
             }
         }
     }

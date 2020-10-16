@@ -6,9 +6,9 @@ using System.Windows.Forms;
 using Nerator.UC.DARK.HISTORY;
 using static Nerator.CS.History;
 using static Nerator.CS.Setting;
+using System.Collections.Generic;
 using static Nerator.CS.Variable;
 using static Nerator.CS.Generator;
-using System.Collections.Generic;
 
 namespace Nerator.UI
 {
@@ -17,6 +17,7 @@ namespace Nerator.UI
         public LIGHT()
         {
             InitializeComponent();
+            HistoryLoad();
         }
 
         private void CEB_Click(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace Nerator.UI
             if (HYS.Checked)
             {
                 Add(HistoryFileName, PWDTB.Text, DefaultDateTime);
-                HYP.Controls.Add(new PWD(PWDTB.Text, "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+                HistoryAdd(PWDTB.Text, GetTime(DefaultDateTime, DefaultDateTime), GetDate(DefaultDateTime, DefaultDateTime));
             }
             Status.Message = "Üretilen yeni şifre: " + PWDTB.Text;
         }
@@ -47,16 +48,17 @@ namespace Nerator.UI
             }
         }
 
-        private void MTC_SelectedIndexChanged(object sender, EventArgs e)
+        private void HistoryAdd(string Password, string Time, string Date, DockStyle Style = DockStyle.Top)
         {
-            if (MTC.SelectedTab == History)
-                HistoryLoad();
+            HYP.Controls.Add(new PWD(Password, Time, Date) { Dock = Style });
         }
 
         private void HistoryLoad()
         {
             if (HYP.Controls.Count > 1)
+            {
                 HYP.Controls.Clear();
+            }
 
             new History(HistoryFileName);
 
@@ -64,7 +66,7 @@ namespace Nerator.UI
 
             foreach (string PKey in History.Keys)
             {
-                HYP.Controls.Add(new PWD(PKey, "00:00:00", "00.00.0000") { Dock = DockStyle.Top });
+                HistoryAdd(PKey, GetTime(GetLong(History[PKey], DefaultDateTime), DefaultDateTime), GetDate(GetLong(History[PKey], DefaultDateTime), DefaultDateTime));
             }
 
             History.Clear();

@@ -185,7 +185,6 @@ namespace Nerator.UI
             this.MTC.SelectedIndex = 0;
             this.MTC.Size = new System.Drawing.Size(335, 227);
             this.MTC.TabIndex = 16;
-            this.MTC.SelectedIndexChanged += new System.EventHandler(this.MTC_SelectedIndexChanged);
             // 
             // Generate
             // 
