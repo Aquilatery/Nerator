@@ -5,7 +5,7 @@
         /// <summary>
         /// Uygulamanın ana girdi noktası.
         /// </summary>
-        [System.MTAThread]
+        [System.STAThread]
         private static void Main() => new CS.Engine();
     }
 }
