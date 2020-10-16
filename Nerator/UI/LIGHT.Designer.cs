@@ -50,20 +50,20 @@ namespace Nerator.UI
             this.DKP2 = new ReaLTaiizor.Controls.Panel();
             this.DKP3 = new ReaLTaiizor.Controls.Panel();
             this.DKP1 = new ReaLTaiizor.Controls.Panel();
-            this.badge2 = new ReaLTaiizor.Controls.Badge();
             this.DKB1 = new ReaLTaiizor.Controls.Badge();
-            this.badge1 = new ReaLTaiizor.Controls.Badge();
             this.DKB2 = new ReaLTaiizor.Controls.Badge();
             this.MNPB = new System.Windows.Forms.PictureBox();
             this.LTPL = new ReaLTaiizor.Controls.Panel();
             this.LTP2 = new ReaLTaiizor.Controls.Panel();
-            this.PWLN = new ReaLTaiizor.Controls.HopeNumeric();
             this.LTP3 = new ReaLTaiizor.Controls.Panel();
             this.LTP1 = new ReaLTaiizor.Controls.Panel();
             this.LTB1 = new ReaLTaiizor.Controls.Badge();
             this.LTB2 = new ReaLTaiizor.Controls.Badge();
             this.SNPB = new System.Windows.Forms.PictureBox();
             this.RTPB = new System.Windows.Forms.PictureBox();
+            this.PWLN = new ReaLTaiizor.Controls.HopeNumeric();
+            this.SMCB = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.AMCB = new ReaLTaiizor.Controls.MaterialComboBox();
             this.MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
             this.STATUST = new System.Windows.Forms.Timer(this.components);
             this.STATUSMT = new System.Windows.Forms.Timer(this.components);
@@ -71,8 +71,6 @@ namespace Nerator.UI
             this.materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
             this.materialCheckBox2 = new ReaLTaiizor.Controls.MaterialCheckBox();
             this.materialCheckBox3 = new ReaLTaiizor.Controls.MaterialCheckBox();
-            this.AMCB = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.SMCB = new ReaLTaiizor.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.LOPB)).BeginInit();
             this.MTC.SuspendLayout();
             this.Generate.SuspendLayout();
@@ -337,9 +335,7 @@ namespace Nerator.UI
             this.DKPL.Controls.Add(this.DKP2);
             this.DKPL.Controls.Add(this.DKP3);
             this.DKPL.Controls.Add(this.DKP1);
-            this.DKPL.Controls.Add(this.badge2);
             this.DKPL.Controls.Add(this.DKB1);
-            this.DKPL.Controls.Add(this.badge1);
             this.DKPL.Controls.Add(this.DKB2);
             this.DKPL.Controls.Add(this.MNPB);
             this.DKPL.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -401,78 +397,39 @@ namespace Nerator.UI
             this.DKP1.Text = "DKP1";
             this.TETT.SetToolTip(this.DKP1, "Dark Theme");
             // 
-            // badge2
-            // 
-            this.badge2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(80)))));
-            this.badge2.BGColorA = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge2.BGColorB = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge2.Enabled = false;
-            this.badge2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.badge2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge2.Location = new System.Drawing.Point(8, 8);
-            this.badge2.Maximum = 0;
-            this.badge2.Name = "badge2";
-            this.badge2.Size = new System.Drawing.Size(20, 20);
-            this.badge2.TabIndex = 13;
-            this.badge2.Text = "DKB1";
-            this.TETT.SetToolTip(this.badge2, "Dark Theme");
-            this.badge2.Value = 0;
-            // 
             // DKB1
             // 
-            this.DKB1.BackColor = System.Drawing.Color.White;
+            this.DKB1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(80)))));
             this.DKB1.BGColorA = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB1.BGColorB = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB1.Enabled = false;
             this.DKB1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.DKB1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.DKB1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB1.Location = new System.Drawing.Point(8, 8);
             this.DKB1.Maximum = 0;
             this.DKB1.Name = "DKB1";
             this.DKB1.Size = new System.Drawing.Size(20, 20);
             this.DKB1.TabIndex = 13;
             this.DKB1.Text = "DKB1";
-            this.TETT.SetToolTip(this.DKB1, "Dark Theme");
             this.DKB1.Value = 0;
-            // 
-            // badge1
-            // 
-            this.badge1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.badge1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(80)))));
-            this.badge1.BGColorA = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge1.BGColorB = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge1.Enabled = false;
-            this.badge1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.badge1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
-            this.badge1.Location = new System.Drawing.Point(75, 8);
-            this.badge1.Maximum = 0;
-            this.badge1.Name = "badge1";
-            this.badge1.Size = new System.Drawing.Size(20, 20);
-            this.badge1.TabIndex = 12;
-            this.badge1.Text = "DKB2";
-            this.TETT.SetToolTip(this.badge1, "Dark Theme");
-            this.badge1.Value = 0;
             // 
             // DKB2
             // 
             this.DKB2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DKB2.BackColor = System.Drawing.Color.White;
+            this.DKB2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(80)))));
             this.DKB2.BGColorA = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB2.BGColorB = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB2.Enabled = false;
             this.DKB2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.DKB2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.DKB2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(103)))), ((int)(((byte)(112)))));
             this.DKB2.Location = new System.Drawing.Point(75, 8);
             this.DKB2.Maximum = 0;
             this.DKB2.Name = "DKB2";
             this.DKB2.Size = new System.Drawing.Size(20, 20);
             this.DKB2.TabIndex = 12;
             this.DKB2.Text = "DKB2";
-            this.TETT.SetToolTip(this.DKB2, "Dark Theme");
             this.DKB2.Value = 0;
             // 
             // MNPB
@@ -526,34 +483,6 @@ namespace Nerator.UI
             this.LTP2.TabIndex = 15;
             this.LTP2.Text = "LTP2";
             this.TETT.SetToolTip(this.LTP2, "Light Theme");
-            // 
-            // PWLN
-            // 
-            this.PWLN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PWLN.BackColor = System.Drawing.Color.White;
-            this.PWLN.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.PWLN.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.PWLN.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.PWLN.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.PWLN.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.PWLN.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.PWLN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PWLN.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.PWLN.ForeColor = System.Drawing.Color.Black;
-            this.PWLN.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.PWLN.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.PWLN.Location = new System.Drawing.Point(3, 60);
-            this.PWLN.MaxNum = 50F;
-            this.PWLN.MinNum = 6F;
-            this.PWLN.Name = "PWLN";
-            this.PWLN.Precision = 0;
-            this.PWLN.Size = new System.Drawing.Size(120, 32);
-            this.PWLN.Step = 1F;
-            this.PWLN.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
-            this.PWLN.TabIndex = 4;
-            this.PWLN.Text = "PWLN";
-            this.TETT.SetToolTip(this.PWLN, "Light Theme");
-            this.PWLN.ValueNumber = 15F;
             // 
             // LTP3
             // 
@@ -650,9 +579,97 @@ namespace Nerator.UI
             this.RTPB.TabIndex = 5;
             this.RTPB.TabStop = false;
             // 
+            // PWLN
+            // 
+            this.PWLN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.PWLN.BackColor = System.Drawing.Color.White;
+            this.PWLN.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.PWLN.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.PWLN.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.PWLN.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PWLN.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.PWLN.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.PWLN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PWLN.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PWLN.ForeColor = System.Drawing.Color.Black;
+            this.PWLN.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PWLN.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PWLN.Location = new System.Drawing.Point(3, 60);
+            this.PWLN.MaxNum = 50F;
+            this.PWLN.MinNum = 6F;
+            this.PWLN.Name = "PWLN";
+            this.PWLN.Precision = 0;
+            this.PWLN.Size = new System.Drawing.Size(120, 32);
+            this.PWLN.Step = 1F;
+            this.PWLN.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
+            this.PWLN.TabIndex = 4;
+            this.PWLN.Text = "PWLN";
+            this.TETT.SetToolTip(this.PWLN, "Light Theme");
+            this.PWLN.ValueNumber = 15F;
+            // 
+            // SMCB
+            // 
+            this.SMCB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SMCB.AutoResize = false;
+            this.SMCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SMCB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SMCB.Depth = 0;
+            this.SMCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.SMCB.DropDownHeight = 174;
+            this.SMCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SMCB.DropDownWidth = 135;
+            this.SMCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.SMCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SMCB.FormattingEnabled = true;
+            this.SMCB.Hint = "Special Mode";
+            this.SMCB.IntegralHeight = false;
+            this.SMCB.ItemHeight = 43;
+            this.SMCB.Items.AddRange(new object[] {
+            "Mixed",
+            "Symbol",
+            "Number"});
+            this.SMCB.Location = new System.Drawing.Point(186, 6);
+            this.SMCB.MaxDropDownItems = 4;
+            this.SMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.SMCB.Name = "SMCB";
+            this.SMCB.Size = new System.Drawing.Size(135, 49);
+            this.SMCB.TabIndex = 14;
+            this.TETT.SetToolTip(this.SMCB, "Select Special Mode");
+            this.SMCB.UseAccent = false;
+            // 
+            // AMCB
+            // 
+            this.AMCB.AutoResize = false;
+            this.AMCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.AMCB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AMCB.Depth = 0;
+            this.AMCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.AMCB.DropDownHeight = 174;
+            this.AMCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AMCB.DropDownWidth = 135;
+            this.AMCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.AMCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.AMCB.FormattingEnabled = true;
+            this.AMCB.Hint = "Alphabetic Mode";
+            this.AMCB.IntegralHeight = false;
+            this.AMCB.ItemHeight = 43;
+            this.AMCB.Items.AddRange(new object[] {
+            "Mixed",
+            "Uppercase",
+            "Lowercase"});
+            this.AMCB.Location = new System.Drawing.Point(6, 6);
+            this.AMCB.MaxDropDownItems = 4;
+            this.AMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.AMCB.Name = "AMCB";
+            this.AMCB.Size = new System.Drawing.Size(135, 49);
+            this.AMCB.TabIndex = 13;
+            this.TETT.SetToolTip(this.AMCB, "Select Alphabetic Mode");
+            this.AMCB.UseAccent = false;
+            // 
             // MTS
             // 
             this.MTS.BaseTabControl = this.MTC;
+            this.MTS.Cursor = System.Windows.Forms.Cursors.Default;
             this.MTS.Depth = 0;
             this.MTS.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.MTS.HeadAlignment = ReaLTaiizor.Controls.MaterialTabSelector.Alignment.Center;
@@ -731,61 +748,6 @@ namespace Nerator.UI
             this.materialCheckBox3.Text = "materialCheckBox3";
             this.materialCheckBox3.UseVisualStyleBackColor = true;
             // 
-            // AMCB
-            // 
-            this.AMCB.AutoResize = false;
-            this.AMCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.AMCB.Depth = 0;
-            this.AMCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.AMCB.DropDownHeight = 174;
-            this.AMCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AMCB.DropDownWidth = 135;
-            this.AMCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.AMCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.AMCB.FormattingEnabled = true;
-            this.AMCB.Hint = "Alphabetic Mode";
-            this.AMCB.ItemHeight = 43;
-            this.AMCB.Items.AddRange(new object[] {
-            "Mixed",
-            "Uppercase",
-            "Lowercase"});
-            this.AMCB.Location = new System.Drawing.Point(6, 6);
-            this.AMCB.MaxDropDownItems = 4;
-            this.AMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.AMCB.Name = "AMCB";
-            this.AMCB.Size = new System.Drawing.Size(135, 49);
-            this.AMCB.TabIndex = 13;
-            this.TETT.SetToolTip(this.AMCB, "Select Alphabetic Mode");
-            this.AMCB.UseAccent = false;
-            // 
-            // SMCB
-            // 
-            this.SMCB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SMCB.AutoResize = false;
-            this.SMCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SMCB.Depth = 0;
-            this.SMCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.SMCB.DropDownHeight = 174;
-            this.SMCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SMCB.DropDownWidth = 135;
-            this.SMCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.SMCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.SMCB.FormattingEnabled = true;
-            this.SMCB.Hint = "Special Mode";
-            this.SMCB.ItemHeight = 43;
-            this.SMCB.Items.AddRange(new object[] {
-            "Mixed",
-            "Symbol",
-            "Number"});
-            this.SMCB.Location = new System.Drawing.Point(186, 6);
-            this.SMCB.MaxDropDownItems = 4;
-            this.SMCB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.SMCB.Name = "SMCB";
-            this.SMCB.Size = new System.Drawing.Size(135, 49);
-            this.SMCB.TabIndex = 14;
-            this.TETT.SetToolTip(this.SMCB, "Select Special Mode");
-            this.SMCB.UseAccent = false;
-            // 
             // LIGHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -857,8 +819,6 @@ namespace Nerator.UI
         private ReaLTaiizor.Controls.Badge DKB1;
         private ReaLTaiizor.Controls.Badge DKB2;
         private System.Windows.Forms.PictureBox MNPB;
-        private ReaLTaiizor.Controls.Badge badge2;
-        private ReaLTaiizor.Controls.Badge badge1;
         private ReaLTaiizor.Controls.MetroToolTip TETT;
         private ReaLTaiizor.Controls.MaterialCheckBox TMCB;
         private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox1;

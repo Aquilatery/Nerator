@@ -11,6 +11,7 @@ using static Nerator.CS.Setting;
 using System.Collections.Generic;
 using static Nerator.CS.Variable;
 using static Nerator.CS.Strength;
+using static Nerator.CS.Character;
 using static Nerator.CS.Generator;
 
 namespace Nerator.UI
@@ -26,7 +27,7 @@ namespace Nerator.UI
 
         private void CEB_Click(object sender, EventArgs e)
         {
-            string GP = Create(GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
+            string GP = Create(GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), GetAlphabetic(AMCB.SelectedItem, AlphabeticType.BS), GetSpecial(SMCB.SelectedItem, SpecialType.NS));
             PWDTB.Text = GP;
             if (HYS.Checked)
             {
@@ -157,6 +158,9 @@ namespace Nerator.UI
                 TMCB_CheckedChanged(null, null);
             }
 
+            SMCB.SelectedIndex = SMCB.Items.IndexOf(GetSpecial(SpecialMode));
+            AMCB.SelectedIndex = AMCB.Items.IndexOf(GetAlphabetic(AlphabeticMode));
+
             PWLN.ValueNumber = PasswordLenght;
             MTC.SelectedTab = OpenPageMode(PageMode);
             MTS.BaseTabControl = MTC;
@@ -176,8 +180,10 @@ namespace Nerator.UI
         {
             HistoryMode = HYS.Checked;
             TopMostMode = TMCB.Checked;
-            PasswordLenght = GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
             PageMode = GetPageMode(MTC.SelectedTab.Text);
+            SpecialMode = GetSpecial(SMCB.SelectedItem, SpecialType.NS);
+            AlphabeticMode = GetAlphabetic(AMCB.SelectedItem, AlphabeticType.BS);
+            PasswordLenght = GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
             Save(ConfigFileName);
         }
     }

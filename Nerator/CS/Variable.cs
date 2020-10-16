@@ -1,5 +1,6 @@
 ﻿using System;
 using static Nerator.CS.History;
+using static Nerator.CS.Character;
 
 namespace Nerator.CS
 {
@@ -151,6 +152,74 @@ namespace Nerator.CS
             catch
             {
                 return DateTimeOffset.FromUnixTimeSeconds(Default).DateTime.ToLocalTime().ToString(DefaultDate);
+            }
+        }
+
+        public static AlphabeticType GetAlphabetic(object Variable, AlphabeticType Default = AlphabeticType.BS)
+        {
+            try
+            {
+                return Variable.ToString() switch
+                {
+                    "Uppercase" => GetAlphabeticMode("JB"),
+                    "Lowercase" => GetAlphabeticMode("JS"),
+                    _ => GetAlphabeticMode("BS"),
+                };
+            }
+            catch
+            {
+                return Default;
+            }
+        }
+
+        public static string GetAlphabetic(AlphabeticType Variable, string Default = "Mixed")
+        {
+            try
+            {
+                return Variable switch
+                {
+                    AlphabeticType.JB => "Uppercase",
+                    AlphabeticType.JS => "Lowercase",
+                    _ => "Mixed",
+                };
+            }
+            catch
+            {
+                return Default;
+            }
+        }
+
+        public static SpecialType GetSpecial(object Variable, SpecialType Default = SpecialType.NS)
+        {
+            try
+            {
+                return Variable.ToString() switch
+                {
+                    "Number" => GetSpecialMode("JN"),
+                    "Symbol" => GetSpecialMode("JS"),
+                    _ => GetSpecialMode("NS"),
+                };
+            }
+            catch
+            {
+                return Default;
+            }
+        }
+
+        public static string GetSpecial(SpecialType Variable, string Default = "Mixed")
+        {
+            try
+            {
+                return Variable switch
+                {
+                    SpecialType.JN => "Number",
+                    SpecialType.JS => "Symbol",
+                    _ => "Mixed",
+                };
+            }
+            catch
+            {
+                return Default;
             }
         }
     }
