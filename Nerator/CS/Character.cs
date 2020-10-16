@@ -41,5 +41,31 @@
             JS,
             NS
         }
+
+        public static SpecialType GetSpecialMode(string Type)
+        {
+            switch (Type)
+            {
+                case "JN":
+                    return SpecialType.JN;
+                case "JS":
+                    return SpecialType.JS;
+                default:
+                    return SpecialType.NS;
+            }
+        }
+
+        public static string GetSpecialMode(SpecialType Type)
+        {
+            switch (Type)
+            {
+                case SpecialType.JN:
+                    return "JN";
+                case SpecialType.JS:
+                    return "JS";
+                default:
+                    return "NS";
+            }
+        }
     }
 }

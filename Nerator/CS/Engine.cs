@@ -8,17 +8,10 @@ namespace Nerator.CS
     {
         public Engine()
         {
-            try
-            {
-                new Setting(ConfigFileName);
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(OpenWindowMode(WindowMode));
-            }
-            catch (System.Exception Ex)
-            {
-                MessageBox.Show(Ex.Message + "\n" + Ex.StackTrace);
-            }
+            new Setting(ConfigFileName);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(OpenWindowMode(WindowMode));
         }
     }
 }

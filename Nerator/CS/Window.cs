@@ -30,7 +30,7 @@ namespace Nerator.CS
             switch (Type)
             {
                 case WindowType.EX:
-                    return "MAIN";
+                    return "EX";
                 case WindowType.DARK:
                     return "DARK";
                 default:
