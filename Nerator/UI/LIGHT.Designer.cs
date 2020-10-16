@@ -47,10 +47,12 @@ namespace Nerator.UI
             this.MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
             this.STATUST = new System.Windows.Forms.Timer(this.components);
             this.STATUSMT = new System.Windows.Forms.Timer(this.components);
+            this.WRPB = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MTC.SuspendLayout();
             this.Generate.SuspendLayout();
             this.History.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WRPB)).BeginInit();
             this.SuspendLayout();
             // 
             // labelEdit1
@@ -82,13 +84,13 @@ namespace Nerator.UI
             // 
             // PWDTB
             // 
-            this.PWDTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PWDTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PWDTB.BackColor = System.Drawing.Color.Transparent;
+            this.PWDTB.BackColor = System.Drawing.Color.White;
             this.PWDTB.Font = new System.Drawing.Font("Tahoma", 11F);
             this.PWDTB.ForeColor = System.Drawing.Color.DimGray;
             this.PWDTB.Image = global::Nerator.Properties.Resources.PasteSpecial;
-            this.PWDTB.Location = new System.Drawing.Point(6, 6);
+            this.PWDTB.Location = new System.Drawing.Point(6, 106);
             this.PWDTB.MaxLength = 50;
             this.PWDTB.Multiline = false;
             this.PWDTB.Name = "PWDTB";
@@ -101,9 +103,9 @@ namespace Nerator.UI
             // 
             // PLPB
             // 
-            this.PLPB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PLPB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PLPB.Location = new System.Drawing.Point(10, 46);
+            this.PLPB.Location = new System.Drawing.Point(10, 146);
             this.PLPB.Name = "PLPB";
             this.PLPB.Size = new System.Drawing.Size(307, 5);
             this.PLPB.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Green;
@@ -130,13 +132,14 @@ namespace Nerator.UI
             // 
             // CEB
             // 
+            this.CEB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.CEB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CEB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CEB.Depth = 0;
             this.CEB.DrawShadows = true;
             this.CEB.HighEmphasis = true;
             this.CEB.Icon = global::Nerator.Properties.Resources.QuillInk;
-            this.CEB.Location = new System.Drawing.Point(6, 56);
+            this.CEB.Location = new System.Drawing.Point(6, 156);
             this.CEB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.CEB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.CEB.Name = "CEB";
@@ -150,14 +153,14 @@ namespace Nerator.UI
             // 
             // CYB
             // 
-            this.CYB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CYB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CYB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CYB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CYB.Depth = 0;
             this.CYB.DrawShadows = true;
             this.CYB.HighEmphasis = true;
             this.CYB.Icon = global::Nerator.Properties.Resources.CopyClipboard;
-            this.CYB.Location = new System.Drawing.Point(234, 56);
+            this.CYB.Location = new System.Drawing.Point(234, 156);
             this.CYB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.CYB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.CYB.Name = "CYB";
@@ -195,6 +198,7 @@ namespace Nerator.UI
             this.Generate.Controls.Add(this.CYB);
             this.Generate.Controls.Add(this.PWDTB);
             this.Generate.Controls.Add(this.PLPB);
+            this.Generate.Controls.Add(this.WRPB);
             this.Generate.Location = new System.Drawing.Point(4, 4);
             this.Generate.Name = "Generate";
             this.Generate.Padding = new System.Windows.Forms.Padding(3);
@@ -204,12 +208,12 @@ namespace Nerator.UI
             // 
             // HYS
             // 
-            this.HYS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HYS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.HYS.AutoSize = true;
             this.HYS.Checked = true;
             this.HYS.CheckState = System.Windows.Forms.CheckState.Checked;
             this.HYS.Depth = 0;
-            this.HYS.Location = new System.Drawing.Point(117, 57);
+            this.HYS.Location = new System.Drawing.Point(117, 157);
             this.HYS.Margin = new System.Windows.Forms.Padding(0);
             this.HYS.MouseLocation = new System.Drawing.Point(-1, -1);
             this.HYS.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -280,6 +284,21 @@ namespace Nerator.UI
             this.STATUSMT.Interval = 50;
             this.STATUSMT.Tick += new System.EventHandler(this.STATUSMT_Tick);
             // 
+            // WRPB
+            // 
+            this.WRPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WRPB.BackColor = System.Drawing.Color.Transparent;
+            this.WRPB.Image = global::Nerator.Properties.Resources.WaitRabbit;
+            this.WRPB.Location = new System.Drawing.Point(0, 0);
+            this.WRPB.Margin = new System.Windows.Forms.Padding(0);
+            this.WRPB.Name = "WRPB";
+            this.WRPB.Size = new System.Drawing.Size(327, 103);
+            this.WRPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.WRPB.TabIndex = 17;
+            this.WRPB.TabStop = false;
+            // 
             // LIGHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -302,6 +321,7 @@ namespace Nerator.UI
             this.Generate.ResumeLayout(false);
             this.Generate.PerformLayout();
             this.History.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WRPB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,5 +344,6 @@ namespace Nerator.UI
         private System.Windows.Forms.Panel HYP;
         private System.Windows.Forms.Timer STATUST;
         private System.Windows.Forms.Timer STATUSMT;
+        private System.Windows.Forms.PictureBox WRPB;
     }
 }
