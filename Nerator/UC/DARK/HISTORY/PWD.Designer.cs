@@ -29,109 +29,109 @@ namespace Nerator.UC.DARK.HISTORY
         /// </summary>
         private void InitializeComponent()
         {
-            this.PASSWORD = new ReaLTaiizor.Controls.MetroLabel();
-            this.COPY = new ReaLTaiizor.Controls.MaterialButton();
-            this.REMOVE = new ReaLTaiizor.Controls.MaterialButton();
-            this.TIMEDATE = new ReaLTaiizor.Controls.MetroLabel();
-            this.SuspendLayout();
+            PASSWORD = new ReaLTaiizor.Controls.MetroLabel();
+            COPY = new ReaLTaiizor.Controls.MaterialButton();
+            REMOVE = new ReaLTaiizor.Controls.MaterialButton();
+            TIMEDATE = new ReaLTaiizor.Controls.MetroLabel();
+            SuspendLayout();
             // 
             // PASSWORD
             // 
-            this.PASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            PASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PASSWORD.AutoEllipsis = true;
-            this.PASSWORD.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PASSWORD.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.PASSWORD.IsDerivedStyle = true;
-            this.PASSWORD.Location = new System.Drawing.Point(80, 0);
-            this.PASSWORD.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.PASSWORD.Name = "PASSWORD";
-            this.PASSWORD.Size = new System.Drawing.Size(142, 36);
-            this.PASSWORD.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.PASSWORD.StyleManager = null;
-            this.PASSWORD.TabIndex = 0;
-            this.PASSWORD.Text = "PASSWORD PASSWORD PASSWORD PASSWORD";
-            this.PASSWORD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PASSWORD.ThemeAuthor = "Taiizor";
-            this.PASSWORD.ThemeName = "MetroLight";
-            this.PASSWORD.UseCompatibleTextRendering = true;
+            PASSWORD.AutoEllipsis = true;
+            PASSWORD.Cursor = System.Windows.Forms.Cursors.Default;
+            PASSWORD.Font = new System.Drawing.Font("Segoe UI", 11F);
+            PASSWORD.IsDerivedStyle = true;
+            PASSWORD.Location = new System.Drawing.Point(80, 0);
+            PASSWORD.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            PASSWORD.Name = "PASSWORD";
+            PASSWORD.Size = new System.Drawing.Size(142, 36);
+            PASSWORD.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            PASSWORD.StyleManager = null;
+            PASSWORD.TabIndex = 0;
+            PASSWORD.Text = "PASSWORD PASSWORD PASSWORD PASSWORD";
+            PASSWORD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            PASSWORD.ThemeAuthor = "Taiizor";
+            PASSWORD.ThemeName = "MetroLight";
+            PASSWORD.UseCompatibleTextRendering = true;
             // 
             // COPY
             // 
-            this.COPY.AutoSize = false;
-            this.COPY.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.COPY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.COPY.Depth = 0;
-            this.COPY.Dock = System.Windows.Forms.DockStyle.Right;
-            this.COPY.DrawShadows = false;
-            this.COPY.HighEmphasis = true;
-            this.COPY.Icon = global::Nerator.Properties.Resources.Copy;
-            this.COPY.Location = new System.Drawing.Point(224, 1);
-            this.COPY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.COPY.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.COPY.Name = "COPY";
-            this.COPY.Size = new System.Drawing.Size(44, 34);
-            this.COPY.TabIndex = 2;
-            this.COPY.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
-            this.COPY.UseAccentColor = false;
-            this.COPY.UseVisualStyleBackColor = true;
-            this.COPY.Click += new System.EventHandler(this.COPY_Click);
+            COPY.AutoSize = false;
+            COPY.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            COPY.Cursor = System.Windows.Forms.Cursors.Hand;
+            COPY.Depth = 0;
+            COPY.Dock = System.Windows.Forms.DockStyle.Right;
+            COPY.DrawShadows = false;
+            COPY.HighEmphasis = true;
+            COPY.Icon = global::Nerator.Properties.Resources.Copy;
+            COPY.Location = new System.Drawing.Point(224, 1);
+            COPY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            COPY.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            COPY.Name = "COPY";
+            COPY.Size = new System.Drawing.Size(44, 34);
+            COPY.TabIndex = 2;
+            COPY.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
+            COPY.UseAccentColor = false;
+            COPY.UseVisualStyleBackColor = true;
+            COPY.Click += new System.EventHandler(COPY_Click);
             // 
             // REMOVE
             // 
-            this.REMOVE.AutoSize = false;
-            this.REMOVE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.REMOVE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.REMOVE.Depth = 0;
-            this.REMOVE.Dock = System.Windows.Forms.DockStyle.Right;
-            this.REMOVE.DrawShadows = false;
-            this.REMOVE.HighEmphasis = true;
-            this.REMOVE.Icon = global::Nerator.Properties.Resources.Delete;
-            this.REMOVE.Location = new System.Drawing.Point(268, 1);
-            this.REMOVE.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.REMOVE.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.REMOVE.Name = "REMOVE";
-            this.REMOVE.Size = new System.Drawing.Size(44, 34);
-            this.REMOVE.TabIndex = 3;
-            this.REMOVE.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
-            this.REMOVE.UseAccentColor = true;
-            this.REMOVE.UseVisualStyleBackColor = true;
-            this.REMOVE.Click += new System.EventHandler(this.REMOVE_Click);
+            REMOVE.AutoSize = false;
+            REMOVE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            REMOVE.Cursor = System.Windows.Forms.Cursors.Hand;
+            REMOVE.Depth = 0;
+            REMOVE.Dock = System.Windows.Forms.DockStyle.Right;
+            REMOVE.DrawShadows = false;
+            REMOVE.HighEmphasis = true;
+            REMOVE.Icon = global::Nerator.Properties.Resources.Delete;
+            REMOVE.Location = new System.Drawing.Point(268, 1);
+            REMOVE.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            REMOVE.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            REMOVE.Name = "REMOVE";
+            REMOVE.Size = new System.Drawing.Size(44, 34);
+            REMOVE.TabIndex = 3;
+            REMOVE.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Text;
+            REMOVE.UseAccentColor = true;
+            REMOVE.UseVisualStyleBackColor = true;
+            REMOVE.Click += new System.EventHandler(REMOVE_Click);
             // 
             // TIMEDATE
             // 
-            this.TIMEDATE.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TIMEDATE.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.TIMEDATE.IsDerivedStyle = true;
-            this.TIMEDATE.Location = new System.Drawing.Point(0, 1);
-            this.TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.TIMEDATE.Name = "TIMEDATE";
-            this.TIMEDATE.Size = new System.Drawing.Size(78, 34);
-            this.TIMEDATE.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.TIMEDATE.StyleManager = null;
-            this.TIMEDATE.TabIndex = 4;
-            this.TIMEDATE.Text = "00:00:00\r\n00.00.0000";
-            this.TIMEDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TIMEDATE.ThemeAuthor = "Taiizor";
-            this.TIMEDATE.ThemeName = "MetroLight";
+            TIMEDATE.Cursor = System.Windows.Forms.Cursors.Default;
+            TIMEDATE.Dock = System.Windows.Forms.DockStyle.Left;
+            TIMEDATE.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            TIMEDATE.IsDerivedStyle = true;
+            TIMEDATE.Location = new System.Drawing.Point(0, 1);
+            TIMEDATE.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            TIMEDATE.Name = "TIMEDATE";
+            TIMEDATE.Size = new System.Drawing.Size(78, 34);
+            TIMEDATE.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            TIMEDATE.StyleManager = null;
+            TIMEDATE.TabIndex = 4;
+            TIMEDATE.Text = "00:00:00\r\n00.00.0000";
+            TIMEDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            TIMEDATE.ThemeAuthor = "Taiizor";
+            TIMEDATE.ThemeName = "MetroLight";
             // 
             // PWD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.Controls.Add(this.TIMEDATE);
-            this.Controls.Add(this.COPY);
-            this.Controls.Add(this.PASSWORD);
-            this.Controls.Add(this.REMOVE);
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.MaximumSize = new System.Drawing.Size(329, 36);
-            this.MinimumSize = new System.Drawing.Size(312, 36);
-            this.Name = "PWD";
-            this.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.Size = new System.Drawing.Size(312, 36);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            Controls.Add(TIMEDATE);
+            Controls.Add(COPY);
+            Controls.Add(PASSWORD);
+            Controls.Add(REMOVE);
+            Margin = new System.Windows.Forms.Padding(0);
+            MaximumSize = new System.Drawing.Size(329, 36);
+            MinimumSize = new System.Drawing.Size(312, 36);
+            Name = "PWD";
+            Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            Size = new System.Drawing.Size(312, 36);
+            ResumeLayout(false);
 
         }
 

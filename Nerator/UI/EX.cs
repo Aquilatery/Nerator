@@ -90,8 +90,13 @@ namespace Nerator.UI
                 Expand_CheckedChanged(null);
             }
 
-            PLength.Value = PasswordLenght;
             TopMost_T.Checked = TopMostMode;
+            if (TopMost_T.Checked)
+            {
+                TopMost_T_CheckedChanged(null);
+            }
+			
+            PLength.Value = PasswordLenght;
             switch (AlphabeticMode)
             {
                 case AlphabeticType.JB:

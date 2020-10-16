@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Threading;
+using System.Windows.Forms;
 using static Nerator.CS.Window;
 using static Nerator.CS.Setting;
 
@@ -6,14 +8,24 @@ namespace Nerator.CS
 {
     public class Engine
     {
+        private static readonly Mutex MTX = new Mutex(true, "{Soferity Nerator - New Generation Password Generator}");
+
         public Engine()
         {
             try
             {
-                new Setting(ConfigFileName);
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(OpenWindowMode(WindowMode));
+                if (MTX.WaitOne(TimeSpan.Zero, true))
+                {
+                    MTX.ReleaseMutex();
+                    new Setting(ConfigFileName);
+                    Application.Run(OpenWindowMode(WindowMode));
+                }
+                else
+                {
+                    MessageBox.Show("Already Open!", "Nerator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (System.Exception Ex)
             {
