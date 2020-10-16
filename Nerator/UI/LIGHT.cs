@@ -3,6 +3,7 @@ using Conforyon;
 using Nerator.CS;
 using ReaLTaiizor.Forms;
 using System.Windows.Forms;
+using static Nerator.CS.Page;
 using Nerator.UC.LIGHT.HISTORY;
 using static Nerator.CS.History;
 using static Nerator.CS.Setting;
@@ -114,11 +115,24 @@ namespace Nerator.UI
         private void LoadConfig()
         {
             HYS.Checked = HistoryMode;
+            MTC.SelectedTab = OpenPageMode(PageMode);
+            MTS.BaseTabControl = MTC;
+        }
+
+        private TabPage OpenPageMode(PageType Type)
+        {
+            return Type switch
+            {
+                PageType.History => History,
+                PageType.Setting => Setting,
+                _ => Generate,
+            };
         }
 
         private void LIGHT_FormClosed(object sender, FormClosedEventArgs e)
         {
             HistoryMode = HYS.Checked;
+            PageMode = GetPageMode(MTC.SelectedTab.Text);
             Save(ConfigFileName);
         }
     }

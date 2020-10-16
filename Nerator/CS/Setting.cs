@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using Newtonsoft.Json;
+using static Nerator.CS.Page;
 using static Nerator.CS.Window;
 using static Nerator.CS.Variable;
 using System.Collections.Generic;
@@ -31,8 +32,9 @@ namespace Nerator.CS
             if (!string.IsNullOrEmpty(SS) && !string.IsNullOrWhiteSpace(SS))
             {
                 Dictionary<string, string> Settings = JsonConvert.DeserializeObject<Dictionary<string, string>>(SS);
-                if (Settings.ContainsKey("WindowMode") && Settings.ContainsKey("SpecialMode") && Settings.ContainsKey("TopMostMode") && Settings.ContainsKey("HistoryMode") && Settings.ContainsKey("AlphabeticMode") && Settings.ContainsKey("EXExpandMode") && Settings.ContainsKey("PasswordLenght"))
+                if (Settings.ContainsKey("PageMode") && Settings.ContainsKey("WindowMode") && Settings.ContainsKey("SpecialMode") && Settings.ContainsKey("TopMostMode") && Settings.ContainsKey("HistoryMode") && Settings.ContainsKey("AlphabeticMode") && Settings.ContainsKey("EXExpandMode") && Settings.ContainsKey("PasswordLenght"))
                 {
+                    PageMode = GetPageMode(Settings["PageMode"]);
                     WindowMode = GetWindowMode(Settings["WindowMode"]);
                     SpecialMode = GetSpecialMode(Settings["SpecialMode"]);
                     TopMostMode = GetBoolean(Settings["TopMostMode"], TopMostMode);
@@ -49,6 +51,7 @@ namespace Nerator.CS
         {
             Dictionary<string, string> Settings = new Dictionary<string, string>()
             {
+                { "PageMode" , GetPageMode(PageMode) },
                 { "WindowMode" , GetWindowMode(WindowMode) },
                 { "SpecialMode" , GetSpecialMode(SpecialMode) },
                 { "TopMostMode" , GetString(TopMostMode, TopMostMode) },
@@ -107,6 +110,13 @@ namespace Nerator.CS
         {
             get => _EXExpandMode;
             set => _EXExpandMode = value;
+        }
+
+        private static PageType _PageMode = PageType.Generate;
+        public static PageType PageMode
+        {
+            get => _PageMode;
+            set => _PageMode = value;
         }
     }
 }

@@ -31,8 +31,8 @@ namespace Nerator.UI
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LIGHT));
-            this.labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TELE = new ReaLTaiizor.Controls.LabelEdit();
+            this.LOPB = new System.Windows.Forms.PictureBox();
             this.PWDTB = new ReaLTaiizor.Controls.BigTextBox();
             this.PLPB = new ReaLTaiizor.Controls.PoisonProgressBar();
             this.SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
@@ -41,46 +41,46 @@ namespace Nerator.UI
             this.MTC = new ReaLTaiizor.Controls.MaterialTabControl();
             this.Generate = new System.Windows.Forms.TabPage();
             this.HYS = new ReaLTaiizor.Controls.MaterialSwitch();
+            this.WRPB = new System.Windows.Forms.PictureBox();
             this.History = new System.Windows.Forms.TabPage();
             this.HYP = new System.Windows.Forms.Panel();
             this.Setting = new System.Windows.Forms.TabPage();
             this.MTS = new ReaLTaiizor.Controls.MaterialTabSelector();
             this.STATUST = new System.Windows.Forms.Timer(this.components);
             this.STATUSMT = new System.Windows.Forms.Timer(this.components);
-            this.WRPB = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOPB)).BeginInit();
             this.MTC.SuspendLayout();
             this.Generate.SuspendLayout();
-            this.History.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WRPB)).BeginInit();
+            this.History.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labelEdit1
+            // TELE
             // 
-            this.labelEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TELE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelEdit1.BackColor = System.Drawing.Color.Transparent;
-            this.labelEdit1.Enabled = false;
-            this.labelEdit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.labelEdit1.ForeColor = System.Drawing.Color.White;
-            this.labelEdit1.Location = new System.Drawing.Point(0, 0);
-            this.labelEdit1.Name = "labelEdit1";
-            this.labelEdit1.Size = new System.Drawing.Size(359, 25);
-            this.labelEdit1.TabIndex = 1;
-            this.labelEdit1.Text = "Nerator";
-            this.labelEdit1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TELE.BackColor = System.Drawing.Color.Transparent;
+            this.TELE.Enabled = false;
+            this.TELE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.TELE.ForeColor = System.Drawing.Color.White;
+            this.TELE.Location = new System.Drawing.Point(0, 0);
+            this.TELE.Name = "TELE";
+            this.TELE.Size = new System.Drawing.Size(359, 25);
+            this.TELE.TabIndex = 1;
+            this.TELE.Text = "Nerator";
+            this.TELE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // LOPB
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::Nerator.Properties.Resources.ShowPassword;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.LOPB.BackColor = System.Drawing.Color.Transparent;
+            this.LOPB.Enabled = false;
+            this.LOPB.Image = global::Nerator.Properties.Resources.ShowPassword;
+            this.LOPB.Location = new System.Drawing.Point(0, 0);
+            this.LOPB.Name = "LOPB";
+            this.LOPB.Size = new System.Drawing.Size(25, 24);
+            this.LOPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LOPB.TabIndex = 3;
+            this.LOPB.TabStop = false;
             // 
             // PWDTB
             // 
@@ -225,6 +225,21 @@ namespace Nerator.UI
             this.HYS.UseAccentColor = true;
             this.HYS.UseVisualStyleBackColor = true;
             // 
+            // WRPB
+            // 
+            this.WRPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WRPB.BackColor = System.Drawing.Color.Transparent;
+            this.WRPB.Image = global::Nerator.Properties.Resources.WaitRabbit;
+            this.WRPB.Location = new System.Drawing.Point(0, 0);
+            this.WRPB.Margin = new System.Windows.Forms.Padding(0);
+            this.WRPB.Name = "WRPB";
+            this.WRPB.Size = new System.Drawing.Size(327, 103);
+            this.WRPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.WRPB.TabIndex = 17;
+            this.WRPB.TabStop = false;
+            // 
             // History
             // 
             this.History.BackColor = System.Drawing.SystemColors.Control;
@@ -284,21 +299,6 @@ namespace Nerator.UI
             this.STATUSMT.Interval = 50;
             this.STATUSMT.Tick += new System.EventHandler(this.STATUSMT_Tick);
             // 
-            // WRPB
-            // 
-            this.WRPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WRPB.BackColor = System.Drawing.Color.Transparent;
-            this.WRPB.Image = global::Nerator.Properties.Resources.WaitRabbit;
-            this.WRPB.Location = new System.Drawing.Point(0, 0);
-            this.WRPB.Margin = new System.Windows.Forms.Padding(0);
-            this.WRPB.Name = "WRPB";
-            this.WRPB.Size = new System.Drawing.Size(327, 103);
-            this.WRPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.WRPB.TabIndex = 17;
-            this.WRPB.TabStop = false;
-            // 
             // LIGHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -307,8 +307,8 @@ namespace Nerator.UI
             this.Controls.Add(this.SSBR);
             this.Controls.Add(this.MTS);
             this.Controls.Add(this.MTC);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.labelEdit1);
+            this.Controls.Add(this.LOPB);
+            this.Controls.Add(this.TELE);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LIGHT";
@@ -316,20 +316,20 @@ namespace Nerator.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Generation Password Generator";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LIGHT_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOPB)).EndInit();
             this.MTC.ResumeLayout(false);
             this.Generate.ResumeLayout(false);
             this.Generate.PerformLayout();
-            this.History.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.WRPB)).EndInit();
+            this.History.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.LabelEdit labelEdit1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private ReaLTaiizor.Controls.LabelEdit TELE;
+        private System.Windows.Forms.PictureBox LOPB;
         private ReaLTaiizor.Controls.BigTextBox PWDTB;
         private ReaLTaiizor.Controls.PoisonProgressBar PLPB;
         private ReaLTaiizor.Controls.ForeverStatusBar SSBR;
