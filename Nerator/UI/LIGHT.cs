@@ -180,10 +180,7 @@ namespace Nerator.UI
             HYS.Checked = HistoryMode;
 
             TMCB.Checked = TopMostMode;
-            if (TMCB.Checked)
-            {
-                TMCB_CheckedChanged(null, null);
-            }
+            TopMost = TopMostMode;
 
             SMCB.SelectedIndex = SMCB.Items.IndexOf(GetSpecial(SpecialMode));
             AMCB.SelectedIndex = AMCB.Items.IndexOf(GetAlphabetic(AlphabeticMode));
@@ -191,6 +188,8 @@ namespace Nerator.UI
             PWLN.ValueNumber = PasswordLenght;
             MTC.SelectedTab = OpenPageMode(PageMode);
             MTS.BaseTabControl = MTC;
+
+            Invalidate();
         }
 
         private TabPage OpenPageMode(PageType Type)
@@ -205,7 +204,6 @@ namespace Nerator.UI
 
         private void LIGHT_FormClosed(object sender, FormClosedEventArgs e)
         {
-            TopMostMode = TMCB.Checked;
             PageMode = GetPageMode(MTC.SelectedTab.Text);
             PasswordLenght = GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
             Save(ConfigFileName);
