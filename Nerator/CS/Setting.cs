@@ -11,8 +11,8 @@ namespace Nerator.CS
     public class Setting
     {
         public static string ConfigFileName => "Config.json";
-        public static int MinimumPasswordLenght => 6;
-        public static int MaximumPasswordLenght => 50;
+        public static int MinimumPasswordLength => 6;
+        public static int MaximumPasswordLength => 50;
 
         public Setting(string ConfigFileName)
         {
@@ -32,7 +32,7 @@ namespace Nerator.CS
             if (!string.IsNullOrEmpty(SS) && !string.IsNullOrWhiteSpace(SS))
             {
                 Dictionary<string, string> Settings = JsonConvert.DeserializeObject<Dictionary<string, string>>(SS);
-                if (Settings.ContainsKey("PageMode") && Settings.ContainsKey("WindowMode") && Settings.ContainsKey("SpecialMode") && Settings.ContainsKey("TopMostMode") && Settings.ContainsKey("HistoryMode") && Settings.ContainsKey("AlphabeticMode") && Settings.ContainsKey("EXExpandMode") && Settings.ContainsKey("PasswordLenght"))
+                if (Settings.ContainsKey("PageMode") && Settings.ContainsKey("WindowMode") && Settings.ContainsKey("SpecialMode") && Settings.ContainsKey("TopMostMode") && Settings.ContainsKey("HistoryMode") && Settings.ContainsKey("AlphabeticMode") && Settings.ContainsKey("EXExpandMode") && Settings.ContainsKey("PasswordLength"))
                 {
                     PageMode = GetPageMode(Settings["PageMode"]);
                     WindowMode = GetWindowMode(Settings["WindowMode"]);
@@ -41,7 +41,7 @@ namespace Nerator.CS
                     HistoryMode = GetBoolean(Settings["HistoryMode"], HistoryMode);
                     AlphabeticMode = GetAlphabeticMode(Settings["AlphabeticMode"]);
                     EXExpandMode = GetBoolean(Settings["EXExpandMode"], EXExpandMode);
-                    PasswordLenght = GetInt(Settings["PasswordLenght"], PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
+                    PasswordLength = GetInt(Settings["PasswordLength"], PasswordLength, MinimumPasswordLength, MaximumPasswordLength);
                 }
             }
             Save(ConfigFileName);
@@ -58,7 +58,7 @@ namespace Nerator.CS
                 { "HistoryMode" , GetString(HistoryMode, HistoryMode) },
                 { "AlphabeticMode" , GetAlphabeticMode(AlphabeticMode) },
                 { "EXExpandMode" , GetString(EXExpandMode, EXExpandMode) },
-                { "PasswordLenght" , GetString(PasswordLenght, PasswordLenght) }
+                { "PasswordLength" , GetString(PasswordLength, PasswordLength) }
             };
             File.WriteAllText(ConfigFileName, JsonConvert.SerializeObject(Settings, Formatting.Indented));
         }
@@ -77,11 +77,11 @@ namespace Nerator.CS
             set => _HistoryMode = value;
         }
 
-        private static int _PasswordLenght = 15;
-        public static int PasswordLenght
+        private static int _PasswordLength = 15;
+        public static int PasswordLength
         {
-            get => _PasswordLenght;
-            set => _PasswordLenght = value;
+            get => _PasswordLength;
+            set => _PasswordLength = value;
         }
 
         private static AlphabeticType _AlphabeticMode = AlphabeticType.BS;

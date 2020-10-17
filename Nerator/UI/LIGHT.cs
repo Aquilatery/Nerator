@@ -26,7 +26,7 @@ namespace Nerator.UI
 
         private void CEB_Click(object sender, EventArgs e)
         {
-            string GP = Create(GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
+            string GP = Create(GetInt(PWLN.Value.ToString(), PasswordLength, MinimumPasswordLength, MaximumPasswordLength), AlphabeticMode, SpecialMode);
             PWDTB.Text = GP;
             if (HistoryMode)
             {
@@ -168,6 +168,14 @@ namespace Nerator.UI
             try
             {
                 SSBR.Text = Status.Message;
+                if (PWLN.Value < MinimumPasswordLength)
+                {
+                    PWLN.Value = MinimumPasswordLength;
+                }
+                else if (PWLN.Value > MaximumPasswordLength)
+                {
+                    PWLN.Value = MaximumPasswordLength;
+                }
             }
             catch (Exception Ex)
             {
@@ -185,7 +193,7 @@ namespace Nerator.UI
             SMCB.SelectedIndex = SMCB.Items.IndexOf(GetSpecial(SpecialMode));
             AMCB.SelectedIndex = AMCB.Items.IndexOf(GetAlphabetic(AlphabeticMode));
 
-            PWLN.ValueNumber = PasswordLenght;
+            PWLN.Value = PasswordLength;
             MTC.SelectedTab = OpenPageMode(PageMode);
             MTS.BaseTabControl = MTC;
 
@@ -205,7 +213,7 @@ namespace Nerator.UI
         private void LIGHT_FormClosed(object sender, FormClosedEventArgs e)
         {
             PageMode = GetPageMode(MTC.SelectedTab.Text);
-            PasswordLenght = GetInt(PWLN.ValueNumber.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
+            PasswordLength = GetInt(PWLN.Value.ToString(), PasswordLength, MinimumPasswordLength, MaximumPasswordLength);
             Save(ConfigFileName);
         }
     }

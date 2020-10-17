@@ -11,7 +11,7 @@ namespace Nerator.CS
     {
         public static string HistoryFileName => "History.json";
         public static long DefaultDateTime => DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-        public static int DefaultDateTimeLenght => DefaultDateTime.ToString().Length;
+        public static int DefaultDateTimeLength => DefaultDateTime.ToString().Length;
         public static string DefaultTime => "HH:mm:ss";
         public static string DefaultDate => "dd.MM.yyyy";
         public static int MaximumHistoryList => 100;
@@ -36,7 +36,7 @@ namespace Nerator.CS
                 Dictionary<string, string> History = JsonConvert.DeserializeObject<Dictionary<string, string>>(HS);
                 foreach (string PKey in History.Keys)
                 {
-                    if (PKey.Length < MinimumPasswordLenght || PKey.Length > MaximumPasswordLenght)
+                    if (PKey.Length < MinimumPasswordLength || PKey.Length > MaximumPasswordLength)
                     {
                         Remove(HistoryFileName, PKey);
                         Load(HistoryFileName);
@@ -54,7 +54,7 @@ namespace Nerator.CS
                 Dictionary<string, string> History = JsonConvert.DeserializeObject<Dictionary<string, string>>(HS);
                 foreach (string PKey in History.Keys)
                 {
-                    if (PKey.Length < MinimumPasswordLenght || PKey.Length > MaximumPasswordLenght || History[PKey].Length != DefaultDateTimeLenght)
+                    if (PKey.Length < MinimumPasswordLength || PKey.Length > MaximumPasswordLength || History[PKey].Length != DefaultDateTimeLength)
                     {
                         Remove(HistoryFileName, PKey);
                         return Loader(HistoryFileName);

@@ -30,7 +30,7 @@ namespace Nerator.CS
                 return ScoreType.Blank;
             }
 
-            if (Password.Length < MinimumPasswordLenght)
+            if (Password.Length < MinimumPasswordLength)
             {
                 return ScoreType.TooShort;
             }
@@ -106,7 +106,7 @@ namespace Nerator.CS
 
         public static class PasswordOptions
         {
-            public static int RequiredLength => MinimumPasswordLenght;
+            public static int RequiredLength => MinimumPasswordLength;
             public static int RequiredUniqueChars => 3;
             public static bool RequireNonAlphanumeric => true;
             public static bool RequireLowercase => true;
@@ -152,7 +152,7 @@ namespace Nerator.CS
                 return StrengthType.Weak;
             }
 
-            if (HasMinimumLength(Password, MinimumPasswordLenght))
+            if (HasMinimumLength(Password, MinimumPasswordLength))
             {
                 Score++;
             }
@@ -182,7 +182,7 @@ namespace Nerator.CS
 
         private static bool IsStrongPassword(string Password)
         {
-            return HasMinimumLength(Password, MinimumPasswordLenght) && HasUpperCaseLetter(Password) && HasLowerCaseLetter(Password) && (HasDigit(Password) || HasSpecialChar(Password));
+            return HasMinimumLength(Password, MinimumPasswordLength) && HasUpperCaseLetter(Password) && HasLowerCaseLetter(Password) && (HasDigit(Password) || HasSpecialChar(Password));
         }
 
         private static bool IsValidPassword(string Password)

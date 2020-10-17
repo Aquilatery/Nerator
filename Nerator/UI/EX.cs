@@ -19,7 +19,7 @@ namespace Nerator.UI
 
         private void Create_B_Click(object sender, EventArgs e)
         {
-            Password.Text = Create(GetInt(PLength.Value.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght), AlphabeticMode, SpecialMode);
+            Password.Text = Create(GetInt(PLength.Value.ToString(), PasswordLength, MinimumPasswordLength, MaximumPasswordLength), AlphabeticMode, SpecialMode);
         }
 
         private void Expand_CheckedChanged(object sender)
@@ -95,7 +95,7 @@ namespace Nerator.UI
                 TopMost_T_CheckedChanged(null);
             }
 			
-            PLength.Value = PasswordLenght;
+            PLength.Value = PasswordLength;
             switch (AlphabeticMode)
             {
                 case AlphabeticType.JB:
@@ -124,7 +124,7 @@ namespace Nerator.UI
 
         private void EX_FormClosed(object sender, FormClosedEventArgs e)
         {
-            PasswordLenght = GetInt(PLength.Value.ToString(), PasswordLenght, MinimumPasswordLenght, MaximumPasswordLenght);
+            PasswordLength = GetInt(PLength.Value.ToString(), PasswordLength, MinimumPasswordLength, MaximumPasswordLength);
             Save(ConfigFileName);
         }
     }
