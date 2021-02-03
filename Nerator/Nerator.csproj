@@ -10,7 +10,6 @@
     <Company>Soferity LLC</Company>
     <Title>$(AssemblyName) - New Generation Password Generator</Title>
     <Description>$(Title)</Description>
-    <AssemblyName>$(Title)</AssemblyName>
     <Product>$(Title)</Product>
     <InformationalVersion>$(Version)</InformationalVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
