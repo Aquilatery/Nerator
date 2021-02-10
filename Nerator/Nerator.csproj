@@ -56,7 +56,7 @@
     
   <ItemGroup>
     <PackageReference Include="Conforyon" Version="1.4.7.4" />
-    <PackageReference Include="ReaLTaiizor" Version="3.7.8.1" />
+    <PackageReference Include="ReaLTaiizor" Version="3.7.8.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Costura.Fody" Version="5.0.0-beta0004">
       <PrivateAssets>all</PrivateAssets>
