@@ -1,6 +1,6 @@
 ﻿using System;
-using Conforyon;
 using System.Drawing;
+using Conforyon.Board;
 using System.Windows.Forms;
 using static Nerator.CS.Setting;
 using static Nerator.CS.Variable;

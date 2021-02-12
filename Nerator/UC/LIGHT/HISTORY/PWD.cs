@@ -1,6 +1,6 @@
 ﻿using System;
-using Conforyon;
 using Nerator.CS;
+using Conforyon.Board;
 using System.Windows.Forms;
 using ReaLTaiizor.Enum.Poison;
 using static Nerator.CS.History;
@@ -41,10 +41,10 @@ namespace Nerator.UC.LIGHT.HISTORY
 
         private void COPY_Click(object sender, EventArgs e)
         {
-            if (Clipboard.GetText() != PASSWORD.Text)
+            if (ClipBoard.GetText() != PASSWORD.Text)
             {
                 ClipBoard.CopyText(PASSWORD.Text, true);
-                if (PASSWORD.Text == Clipboard.GetText())
+                if (PASSWORD.Text == ClipBoard.GetText())
                 {
                     Status.Message = PASSWORD.Text + " copied!";
                 }

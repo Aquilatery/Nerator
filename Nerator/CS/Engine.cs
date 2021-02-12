@@ -8,7 +8,7 @@ namespace Nerator.CS
 {
     public class Engine
     {
-        private static readonly Mutex MTX = new Mutex(true, "{Soferity Nerator - New Generation Password Generator}");
+        private static readonly Mutex MTX = new(true, "{Soferity Nerator - New Generation Password Generator}");
 
         public Engine()
         {

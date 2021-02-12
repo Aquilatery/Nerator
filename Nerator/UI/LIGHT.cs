@@ -1,6 +1,6 @@
 ﻿using System;
-using Conforyon;
 using Nerator.CS;
+using Conforyon.Board;
 using ReaLTaiizor.Forms;
 using System.Windows.Forms;
 using static Nerator.CS.Page;

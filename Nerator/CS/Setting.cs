@@ -49,7 +49,7 @@ namespace Nerator.CS
 
         public static void Save(string ConfigFileName)
         {
-            Dictionary<string, string> Settings = new Dictionary<string, string>()
+            Dictionary<string, string> Settings = new()
             {
                 { "PageMode" , GetPageMode(PageMode) },
                 { "WindowMode" , GetWindowMode(WindowMode) },

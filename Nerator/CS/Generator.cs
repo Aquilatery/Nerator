@@ -6,7 +6,7 @@ namespace Nerator.CS
 {
     public static class Generator
     {
-        private static readonly Random RM = new Random();
+        private static readonly Random RM = new();
 
         private const string AC_JB = "ABCDEFGHIJKLMNOPRSTUVYZQWX";
         private const string AC_JS = "abcdefghijklmnoprstuvyzqwx";
