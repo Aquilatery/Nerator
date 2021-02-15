@@ -1,6 +1,6 @@
 ﻿using System;
-using static Nerator.CS.History;
 using static Nerator.CS.Character;
+using static Nerator.CS.History;
 
 namespace Nerator.CS
 {

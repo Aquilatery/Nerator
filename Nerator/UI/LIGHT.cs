@@ -1,17 +1,17 @@
-﻿using System;
+﻿using Conforyon.Board;
 using Nerator.CS;
-using Conforyon.Board;
-using ReaLTaiizor.Forms;
-using System.Windows.Forms;
-using static Nerator.CS.Page;
 using Nerator.UC.LIGHT.HISTORY;
-using static Nerator.CS.History;
-using static Nerator.CS.Setting;
+using ReaLTaiizor.Forms;
+using System;
 using System.Collections.Generic;
-using static Nerator.CS.Variable;
-using static Nerator.CS.Strength;
+using System.Windows.Forms;
 using static Nerator.CS.Character;
 using static Nerator.CS.Generator;
+using static Nerator.CS.History;
+using static Nerator.CS.Page;
+using static Nerator.CS.Setting;
+using static Nerator.CS.Strength;
+using static Nerator.CS.Variable;
 
 namespace Nerator.UI
 {

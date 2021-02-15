@@ -85,7 +85,7 @@ namespace Nerator.CS
                 return Result;
             }
         */
-		
+
         private static string Shuffle_Mode_3(string Text, int Length)
         {
             return new string(Enumerable.Repeat(new string(Enumerable.Repeat(Text, Text.Length).Select(TXT => TXT[RM.Next(TXT.Length)]).ToArray()), Length).Select(PWD => PWD[RM.Next(PWD.Length)]).ToArray());

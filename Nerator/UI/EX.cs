@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Conforyon.Board;
+using System;
 using System.Drawing;
-using Conforyon.Board;
 using System.Windows.Forms;
+using static Nerator.CS.Character;
+using static Nerator.CS.Generator;
 using static Nerator.CS.Setting;
 using static Nerator.CS.Variable;
-using static Nerator.CS.Generator;
-using static Nerator.CS.Character;
 
 namespace Nerator.UI
 {
@@ -94,7 +94,7 @@ namespace Nerator.UI
             {
                 TopMost_T_CheckedChanged(null);
             }
-			
+
             PLength.Value = PasswordLength;
             switch (AlphabeticMode)
             {

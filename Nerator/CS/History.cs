@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
-using Newtonsoft.Json;
-using static Nerator.CS.Setting;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using static Nerator.CS.Setting;
 using static Nerator.CS.Variable;
 
 namespace Nerator.CS

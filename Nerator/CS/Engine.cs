@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.Windows.Forms;
-using static Nerator.CS.Window;
 using static Nerator.CS.Setting;
+using static Nerator.CS.Window;
 
 namespace Nerator.CS
 {
@@ -15,9 +15,9 @@ namespace Nerator.CS
             try
             {
                 Application.EnableVisualStyles();
-                #if NET5_0
+#if NET5_0
                 Application.SetHighDpiMode(HighDpiMode.SystemAware);
-                #endif
+#endif
                 Application.SetCompatibleTextRenderingDefault(false);
                 if (MTX.WaitOne(TimeSpan.Zero, true))
                 {

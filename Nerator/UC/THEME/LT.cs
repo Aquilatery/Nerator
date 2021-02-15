@@ -1,8 +1,8 @@
-﻿using System;
-using Nerator.CS;
+﻿using Nerator.CS;
+using System;
 using System.Windows.Forms;
-using static Nerator.CS.Window;
 using static Nerator.CS.Setting;
+using static Nerator.CS.Window;
 
 namespace Nerator.UC.THEME
 {

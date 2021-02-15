@@ -1,10 +1,10 @@
-﻿using System.IO;
-using Newtonsoft.Json;
-using static Nerator.CS.Page;
-using static Nerator.CS.Window;
-using static Nerator.CS.Variable;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.IO;
 using static Nerator.CS.Character;
+using static Nerator.CS.Page;
+using static Nerator.CS.Variable;
+using static Nerator.CS.Window;
 
 namespace Nerator.CS
 {
@@ -51,14 +51,14 @@ namespace Nerator.CS
         {
             Dictionary<string, string> Settings = new()
             {
-                { "PageMode" , GetPageMode(PageMode) },
-                { "WindowMode" , GetWindowMode(WindowMode) },
-                { "SpecialMode" , GetSpecialMode(SpecialMode) },
-                { "TopMostMode" , GetString(TopMostMode, TopMostMode) },
-                { "HistoryMode" , GetString(HistoryMode, HistoryMode) },
-                { "AlphabeticMode" , GetAlphabeticMode(AlphabeticMode) },
-                { "EXExpandMode" , GetString(EXExpandMode, EXExpandMode) },
-                { "PasswordLength" , GetString(PasswordLength, PasswordLength) }
+                { "PageMode", GetPageMode(PageMode) },
+                { "WindowMode", GetWindowMode(WindowMode) },
+                { "SpecialMode", GetSpecialMode(SpecialMode) },
+                { "TopMostMode", GetString(TopMostMode, TopMostMode) },
+                { "HistoryMode", GetString(HistoryMode, HistoryMode) },
+                { "AlphabeticMode", GetAlphabeticMode(AlphabeticMode) },
+                { "EXExpandMode", GetString(EXExpandMode, EXExpandMode) },
+                { "PasswordLength", GetString(PasswordLength, PasswordLength) }
             };
             File.WriteAllText(ConfigFileName, JsonConvert.SerializeObject(Settings, Formatting.Indented));
         }

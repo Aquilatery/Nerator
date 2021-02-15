@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using ReaLTaiizor.Enum.Poison;
-using static Nerator.CS.Setting;
+﻿using ReaLTaiizor.Enum.Poison;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
+using static Nerator.CS.Setting;
 
 namespace Nerator.CS
 {

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Conforyon.Board;
 using Nerator.CS;
-using Conforyon.Board;
-using System.Windows.Forms;
 using ReaLTaiizor.Enum.Poison;
+using System;
+using System.Windows.Forms;
 using static Nerator.CS.History;
 using static Nerator.CS.Strength;
 using static ReaLTaiizor.Colors.PoisonColors;
