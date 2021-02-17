@@ -15,7 +15,7 @@ namespace Nerator.CS
             try
             {
                 Application.EnableVisualStyles();
-#if NET5_0
+#if NET6_0
                 Application.SetHighDpiMode(HighDpiMode.SystemAware);
 #endif
                 Application.SetCompatibleTextRenderingDefault(false);

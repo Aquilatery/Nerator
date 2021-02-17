@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <!--<TargetFramework>net48</TargetFramework>-->
-    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <TargetFrameworks>net48;net6.0-windows</TargetFrameworks>
     <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Nerator.Nerator</StartupObject>
     <ApplicationManifest>App.manifest</ApplicationManifest>
@@ -39,7 +39,7 @@
     <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)'=='net6.0-windows'">
     <DisableFody>true</DisableFody>
   </PropertyGroup>
 
