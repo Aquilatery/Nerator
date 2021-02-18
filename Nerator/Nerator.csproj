@@ -17,8 +17,8 @@
     <Version>$([System.DateTime]::Today.ToString(yy)).$([System.DateTime]::Today.ToString(MM)).$([System.DateTime]::Today.ToString(dd)).$([System.DateTime]::Now.ToString(HH))$([System.DateTime]::Now.ToString(mm))</Version>
     <AssemblyName>Nerator</AssemblyName>
     <RootNamespace>$(AssemblyName)</RootNamespace>
-    <AnalysisLevel>latest</AnalysisLevel>
-    <LangVersion>latest</LangVersion>
+    <AnalysisLevel>preview</AnalysisLevel>
+    <LangVersion>preview</LangVersion>
     <Copyright>Copyright © $([System.DateTime]::Today.ToString(yyyy)) $(Company)</Copyright>
     <Configurations>Debug;Release</Configurations>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
