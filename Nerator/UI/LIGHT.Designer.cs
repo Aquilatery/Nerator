@@ -449,7 +449,7 @@
             MTS.Size = new System.Drawing.Size(335, 23);
             MTS.TabIndex = 17;
             MTS.Text = "materialTabSelector1";
-            MTS.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextState.Normal;
+            MTS.TitleTextState = ReaLTaiizor.Controls.MaterialTabSelector.TextStateType.Normal;
             // 
             // STATUST
             // 
