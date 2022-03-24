@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <!--<TargetFramework>net48</TargetFramework>-->
-    <TargetFrameworks>net48;netcoreapp3.1-windows;net5.0-windows;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net48;netcoreapp3.1-windows;net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
     <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Nerator.Nerator</StartupObject>
     <ApplicationManifest>App.manifest</ApplicationManifest>
@@ -47,7 +47,7 @@
     <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
   </ItemGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='netcoreapp3.1-windows' OR '$(TargetFramework)'=='net5.0-windows' OR '$(TargetFramework)'=='net6.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)'=='netcoreapp3.1-windows' OR '$(TargetFramework)'=='net5.0-windows' OR '$(TargetFramework)'=='net6.0-windows' OR '$(TargetFramework)'=='net7.0-windows'">
     <DisableFody>true</DisableFody>
   </PropertyGroup>
 
@@ -66,7 +66,7 @@
     <PackageReference Include="Conforyon" Version="1.4.7.7" />
     <PackageReference Include="ReaLTaiizor" Version="3.7.8.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Costura.Fody" Version="5.7.0">
+    <PackageReference Include="Costura.Fody" Version="5.8.0-alpha0098">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive; compile</IncludeAssets>
     </PackageReference>
