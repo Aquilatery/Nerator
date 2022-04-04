@@ -1,5 +1,4 @@
-﻿using Conforyon.Board;
-using Nerator.CS;
+﻿using Nerator.CS;
 using Nerator.UC.LIGHT.HISTORY;
 using ReaLTaiizor.Forms;
 using System;
@@ -42,7 +41,7 @@ namespace Nerator.UI
         {
             if (PWDTB.Text != Clipboard.GetText())
             {
-                ClipBoard.CopyText(PWDTB.Text, true);
+                Clipboard.SetDataObject(PWDTB.Text, true);
                 if (PWDTB.Text == Clipboard.GetText())
                 {
                     Status.Message = "Generated password copied successfully!";

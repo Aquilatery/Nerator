@@ -1,5 +1,4 @@
-﻿using Conforyon.Board;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 using static Nerator.CS.Character;
@@ -39,7 +38,7 @@ namespace Nerator.UI
 
         private void Copy_B_Click(object sender, EventArgs e)
         {
-            ClipBoard.CopyText(Password.Text, true);
+            Clipboard.SetDataObject(Password.Text, true);
             Password.Focus();
         }
 

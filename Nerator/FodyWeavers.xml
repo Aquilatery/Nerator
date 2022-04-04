@@ -2,27 +2,23 @@
 <Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
   <Costura CreateTemporaryAssemblies="false" IncludeDebugSymbols="false" DisableCompression="false" DisableCleanup="false" LoadAtModuleInit="true" IgnoreSatelliteAssemblies="false">
     <!--<PreloadOrder>
-      Conforyon
       ReaLTaiizor
       Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </PreloadOrder>-->
 
     <!--<Unmanaged32Assemblies>
-      Conforyon
       ReaLTaiizor
       Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </Unmanaged32Assemblies>
     <Unmanaged64Assemblies>
-      Conforyon
       ReaLTaiizor
       Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </Unmanaged64Assemblies>-->
 
     <IncludeAssemblies>
-      Conforyon
       ReaLTaiizor
       Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
