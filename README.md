@@ -1,14 +1,9 @@
-# Nerator
-  <p>New Generation Password Generator v22.03.24.2332</p>
-  <p>Visual Studio 2022</p>
-  <p>.NET Framework 4.8 (Minimum 4.0) & .NET Core 3.1 & .NET 5 & .NET 6 & .NET 7</p>
-  <img src=".screenshots/GIF.gif" />
-  <img src=".screenshots/UI_1.png" />
-  <img src=".screenshots/UI_2.png" />
-  <img src=".screenshots/UI_3.png" />
-  <img src=".screenshots/UI_4.png" />
-  <img src=".screenshots/UI_5.png" />
-  <img src=".screenshots/UI_6.png" />
-  <img src=".screenshots/UI_7.png" />
-  <img src=".screenshots/UI_8.png" />
-  <img src=".screenshots/UI_9.png" />
+# *Nerator moved to the ReaLTaiizor repo*
+
+The [sources](https://github.com/Taiizor/ReaLTaiizor/tree/develop/ready/ReaLTaiizor.Nerator) and [issues](https://github.com/Taiizor/ReaLTaiizor/issues?q=is%3Aopen+is%3Aissue) for Nerator have moved to the [ReaLTaiizor repo](https://github.com/Taiizor/ReaLTaiizor).
+
+New issues and PRs should be posted at the [ReaLTaiizor repo](https://github.com/Taiizor/ReaLTaiizor).
+
+Please don't post new issues or PRs in this repo.
+
+For information about using ReaLTaiizor, see [ReaLTaiizor wiki](https://github.com/Taiizor/ReaLTaiizor/wiki).
